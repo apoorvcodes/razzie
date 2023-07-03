@@ -1,100 +1,19 @@
 {
-  "name": "create-ts-starter",
-  "version": "5.1.0",
-  "description": "Production ready starter for typescript node project",
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/saostad/node-typescript-starter.git"
-  },
-  "main": "dist-esm/index.js",
-  "types": "dist-esm/index.d.ts",
-  "bin": "bin/setup.js",
-  "exports": {
-    "import": "./dist-esm/index.js",
-    "require": "./dist-cjs/index.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "scripts": {
-    "format": "prettier --check \"src/**/*.ts\" --write",
-    "lint": "eslint --ext \".ts,.js\" src --quiet",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "gen-docs": "typedoc src/index.ts",
-    "postgen-docs": "node ./config/github.js",
-    "tag": "node ./config/tag.js",
-    "auto-changelog": "auto-changelog --hide-credit --breaking-pattern \"breaking:\"",
-    "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change-log updated.\"",
-    "vulnerability-scan": "snyk test --all-projects",
-    "clean": "rimraf ./dist-esm ./dist-cjs ./compile",
-    "precompile": "npm-run-all -s clean tsc-cjs",
-    "compile": "node --trace-warnings ./config/compile/compile.js",
-    "tsc": "tsc",
-    "tsc-cjs": "tsc --p tsconfig-cjs.json",
-    "tsc:watch": "tsc --watch --preserveWatchOutput",
-    "prepublishOnly": "npm-run-all -s test clean tsc tsc-cjs gen-docs",
-    "postpublish": "npm-run-all -s tag gen-changelog",
-    "predocker:build": "tsc",
-    "docker:build": "node ./config/docker-build.js",
-    "index:inspect": "node --inspect --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist-esm/index.js",
-    "index": "node --enable-source-maps --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist-esm/index.js",
-    "dev:monitor": "set NODE_ENV=development&& nodemon --delay 2.5 --watch dist-esm --exec \"npm run index\"",
-    "dev": "wait-on dist-esm/index.js && npm run dev:monitor",
-    "prestart": "npm run clean",
-    "start": "npm-run-all -p -c tsc:watch dev",
-    "prod": "set NODE_ENV=production&& node  --es-module-specifier-resolution=node --trace-warnings --unhandled-rejections=strict dist-esm/index.js"
-  },
-  "keywords": [
-    "node",
-    "typescript",
-    "boilerplate",
-    "starter"
-  ],
-  "author": "Saeid Ostad",
+  "name": "razzie",
+  "version": "0.1.0",
+  "description": "easy docs sdk",
+  "main": "src/index.ts",
+  "repository": "https://github.com/apoorvcodes/razzie.git",
+  "author": "apoorvcodes <tofu.develops@gmail.com>",
   "license": "MIT",
-  "jest": {
-    "preset": "ts-jest/presets/default-esm",
-    "globals": {
-      "ts-jest": {
-        "useESM": true
-      }
-    },
-    "roots": [
-      "<rootDir>/src"
-    ],
-    "testMatch": [
-      "**/__tests__/**/*.+(ts|tsx|js)",
-      "**/?(*.)+(spec|test).+(ts|tsx|js)"
-    ]
-  },
+  "private": false,
   "devDependencies": {
-    "@types/jest": "^29.5.1",
-    "@types/node": "^18.16.3",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^5.59.2",
-    "auto-changelog": "^2.4.0",
-    "colors": "^1.4.0",
-    "eslint": "^8.39.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "jest": "^29.5.0",
-    "load-json-file": "^7.0.1",
     "nodemon": "^2.0.22",
-    "npm-run-all": "^4.1.5",
-    "pkg": "^5.8.1",
-    "prettier": "^2.8.8",
-    "rimraf": "^5.0.0",
-    "ts-jest": "^29.1.0",
-    "typedoc": "^0.24.6",
-    "typescript": "^5.0.4",
-    "wait-on": "^7.0.1"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "fast-node-logger": "^3.0.4",
-    "keytar": "^7.9.0",
-    "ts-node": "^10.9.1"
+    "hnswlib-node": "^2.0.0",
+    "langchain": "^0.0.102"
   }
 }
