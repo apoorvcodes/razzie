@@ -94,6 +94,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "fast-node-logger": "^3.0.4",
-    "keytar": "^7.9.0"
+    "keytar": "^7.9.0",
+    "ts-node": "^10.9.1"
   }
 }
