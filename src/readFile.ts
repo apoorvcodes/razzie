@@ -3,7 +3,9 @@ import path from "path";
 import { load } from "cheerio";
 import { Document } from "langchain/document";
 
-export async function loopDirectory(directoryPath: string): Promise<Document[]> {
+export async function loopDirectory(
+  directoryPath: string,
+): Promise<Document[]> {
   const docs: Document[] = [];
 
   try {
@@ -22,7 +24,7 @@ export async function loopDirectory(directoryPath: string): Promise<Document[]> 
   } catch (err) {
     console.error(err);
     throw new Error(
-      `Could not read directory: ${directoryPath}. Did you run \`sh download.sh\`?`
+      `Could not read directory: ${directoryPath}. Did you run \`sh download.sh\`?`,
     );
   }
 
