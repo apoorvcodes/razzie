@@ -7,13 +7,15 @@ export async function loopDirectory(
   directoryPath: string,
 ): Promise<Document[]> {
   const docs: Document[] = [];
-
+  let finalPath = directoryPath
+  if(!directoryPath.includes(process.cwd())) finalPath = process.cwd()+directoryPath
   try {
-    const files = fs.readdirSync(directoryPath);
+    const files = fs.readdirSync(finalPath);
     for (const file of files) {
-      const filePath = path.join(directoryPath, file);
+      const filePath = path.join(finalPath, file);
       const stat = fs.statSync(filePath);
       if (stat.isDirectory()) {
+        console.log(stat.isDirectory)
         const nestedDocs = await loopDirectory(filePath);
         docs.push(...nestedDocs);
       } else {
@@ -24,7 +26,7 @@ export async function loopDirectory(
   } catch (err) {
     console.error(err);
     throw new Error(
-      `Could not read directory: ${directoryPath}. Did you run \`sh download.sh\`?`,
+      `Could not read directory: ${finalPath}. Did you run \`sh download.sh\`?`,
     );
   }
 

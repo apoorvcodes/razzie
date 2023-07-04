@@ -7,7 +7,7 @@ import { loopDirectory } from "./readFile";
 export async function setupHNSWLib(
   path: string,
   pathname: string,
-  options: {
+  options?: {
     timeout: number;
     modelName: string;
   },
@@ -18,13 +18,13 @@ export async function setupHNSWLib(
   const client = new HNSWLib(new OpenAIEmbeddings(options), args);
 
   const rawDocs = await loopDirectory(path);
-
+  console.log("got docs", rawDocs)
   const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 8000,
     chunkOverlap: 100,
   });
 
   const docs = await textSplitter.splitDocuments(rawDocs);
-  await client.addDocuments(docs);
-  await client.save(pathname);
+  console.log((await client.addDocuments(docs)))
+  await client.save(pathname)
 }
