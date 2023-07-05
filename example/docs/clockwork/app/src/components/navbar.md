@@ -12,8 +12,10 @@ The file consists of three main functions: `Navbar`, `Logo`, and `Balance`.
    This function is responsible for displaying the user's balance. It first retrieves the `User` context using the `use_shared_state` hook. If the user has an account, it formats the balance using the `format_balance` utility function and displays it in a `div` element with a specific CSS class for styling. If the user does not have an account, an empty string is displayed.
 
 In summary, the `navbar.rs` file defines the structure and functionality of the navigation bar for the Clockwork project. It includes the application logo, user balance, and a connect button. The file utilizes the Dioxus framework for UI rendering and the Dioxus Router for navigation.
-## Questions: 
- 1. Question: What is the purpose of the `Navbar` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `Navbar` function?
    Answer: The `Navbar` function is responsible for rendering the navigation bar of the Clockwork project, which includes the logo, balance, and a connect button.
 
 2. Question: How is the `Logo` function used in the code?
@@ -27,4 +29,3 @@ In summary, the `navbar.rs` file defines the structure and functionality of the 
 
 5. Question: What libraries are being used in this code?
    Answer: The code uses the `dioxus` library for creating user interfaces, the `dioxus_router` library for handling navigation and routing, and the `crate` library for importing components and utilities specific to the Clockwork project.
-    

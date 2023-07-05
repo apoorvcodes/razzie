@@ -7,5 +7,3 @@ The `output/clockwork/utils/src` folder is part of the Clockwork project and con
 `thread.rs` contains the data structures and implementations for handling threads and their triggering conditions in the Solana blockchain. The file defines the `ClockData` struct, which represents a specific moment in time recorded by a Solana cluster, and the `Trigger` enum, which defines the triggering conditions of a thread. The file also defines the `ThreadResponse` struct, a response value that target programs can return to update the thread, and the `SerializableInstruction` and `SerializableAccount` structs, which represent the data needed to execute an instruction on Solana.
 
 In summary, the `output/clockwork/utils/src` folder provides essential functionality for the Clockwork project, including handling threads and their triggers, generating URLs for blockchain explorers, and defining core data structures and traits. This code is likely to be used by other parts of the Clockwork project to interact with the Solana blockchain, manage threads, and provide a foundation for the project's functionality.
-
-    

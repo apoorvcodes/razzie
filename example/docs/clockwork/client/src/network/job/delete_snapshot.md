@@ -7,6 +7,7 @@ The `Instruction` object is created with the following properties:
 1. `program_id`: This is set to the Clockwork network program's ID, which is the unique identifier for the program on the Solana blockchain.
 
 2. `accounts`: This is a vector of `AccountMeta` objects, which represent the accounts that are involved in the instruction. In this case, there are three accounts:
+
    - `Config::pubkey()`: This is a read-only account representing the Clockwork network program's configuration.
    - `Registry::pubkey()`: This account represents the registry of snapshots in the Clockwork network program.
    - `thread`: This is a read-only account representing the thread identifier for the snapshot to be deleted.
@@ -14,8 +15,10 @@ The `Instruction` object is created with the following properties:
 3. `data`: This is the serialized instruction data that will be executed by the Clockwork network program. The `DeleteSnapshotJob` struct is used to create the instruction data, and its `data()` method is called to serialize the data.
 
 In summary, the `delete_snapshot.rs` file provides a function to create a Solana instruction for deleting a snapshot in the Clockwork network program. The instruction includes the necessary account metadata and serialized instruction data to be executed by the program.
-## Questions: 
- 1. Question: What is the purpose of the `delete_snapshot` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `delete_snapshot` function?
    Answer: The `delete_snapshot` function creates an `Instruction` for deleting a snapshot associated with a given thread in the Clockwork network program.
 
 2. Question: What are the input parameters for the `delete_snapshot` function?
@@ -29,4 +32,3 @@ In summary, the `delete_snapshot.rs` file provides a function to create a Solana
 
 5. Question: What is the significance of the `new_readonly` method used for creating `AccountMeta` objects in the `accounts` vector?
    Answer: The `new_readonly` method is used to create `AccountMeta` objects with a specified read-only status. In this case, the Config and thread accounts are marked as read-only, meaning they cannot be modified during the execution of the `delete_snapshot` instruction.
-    

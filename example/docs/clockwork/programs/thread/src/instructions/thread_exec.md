@@ -17,8 +17,10 @@ The `handler` function is the main entry point for executing threads. It perform
 11. If the thread has no more work or the number of execs since the last payout has reached the rate limit, reimburses the worker for the transaction base fee.
 
 This file is essential for developers working on the Clockwork project, as it handles the core logic for executing threads and managing worker fees and reimbursements.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadExec` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadExec` struct and its associated fields?
    Answer: The `ThreadExec` struct represents the accounts required by the `thread_exec` instruction. It contains fields for the worker's fee account, the active worker pool, the signatory, the thread to execute, and the worker.
 
 2. Question: How does the code handle rate limits for thread execution?
@@ -32,4 +34,3 @@ This file is essential for developers working on the Clockwork project, as it ha
 
 5. Question: How does the code handle reimbursement for the transaction base fee?
    Answer: If the thread has no more work or the number of execs since the last payout has reached the rate limit, the code updates the lamports of the thread and signatory accounts by subtracting and adding the `TRANSACTION_BASE_FEE_REIMBURSEMENT` value, respectively. It also updates the `exec_context` to mark that a reimbursement happened in this slot.
-    

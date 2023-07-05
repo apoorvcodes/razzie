@@ -18,5 +18,3 @@ The instructions implemented in this folder include:
 The `mod.rs` file serves as a module declaration and re-export file, organizing and managing the various sub-modules within the Clockwork project. It publicly exposes these sub-modules and re-exports their contents, making them accessible to other parts of the project or external code that depends on the Clockwork library.
 
 In summary, the `instructions` folder in the Clockwork project contains the implementation of various instructions responsible for managing threads and their execution. These instructions are essential for developers working on the Clockwork project, as they define the core functionality for creating, updating, executing, and deleting threads.
-
-    

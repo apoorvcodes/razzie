@@ -7,8 +7,10 @@ The code in this file consists of two main parts:
 2. `pub use webhook::*;`: This line re-exports all public items (functions, structs, enums, etc.) defined within the "webhook" sub-module. The `pub` keyword makes these items publicly accessible to other modules that use the "clockwork" module. The `use webhook::*;` statement imports all items from the "webhook" sub-module into the current scope, and the `*` (wildcard) means that all public items from the "webhook" sub-module will be re-exported.
 
 In summary, the `mod.rs` file in the "clockwork" project is responsible for organizing and managing the "webhook" sub-module. It declares the "webhook" sub-module and re-exports all its public items, making them accessible to other modules within the project. Developers working on the "clockwork" project should be aware of this file's role in managing the "webhook" sub-module and its contents.
-## Questions: 
- 1. Question: What is the purpose of the `mod webhook;` line?
+
+## Questions:
+
+1. Question: What is the purpose of the `mod webhook;` line?
    Answer: The `mod webhook;` line declares a submodule named `webhook` within the current module, allowing the code in the `webhook` module to be organized separately in a file named `webhook.rs`.
 
 2. Question: What does the `pub use webhook::*;` line do?
@@ -22,4 +24,3 @@ In summary, the `mod.rs` file in the "clockwork" project is responsible for orga
 
 5. Question: How can I use the items from the `webhook` submodule in another module?
    Answer: To use the items from the `webhook` submodule in another module, you would first need to import the `clockwork` module using `use clockwork;` or `use clockwork::webhook;`. Then, you can access the items from the `webhook` submodule directly, as they have been re-exported with the `pub use webhook::*;` line.
-    

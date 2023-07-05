@@ -15,5 +15,3 @@ Here is a list of the subfolders in this folder and a summary of the contents of
 2. `vendor`: This folder contains third-party libraries and dependencies used by the client-side application. These libraries are typically included in the `main.js` and `styles.css` files and are loaded by the browser when the application is running. Examples of third-party libraries might include jQuery, Bootstrap, or any other popular JavaScript or CSS frameworks.
 
 In summary, the `output/clockwork/client/target` folder contains the build output for the client-side application of the Clockwork project. It includes the main HTML, JavaScript, and CSS files, as well as any static assets and third-party dependencies required for the application to function correctly. This folder is likely to be generated during the build process and is used to run the client-side application in a web browser. Developers working on the Clockwork project should be familiar with the contents of this folder and how they fit into the larger project structure.
-
-    

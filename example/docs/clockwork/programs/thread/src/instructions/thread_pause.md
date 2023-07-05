@@ -15,8 +15,10 @@ Inside the `handler` function, the following steps are performed:
 Finally, the function returns `Ok(())`, indicating that the operation was successful.
 
 In summary, the `thread_pause.rs` file provides the functionality to pause a thread in the Clockwork project. It defines the necessary account structures and implements the handler function to perform the pause operation.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadPause` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadPause` struct?
    Answer: The `ThreadPause` struct defines the accounts required by the `thread_delete` instruction, including the authority (owner) of the thread and the thread to be paused.
 
 2. Question: How are the seeds and bump values for the `thread` account determined?
@@ -30,4 +32,3 @@ In summary, the `thread_pause.rs` file provides the functionality to pause a thr
 
 5. Question: What does the `Ok(())` return value signify in the `handler` function?
    Answer: The `Ok(())` return value signifies that the function has executed successfully without any errors.
-    

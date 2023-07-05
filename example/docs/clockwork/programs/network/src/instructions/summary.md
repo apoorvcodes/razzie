@@ -7,5 +7,3 @@ Each file in this folder defines a struct that represents a specific operation, 
 The `mod.rs` file in this folder serves as a module declaration and re-export file, organizing and managing the various sub-modules within the project. This file is crucial for maintaining a clean and organized codebase, as it allows developers to easily locate and access the functionality provided by each sub-module.
 
 In summary, the `output/clockwork/programs/network/src/instructions` folder contains the core functionalities of the Clockwork project, implemented using the Anchor framework and the Solana Program Library. The files in this folder define structs and handler functions for various operations, such as updating settings, handling delegation claims, creating and managing pools, and managing worker accounts. Developers working with this code should be familiar with the Anchor framework, Solana accounts, and the overall structure of the Clockwork project.
-
-    

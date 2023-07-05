@@ -19,5 +19,3 @@ The `SignedRequest` struct, in particular, is a key component of the system, as 
 The `Relay` struct represents a relay in the system, which is responsible for forwarding messages between different components. The various `Secret*` structs are used to represent different types of secret-related requests and responses, allowing the system to manage secrets in a structured and organized manner.
 
 In summary, the `lib.rs` file in the `output/clockwork/relayer/api/src` folder is an essential part of the Clockwork project, providing the main data structures and their implementations for handling signed requests, relays, and secrets. The file leverages the Serde library for serialization and deserialization and the Solana SDK for public key and signature handling. This file is crucial for ensuring the secure and efficient management of secrets and relays within the Clockwork system.
-
-    

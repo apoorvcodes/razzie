@@ -11,8 +11,10 @@ Following the module import, there are two `pub use` statements:
 2. `pub use thread::*;`: This statement re-exports all public items from the previously imported `thread` module. This allows other modules within the Clockwork project to access the items defined in the `thread` module without needing to import it directly.
 
 In summary, the `mod.rs` file in the Clockwork project serves as a central module for managing the program's state. It imports the `thread` module and re-exports relevant items from both the `thread` module and the `clockwork_utils` crate, making them easily accessible for other modules within the project.
-## Questions: 
- 1. Question: What is the purpose of the `mod.rs` file in the clockwork project?
+
+## Questions:
+
+1. Question: What is the purpose of the `mod.rs` file in the clockwork project?
    Answer: The `mod.rs` file serves as the module declaration file for the program's state management, and it re-exports the necessary objects from the `thread` module and the `clockwork_utils::thread` module.
 
 2. Question: What is the role of the `thread` module in the clockwork project?
@@ -26,4 +28,3 @@ In summary, the `mod.rs` file in the Clockwork project serves as a central modul
 
 5. Question: Are there any other modules or dependencies that the clockwork project relies on for managing its state?
    Answer: Based on the provided code snippet, it appears that the clockwork project primarily relies on the `thread` module and the `clockwork_utils::thread` module for state management. However, there might be other modules or dependencies not shown in this snippet.
-    

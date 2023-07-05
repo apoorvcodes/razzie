@@ -11,5 +11,3 @@ The `state` subfolder is responsible for managing the state and execution of tra
 The `ThreadAccount` trait is defined for reading and writing to a thread account, and the `ExecContext` and `TriggerContext` structs represent the execution context and trigger context of a transaction thread, respectively. These components are essential for managing the state and execution of transaction threads on the Solana blockchain, providing the necessary functionality for developers working with the Clockwork project.
 
 In summary, the code in the `output/clockwork/programs/thread/src` folder is crucial for managing the state and execution of transaction threads on the Solana blockchain within the Clockwork project. It provides the necessary structs, methods, and traits for working with thread accounts, execution contexts, trigger contexts, and thread settings, making it an essential part of the project's functionality. This code is relevant to developers working on the Clockwork project or those who are interested in creating dynamic, long-running transaction threads on the Solana blockchain.
-
-    

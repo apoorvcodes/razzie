@@ -23,5 +23,3 @@ Key components in this folder include:
 The `mod.rs` file serves as a central hub for organizing and exporting the various sub-modules and their components, making it easier for developers to manage dependencies and access the functionality provided by each sub-module.
 
 In summary, the code in the `output/clockwork/app/src/components` folder is responsible for rendering different parts of the Clockwork project's user interface, managing connections and cryptographic operations, and fetching data from external sources. The components are built using the Dioxus framework, wasm_bindgen crate, and other libraries for interacting with the Solana blockchain and market data providers.
-
-    

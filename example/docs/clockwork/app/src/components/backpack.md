@@ -13,10 +13,12 @@ The `Backpack` type is defined as an external C-compatible structure with the `e
 The `N` type is also defined as an external C-compatible structure with another `extern "C"` block. It has a single method, `to_string`, which converts the `N` object to a string representation.
 
 In summary, the `backpack.rs` file defines the `Backpack` and `N` types, along with their associated methods, for managing connections and cryptographic operations in the Clockwork project. The code is written in Rust and uses the `wasm_bindgen` crate for WebAssembly interoperability, allowing it to be called from JavaScript.
-## Questions: 
- 1. Question: What is the purpose of the `#![allow(non_upper_case_globals)]` attribute?
 
-   Answer: This attribute allows the use of non-uppercase global constants in the code without triggering a warning or error from the Rust compiler.
+## Questions:
+
+1.  Question: What is the purpose of the `#![allow(non_upper_case_globals)]` attribute?
+
+Answer: This attribute allows the use of non-uppercase global constants in the code without triggering a warning or error from the Rust compiler.
 
 2. Question: What is the role of the `wasm_bindgen` attribute and why is it used in this code?
 
@@ -33,4 +35,3 @@ In summary, the `backpack.rs` file defines the `Backpack` and `N` types, along w
 5. Question: What is the reason for using `Option<N>` as the type for the `pubkey` parameter in the `sign_message` function?
 
    Answer: The `Option<N>` type is used to indicate that the `pubkey` parameter is optional. If a public key is provided, it will be used for signing the message; otherwise, the default public key associated with the backpack will be used.
-    

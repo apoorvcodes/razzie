@@ -18,8 +18,10 @@ The `handler` function takes a context of `DeleteSnapshotProcessSnapshot` and re
 The function returns a `ThreadResponse` containing the dynamic instruction (if any), and no close_to or trigger values.
 
 In summary, this file is responsible for managing the deletion of snapshots and their associated frames in the Clockwork project. It defines the necessary accounts and constraints, and implements the logic for handling the deletion process.
-## Questions: 
- 1. Question: What is the purpose of the `DeleteSnapshotProcessSnapshot` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `DeleteSnapshotProcessSnapshot` struct and its associated fields?
    Answer: The `DeleteSnapshotProcessSnapshot` struct is used to define the account constraints and relationships for the delete snapshot process. It contains fields for the config, registry, snapshot, and thread accounts, with specific constraints and attributes for each.
 
 2. Question: What is the purpose of the `handler` function and its input parameter `ctx`?
@@ -33,4 +35,3 @@ In summary, this file is responsible for managing the deletion of snapshots and 
 
 5. Question: What is the purpose of the `ThreadResponse` struct and what are its fields used for?
    Answer: The `ThreadResponse` struct is used to return the result of the handler function. It contains fields for the `dynamic_instruction`, `close_to`, and `trigger`. The `dynamic_instruction` field holds the next instruction for the thread, while the `close_to` and `trigger` fields are set to `None` in this implementation, indicating that there are no additional actions required.
-    

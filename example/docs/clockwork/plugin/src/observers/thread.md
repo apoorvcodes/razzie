@@ -1,6 +1,7 @@
 The `thread.rs` file is part of the Clockwork project and is responsible for managing and observing threads based on various triggers. It defines a `ThreadObserver` struct that contains several fields for tracking threads and their triggers, such as account updates, cron schedules, immediate execution, slot updates, and epoch updates.
 
 The `ThreadObserver` struct has the following fields:
+
 - `clocks`: A map of slot numbers to sysvar clock data for that slot.
 - `current_epoch`: An integer tracking the current epoch.
 - `account_threads`: A map of account pubkeys to the set of threads listening for an account update.
@@ -11,6 +12,7 @@ The `ThreadObserver` struct has the following fields:
 - `updated_accounts`: A set of accounts that have been updated.
 
 The `ThreadObserver` struct also has several methods for processing and observing threads, clocks, and accounts. These methods include:
+
 - `new()`: Creates a new `ThreadObserver` instance.
 - `process_slot()`: Processes a slot and returns a set of executable threads based on various triggers.
 - `observe_clock()`: Observes a clock and updates the `clocks` field.
@@ -20,8 +22,10 @@ The `ThreadObserver` struct also has several methods for processing and observin
 Additionally, the `thread.rs` file contains a `next_moment()` function that calculates the next scheduled moment for a cron-triggered thread based on a reference timestamp and a cron schedule string.
 
 In summary, the `thread.rs` file is responsible for managing threads in the Clockwork project based on various triggers, such as account updates, cron schedules, immediate execution, slot updates, and epoch updates. It provides methods for processing and observing threads, clocks, and accounts, and helps in determining the next scheduled moment for cron-triggered threads.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadObserver` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadObserver` struct?
    Answer: The `ThreadObserver` struct is responsible for managing and tracking the state of threads based on various triggers such as account updates, cron schedules, immediate execution, slot updates, and epoch updates.
 
 2. Question: How does the `process_slot` function work?
@@ -35,4 +39,3 @@ In summary, the `thread.rs` file is responsible for managing threads in the Cloc
 
 5. Question: What is the purpose of the `next_moment` function?
    Answer: The `next_moment` function calculates the next scheduled timestamp for a thread with a cron trigger, based on the given reference timestamp and cron schedule string. It returns the next scheduled timestamp as an `i64` value, or `None` if the schedule is invalid or there are no upcoming scheduled times.
-    

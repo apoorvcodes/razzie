@@ -18,8 +18,10 @@ The `handler` function takes a `Context<UnstakeCreate>` and an `amount` (u64) as
 5. Returns `Ok(())` to indicate a successful operation.
 
 This file is essential for developers working on the Clockwork project, as it provides the functionality to create an unstake account and perform the unstaking operation. The code is well-structured and uses the Anchor framework for defining accounts and handling instructions.
-## Questions: 
- 1. Question: What is the purpose of the `UnstakeCreate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `UnstakeCreate` struct and its associated fields?
    Answer: The `UnstakeCreate` struct is used to define the account inputs required for the unstaking process in the Clockwork project. It contains fields for the authority, delegation, registry, system_program, unstake, and worker accounts.
 
 2. Question: How are the seeds and bump values used in the account annotations?
@@ -33,4 +35,3 @@ This file is essential for developers working on the Clockwork project, as it pr
 
 5. Question: How is the `init` method used in the `handler` function for the `unstake` account?
    Answer: The `init` method is called on the `unstake` account to initialize it with the provided parameters, such as the unstake amount, authority key, delegation key, total unstakes, and worker key. This sets up the unstake account with the necessary information for the unstaking process.
-    

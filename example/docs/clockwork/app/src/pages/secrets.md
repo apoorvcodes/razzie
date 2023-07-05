@@ -9,8 +9,10 @@ The `Header` function is a helper function that takes a `Scope` as an argument a
 The `get_secrets` function is an asynchronous function that retrieves the secrets from the server. It creates a `SecretList` message and serializes it using `bincode`. It then creates a `SignedRequest` object with the message, signer's public key, and signature. The signature is generated using the `backpack.sign_message` function. The function sends a POST request to the `RELAYER_URL` with the `SignedRequest` object as JSON payload. If the request is successful, it returns the secrets from the `SecretListResponse`. If there's an error, it returns an empty vector.
 
 In summary, the `secrets.rs` file is responsible for displaying and fetching secrets in the Clockwork project. It provides a `SecretsPage` function to render the secrets page, a `Header` function to render the table header, and a `get_secrets` function to fetch secrets from the server.
-## Questions: 
- 1. Question: What is the purpose of the `SecretsPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `SecretsPage` function?
    Answer: The `SecretsPage` function is responsible for rendering the secrets page, which displays a list of secrets, and provides a link to create a new secret.
 
 2. Question: How does the `get_secrets` function fetch the secrets?
@@ -24,4 +26,3 @@ In summary, the `secrets.rs` file is responsible for displaying and fetching sec
 
 5. Question: What libraries are being used in this code and what are their purposes?
    Answer: The code uses several libraries, including `anchor_lang` for working with the Solana blockchain, `clockwork_relayer_api` for interacting with the relayer API, `dioxus` for building the user interface, `dioxus_router` for handling routing, `dotenv_codegen` for accessing environment variables, `reqwest` for making HTTP requests, and `solana_client_wasm` for working with Solana signatures.
-    

@@ -9,8 +9,10 @@ The `update-solana.sh` script is a Bash script used to update the version of Sol
 4. Update the Solana version in the `Dockerfile`. The script uses the `sed` command again to find and replace the Solana version in the `Dockerfile`. It searches for lines starting with "ENV SOLANA_VERSION=v" and replaces the version number with the new version provided by the user. The `-i` and `-e` flags are used in the same way as in step 3.
 
 In summary, the `update-solana.sh` script is used to update the Solana version in a Clockwork project by modifying the `Cargo.toml` files and the `Dockerfile`. Developers can use this script to easily update the Solana dependency across the entire project.
-## Questions: 
- 1. Question: What is the purpose of this script?
+
+## Questions:
+
+1. Question: What is the purpose of this script?
    Answer: The purpose of this script is to update the version of Solana in all Cargo.toml files and the Dockerfile in the project.
 
 2. Question: How does the script get the new version of Solana to update?
@@ -24,4 +26,3 @@ In summary, the `update-solana.sh` script is used to update the Solana version i
 
 5. Question: How does the script update the version of Solana in the Dockerfile?
    Answer: The script uses the `sed` command to find and replace the Solana version in the Dockerfile by searching for the line starting with "ENV SOLANA_VERSION=v" and updating the version after the "v" with the new version provided by the user.
-    

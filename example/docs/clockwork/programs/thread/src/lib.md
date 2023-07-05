@@ -18,8 +18,10 @@ The main functionality of the file is defined within the `thread_program` module
 12. `thread_withdraw`: Allows an owner to withdraw from a thread's lamport balance.
 
 Each of these functions takes a `Context` object as an argument and calls a corresponding handler function from the `instructions` module to perform the desired operation. The `Result` type is used to handle errors and return values.
-## Questions: 
- 1. Question: What is the purpose of the `declare_id!` macro and the string passed to it?
+
+## Questions:
+
+1. Question: What is the purpose of the `declare_id!` macro and the string passed to it?
    Answer: The `declare_id!` macro is used to define the program ID for the Clockwork project. The string passed to it is a unique identifier for the program on the Solana blockchain.
 
 2. Question: How are the different functions in the `thread_program` module related to the transaction threads mentioned in the documentation?
@@ -33,4 +35,3 @@ Each of these functions takes a `Context` object as an argument and calls a corr
 
 5. Question: How does the `get_crate_info` function work and what is its purpose?
    Answer: The `get_crate_info` function is used to return the crate information (such as version, name, and other metadata) of the Clockwork project. It uses the `sol_set_return_data/sol_get_return_data` functions to return this information to the caller.
-    

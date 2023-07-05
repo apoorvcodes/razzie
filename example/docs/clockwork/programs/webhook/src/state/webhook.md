@@ -11,8 +11,10 @@ The `webhook.rs` file is part of the Clockwork project and is responsible for de
 The file also imports necessary modules and dependencies, such as `std`, `anchor_lang`, and `serde`. Additionally, it defines a constant `SEED_WEBHOOK` which is a byte slice containing the string "webhook". This constant is used as a seed for generating program addresses.
 
 In summary, the `webhook.rs` file defines the core data structures and behavior for webhooks in the Clockwork project, including the main `Webhook` struct, the `WebhookAccount` trait, and the `HttpMethod` and `Relayer` enums.
-## Questions: 
- 1. Question: What is the purpose of the `Webhook` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Webhook` struct and its fields?
    Answer: The `Webhook` struct represents a webhook object with fields such as authority, body, created_at, headers, id, method, relayer, url, and workers, which store information about the webhook, such as the authority that created it, the request body, headers, HTTP method, relayer type, target URL, and associated worker public keys.
 
 2. Question: How is the `pubkey` function in the `Webhook` struct used?
@@ -26,4 +28,3 @@ In summary, the `webhook.rs` file defines the core data structures and behavior 
 
 5. Question: What is the purpose of the `Relayer` enum and its variants?
    Answer: The `Relayer` enum represents the type of relayer used for the webhook, with two possible variants: `Clockwork` for the default Clockwork relayer, and `Custom(String)` for a custom relayer specified by a string.
-    

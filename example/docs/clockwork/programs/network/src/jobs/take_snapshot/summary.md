@@ -11,5 +11,3 @@ The `output/clockwork/programs/network/src/jobs/take_snapshot` folder is part of
 The `mod.rs` file serves as the module declaration file for the directory, organizing and exporting the functionality provided by the various sub-modules within the same directory. It declares and re-exports four sub-modules: `create_entry`, `create_frame`, `create_snapshot`, and `job`.
 
 In summary, the code in the `output/clockwork/programs/network/src/jobs/take_snapshot` folder is responsible for taking a snapshot of the system state in the Clockwork project. It involves creating snapshot entries for delegations, initializing snapshot frames for workers, and creating a new snapshot of the system state. The implementation is organized into four Rust files, with a `mod.rs` file for module organization and exporting. This functionality is essential for maintaining an accurate and up-to-date representation of the system state, which can be used for various purposes such as monitoring, analysis, and decision-making.
-
-    

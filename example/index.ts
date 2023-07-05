@@ -1,7 +1,9 @@
 import { config } from "dotenv";
-config()
 
-import {setupHNSWLib} from "../src";
+config();
 
+import  Client  from "../src/llm";
 
-setupHNSWLib("/example/docs/clockwork", "data")
+const client = new Client({
+    condensePrompt: 
+})

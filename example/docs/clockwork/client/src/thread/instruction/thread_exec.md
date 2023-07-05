@@ -14,8 +14,10 @@ The `thread_exec` function returns an `Instruction` object, which is a data stru
 3. `data`: This is the serialized data of the `ThreadExec` instruction from the `clockwork_thread_program` library. This data is used by the Clockwork thread program to determine the specific action to be performed when the instruction is executed.
 
 In summary, the `thread_exec.rs` file defines a function that creates an instruction to execute a thread in the Clockwork network program. This instruction includes the necessary account metadata and serialized data for the Clockwork thread program to perform the desired action on the Solana blockchain.
-## Questions: 
- 1. Question: What is the purpose of the `thread_exec` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_exec` function?
    Answer: The `thread_exec` function creates an `Instruction` for executing a thread in the Clockwork project, taking the signatory, thread, and worker public keys as input.
 
 2. Question: What are the dependencies used in this code?
@@ -29,4 +31,3 @@ In summary, the `thread_exec.rs` file defines a function that creates an instruc
 
 5. Question: How is the `data` field in the `Instruction` struct populated?
    Answer: The `data` field in the `Instruction` struct is populated using the `data()` method of the `clockwork_thread_program::instruction::ThreadExec` struct, which serializes the instruction data required for the thread execution.
-    

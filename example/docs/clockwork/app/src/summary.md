@@ -9,5 +9,3 @@ The `components` subfolder contains various Rust files and components responsibl
 The `pages` subfolder contains Rust files responsible for rendering different pages and components within the Clockwork project using the Dioxus library. The files define various pages and components, each with a main function that takes a `Scope` object and returns an `Element`. The RSX macro is used to write HTML-like syntax in Rust code, and CSS classes are used for styling. Some files also interact with the Clockwork SDK or other libraries to fetch data or perform actions.
 
 In summary, the code in the `output/clockwork/app/src` folder is essential for the Clockwork project, providing the core functionality and components for interacting with the Solana blockchain, managing user interactions, and rendering the user interface. Developers working on this project should be familiar with the Dioxus framework, wasm_bindgen crate, and other libraries for interacting with the Solana blockchain and market data providers.
-
-    

@@ -5,8 +5,10 @@ In this particular `mod.rs` file, there are two sub-modules being declared and m
 Following the module declarations, the file also re-exports the contents of both sub-modules using the `pub use` keyword. This means that any items (such as structs, enums, functions, etc.) defined within the `webhook_create` and `webhook_respond` sub-modules will be directly accessible to other modules that import this parent module. This can help simplify the import statements in other parts of the project and make it easier to use the items defined within these sub-modules.
 
 In summary, the `mod.rs` file in the "clockwork" project is responsible for organizing and exposing the `webhook_create` and `webhook_respond` sub-modules, as well as re-exporting their contents for easier access throughout the project. Developers working on this project should be aware of the structure and organization provided by this file, as well as the items defined within the two sub-modules.
-## Questions: 
- 1. Question: What is the purpose of this `mod.rs` file in the clockwork project?
+
+## Questions:
+
+1. Question: What is the purpose of this `mod.rs` file in the clockwork project?
    Answer: The `mod.rs` file is used to define the structure and public interface of the clockwork module, by declaring the submodules `webhook_create` and `webhook_respond` and re-exporting their contents.
 
 2. Question: What are the functionalities provided by the `webhook_create` and `webhook_respond` modules?
@@ -20,4 +22,3 @@ In summary, the `mod.rs` file in the "clockwork" project is responsible for orga
 
 5. Question: Are there any tests or examples available for the `webhook_create` and `webhook_respond` modules?
    Answer: This code snippet does not provide information about tests or examples, but you can look for them in the respective module files or in a separate `tests` or `examples` directory within the project.
-    

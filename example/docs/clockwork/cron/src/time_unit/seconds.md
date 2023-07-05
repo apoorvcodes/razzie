@@ -9,8 +9,10 @@ The `TimeUnitField` trait is implemented for the `Seconds` struct, providing met
 The `PartialEq` trait is implemented for the `Seconds` struct, allowing instances to be compared for equality. The `eq` method compares the `ordinals` of two `Seconds` instances and returns true if they are equal.
 
 In summary, the `seconds.rs` file defines the `Seconds` struct and its associated methods for handling the seconds field in a time unit. It provides functionality for working with sets of ordinals representing seconds and implements the `TimeUnitField` trait to integrate with the Clockwork project's time unit handling.
-## Questions: 
- 1. Question: What is the purpose of the `Seconds` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Seconds` struct and its fields?
    Answer: The `Seconds` struct represents a time unit field for seconds, and it has a field called `ordinals` which is an optional `OrdinalSet` representing the specific seconds values.
 
 2. Question: How does the `TimeUnitField` trait relate to the `Seconds` struct?
@@ -24,4 +26,3 @@ In summary, the `seconds.rs` file defines the `Seconds` struct and its associate
 
 5. Question: What is the purpose of the `Cow` type in the `name()` method?
    Answer: The `Cow` (short for "clone on write") type is used in the `name()` method to return a string that can be either borrowed or owned, depending on the context, allowing for more efficient memory usage.
-    

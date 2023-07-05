@@ -7,8 +7,10 @@ The `README.md` file provides a brief set of instructions for developers to get 
 3. `localhost:8080`: This is the default address and port where the Trunk development server hosts the Clockwork application. Developers can visit this URL in their web browser to view and interact with the running application.
 
 In summary, the `README.md` file provides a quick and straightforward guide for developers to set up and run the Clockwork project using the Trunk build tool. It assumes that the developer has Rust and Cargo installed on their machine. By following these instructions, developers can start working on the project and see their changes in real-time as they develop.
-## Questions: 
- 1. Question: What is the purpose of the `cargo install trunk` command?
+
+## Questions:
+
+1. Question: What is the purpose of the `cargo install trunk` command?
    Answer: The `cargo install trunk` command is used to install the Trunk build tool, which is a required dependency for building and serving the Clockwork project.
 
 2. Question: What does the `trunk serve` command do?
@@ -22,4 +24,3 @@ In summary, the `README.md` file provides a quick and straightforward guide for 
 
 5. Question: Can the port number for the local server be changed from the default `8080`?
    Answer: The instructions do not mention changing the port number, but it is likely that Trunk allows specifying a custom port number through command-line options or configuration files.
-    

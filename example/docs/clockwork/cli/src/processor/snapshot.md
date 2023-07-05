@@ -3,6 +3,7 @@ The `snapshot.rs` file is part of the Clockwork project and is responsible for h
 There are two main functions in this file: `get` and `get_snapshot_entry`.
 
 1. `get` function:
+
    - This function takes a reference to a `Client` object and an optional `entry_id` as arguments.
    - It retrieves the `Registry` object from the client using the `registry_pubkey` and handles any errors that may occur during this process.
    - It then calculates the `snapshot_pubkey` based on the `registry.snapshot_count` and retrieves the `Snapshot` object from the client using this key.
@@ -16,8 +17,10 @@ There are two main functions in this file: `get` and `get_snapshot_entry`.
    - The entry is then printed to the console.
 
 In summary, the `snapshot.rs` file provides functionality to retrieve and display snapshot and snapshot entry data from the Clockwork project. It handles errors that may occur during the retrieval process and prints the retrieved data to the console.
-## Questions: 
- 1. Question: What is the purpose of the `get` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `get` function?
    Answer: The `get` function retrieves a snapshot from the registry using the provided client and an optional entry_id. If an entry_id is provided, it also retrieves the corresponding snapshot entry.
 
 2. Question: How does the `get` function handle errors when fetching the registry and snapshot data?
@@ -31,4 +34,3 @@ In summary, the `snapshot.rs` file provides functionality to retrieve and displa
 
 5. Question: What is the role of the `clockwork_client::network::objects::{Registry, Snapshot, SnapshotEntry}` import statement?
    Answer: The import statement brings the `Registry`, `Snapshot`, and `SnapshotEntry` structs from the `clockwork_client::network::objects` module into scope, allowing the code to use these structs for fetching and handling snapshot data.
-    

@@ -7,8 +7,10 @@ The `read_or_new_keypair` function uses a match expression to handle the `keypat
 If `keypath` is `None`, meaning no file path is provided, the function calls `Keypair::new()` to generate a new keypair. The `new()` function is a constructor for the `Keypair` struct that creates a new keypair object.
 
 In summary, the `utils.rs` file provides a utility function for the Clockwork project to either read a keypair from a file or generate a new one, depending on whether a file path is provided. This is useful for developers working with the project, as it simplifies the process of managing keypairs.
-## Questions: 
- 1. Question: What is the purpose of the `read_or_new_keypair` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `read_or_new_keypair` function?
    Answer: The `read_or_new_keypair` function is used to either read an existing keypair from a file specified by the `keypath` parameter or generate a new keypair if no `keypath` is provided.
 
 2. Question: What is the `solana_sdk::signature::{read_keypair_file, Keypair}` import used for?
@@ -22,4 +24,3 @@ In summary, the `utils.rs` file provides a utility function for the Clockwork pr
 
 5. Question: Is there any error handling implemented in the `read_or_new_keypair` function?
    Answer: There is no explicit error handling implemented in the `read_or_new_keypair` function, as the `unwrap()` function is used, which will cause the program to panic if an error occurs while reading the keypair file.
-    

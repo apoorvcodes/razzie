@@ -12,8 +12,10 @@ The current `README.md` file only contains the title "Clockwork SDK," which indi
 6. **License**: Details about the licensing terms and conditions for the Clockwork SDK project.
 
 By including these sections in the `README.md` file, developers will have a comprehensive understanding of the Clockwork SDK project, allowing them to effectively use and contribute to its development.
-## Questions: 
- 1. Question: What is the purpose of the Clockwork SDK?
+
+## Questions:
+
+1. Question: What is the purpose of the Clockwork SDK?
    Answer: The Clockwork SDK is a software development kit designed to provide developers with the necessary tools and resources to build applications or integrate features related to the Clockwork project.
 
 2. Question: What programming languages and platforms are supported by the Clockwork SDK?
@@ -27,4 +29,3 @@ By including these sections in the `README.md` file, developers will have a comp
 
 5. Question: How can developers contribute to the Clockwork SDK project or report issues they encounter while using it?
    Answer: The README.md file does not mention any contribution guidelines or issue reporting process, so it would be useful to know how developers can participate in the project and report any problems they face.
-    

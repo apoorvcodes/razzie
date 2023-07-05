@@ -25,8 +25,10 @@ The ClockworkPlugin also has a `new_from_config` method that creates a new Clock
 The `build_runtime` function creates a new Tokio runtime with the given configuration, enabling all features and setting the thread name and worker thread count.
 
 Overall, this file defines the core functionality of the ClockworkPlugin, which is responsible for processing account updates, slot status updates, and other events in the Solana Geyser Plugin Interface.
-## Questions: 
- 1. Question: What is the purpose of the `ClockworkPlugin` struct and its `inner` field?
+
+## Questions:
+
+1. Question: What is the purpose of the `ClockworkPlugin` struct and its `inner` field?
    Answer: The `ClockworkPlugin` struct represents the main plugin structure for the Clockwork project. The `inner` field is an `Arc<Inner>` type, which is a reference-counted smart pointer to an `Inner` struct that contains the plugin's configuration, executors, observers, and runtime.
 
 2. Question: How does the `on_load` function work and what is its purpose?
@@ -40,4 +42,3 @@ Overall, this file defines the core functionality of the ClockworkPlugin, which 
 
 5. Question: What is the purpose of the `build_runtime` function and how does it use the `PluginConfig`?
    Answer: The `build_runtime` function creates a new Tokio runtime with the specified configuration from the `PluginConfig`. It sets up a multi-threaded runtime with the thread count specified in the configuration, enabling all available features, and naming the threads "clockwork-plugin".
-    

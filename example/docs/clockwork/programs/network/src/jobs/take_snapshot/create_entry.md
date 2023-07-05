@@ -15,8 +15,10 @@ The `handler` function is the main function in this file. It takes a context of 
 The `handler` function returns a `ThreadResponse` containing the dynamic instruction and other default values.
 
 In summary, the `create_entry.rs` file is responsible for creating snapshot entries and snapshot frames in the Clockwork project. It uses the Anchor framework to interact with the Solana blockchain and manages the accounts required for the process.
-## Questions: 
- 1. Question: What is the purpose of the `TakeSnapshotCreateEntry` struct and its associated attributes?
+
+## Questions:
+
+1. Question: What is the purpose of the `TakeSnapshotCreateEntry` struct and its associated attributes?
    Answer: The `TakeSnapshotCreateEntry` struct is used to define the accounts required for the `handler` function. It contains various accounts such as `config`, `delegation`, `payer`, `registry`, `snapshot`, `snapshot_entry`, `snapshot_frame`, `system_program`, `thread`, and `worker`, each with their respective constraints and properties.
 
 2. Question: What does the `handler` function do, and what is its return type?
@@ -30,4 +32,3 @@ In summary, the `create_entry.rs` file is responsible for creating snapshot entr
 
 5. Question: What is the purpose of the `ThreadResponse` struct, and how is it used in the `handler` function?
    Answer: The `ThreadResponse` struct is used to store the dynamic instruction for the next step in the thread and any other relevant information. In the `handler` function, it is used to return the dynamic instruction determined by the function's logic, along with the default values for any other fields in the struct.
-    

@@ -5,8 +5,10 @@ The main function in this file is `NewSecretPage(cx: Scope) -> Element`, which r
 When the "Continue" button is clicked, the `create_secret` function is called with the current values of `name` and `word`. This function is an asynchronous function that takes a `String` name and a `String` word as arguments and returns a `String`. It creates a `SecretCreate` object with the given name and word, serializes it into bytes, and signs the message using the `backpack` module. The signed request is then sent to the Clockwork relayer API using the `reqwest` library, with the endpoint `/secret_create` and the relayer URL specified in the environment variable `RELAYER_URL`.
 
 In summary, the `new_secret.rs` file provides a user interface for creating a new secret and handles the process of signing and sending the secret creation request to the Clockwork relayer API.
-## Questions: 
- 1. Question: What is the purpose of the `NewSecretPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `NewSecretPage` function?
    Answer: The `NewSecretPage` function is responsible for rendering the user interface for creating a new secret, including input fields for the secret's name and value, and buttons for canceling or continuing the process.
 
 2. Question: How does the `create_secret` function work?
@@ -20,4 +22,3 @@ In summary, the `new_secret.rs` file provides a user interface for creating a ne
 
 5. Question: How are the input fields for the secret's name and value handled in the `NewSecretPage` function?
    Answer: The input fields for the secret's name and value are managed using the `use_state` hook, which creates a stateful value and a function to update it. The `oninput` event handler is used to update the state when the user types in the input fields.
-    

@@ -7,5 +7,3 @@ The main module file, `mod.rs`, organizes and manages the sub-modules related to
 Each file in this folder defines a function that creates an `Instruction` object, which is a data structure representing an instruction to be executed on the Solana blockchain. These instructions include the necessary account metadata and serialized data for the Clockwork thread program to perform the desired action on the Solana blockchain.
 
 In summary, the `output/clockwork/client/src/thread/instruction` folder is an essential part of the Clockwork project, providing functions for creating instructions related to thread operations and crate information retrieval. These instructions are used to interact with the Clockwork Thread Program on the Solana blockchain, enabling the management and execution of threads in the Clockwork system. The modular structure of the code in this folder makes it easier for developers to navigate and maintain the project.
-
-    

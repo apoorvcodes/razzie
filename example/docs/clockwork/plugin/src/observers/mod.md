@@ -9,8 +9,10 @@ The `impl Observers` block provides an implementation for the `Observers` struct
 The `impl Debug for Observers` block provides a custom implementation of the `Debug` trait for the `Observers` struct. This is useful for debugging purposes, as it allows the developer to print a human-readable representation of the `Observers` struct. The `fmt` function is implemented to simply write the string "observers" to the provided formatter, which will be displayed when the `Observers` struct is printed using the `{:?}` format specifier.
 
 In summary, the `mod.rs` file in the Clockwork project defines the main module for observer functionality, including the `Observers` struct and its implementation. It manages the two types of observers, `ThreadObserver` and `WebhookObserver`, and provides thread-safe sharing of these observers using `Arc` smart pointers.
-## Questions: 
- 1. Question: What is the purpose of the `Observers` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `Observers` struct?
    Answer: The `Observers` struct is a container for two observer instances, `ThreadObserver` and `WebhookObserver`, both wrapped in `Arc` smart pointers for shared ownership and thread safety.
 
 2. Question: What is the purpose of the `new()` function in the `Observers` implementation?
@@ -24,4 +26,3 @@ In summary, the `mod.rs` file in the Clockwork project defines the main module f
 
 5. Question: What are the `thread` and `webhook` modules used for in this code?
    Answer: The `thread` and `webhook` modules contain the implementations of the `ThreadObserver` and `WebhookObserver` structs, respectively. These modules are imported to be used within the `Observers` struct and its implementation.
-    

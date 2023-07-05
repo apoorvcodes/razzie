@@ -15,8 +15,10 @@ The `handler` function takes two arguments: a `Context` of type `WorkerClaim` an
 If all operations are successful, the function returns `Ok(())`. In case of any errors, such as insufficient worker balance or account access issues, the function will return an error.
 
 This file is essential for developers working on the Clockwork project, as it handles the core functionality of claiming commissions by workers. Developers should be aware of the account types, the `handler` function, and the steps involved in processing a worker's claim.
-## Questions: 
- 1. Question: What is the purpose of the `WorkerClaim` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `WorkerClaim` struct and its associated fields?
    Answer: The `WorkerClaim` struct is used to define the account inputs required for a worker to claim their commission. It includes fields for the authority (signer), the account to pay the commission to (pay_to), and the worker's account.
 
 2. Question: What is the role of the `handler` function in this code?
@@ -30,4 +32,3 @@ This file is essential for developers working on the Clockwork project, as it ha
 
 5. Question: What is the purpose of the `Result<()>` return type for the `handler` function?
    Answer: The `Result<()>` return type indicates that the `handler` function may return an error during its execution. If the function completes successfully, it will return `Ok(())`, otherwise, it will return an error with a description of the issue.
-    

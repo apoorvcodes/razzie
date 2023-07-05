@@ -9,10 +9,12 @@ The file starts by declaring the three sub-modules using the `pub mod` keyword. 
 After declaring the sub-modules, the file uses the `pub use` keyword to re-export the contents of each sub-module. This allows other parts of the project to access the contents of these sub-modules directly, without having to specify the full path to the sub-module. For example, instead of writing `clockwork::job::Job`, a developer can simply write `clockwork::Job` to access the `Job` struct (assuming it exists) in the `job` module.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing the public interface of the `job`, `process_delegation`, and `process_worker` sub-modules. It declares these sub-modules and re-exports their contents, making it easier for other parts of the project to access and use their functionality.
-## Questions: 
- 1. What is the purpose of the `mod.rs` file in the clockwork project?
 
-   The `mod.rs` file is used to define the module structure and publicly expose the sub-modules and their contents for the clockwork project.
+## Questions:
+
+1.  What is the purpose of the `mod.rs` file in the clockwork project?
+
+The `mod.rs` file is used to define the module structure and publicly expose the sub-modules and their contents for the clockwork project.
 
 2. What are the sub-modules included in the clockwork project?
 
@@ -29,4 +31,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 5. How can I use the contents of these sub-modules in another module within the project?
 
    To use the contents of these sub-modules in another module, you can simply import the clockwork module using `use clockwork::*;` and then access the desired items directly.
-    

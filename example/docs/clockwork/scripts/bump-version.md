@@ -9,8 +9,10 @@ The `bump-version.sh` script is a Bash script used to automate the process of up
 7. Commits the changes to the Git repository, creates a new Git tag with the new version number, and pushes the changes and tags to the remote repository.
 
 This script is useful for developers who need to update the version number of the Clockwork project and its components in a consistent and automated manner. It ensures that all the necessary files are updated with the new version number and that the project builds successfully before committing the changes.
-## Questions: 
- 1. Question: What is the purpose of this script?
+
+## Questions:
+
+1. Question: What is the purpose of this script?
    Answer: The purpose of this script is to automate the process of updating the version number of the Clockwork project and its various components, as well as building the project and committing the changes to the Git repository.
 
 2. Question: What does the "TODO Borrow the increment-cargo-version.sh script from Solana" comment mean?
@@ -24,4 +26,3 @@ This script is useful for developers who need to update the version number of th
 
 5. Question: How does the script handle Git operations after updating the version number?
    Answer: After updating the version number and rebuilding the project, the script stages all changes using `git add .`, commits the changes with a message indicating the version bump, creates a new Git tag with the new version number, and pushes the changes and tags to the remote repository.
-    

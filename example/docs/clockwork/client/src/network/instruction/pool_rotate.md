@@ -16,8 +16,10 @@ The `pool_rotate` function returns an `Instruction` object, which is a struct fr
 3. `data`: This field is set to the serialized data of a `PoolRotate` instruction from the `clockwork_network_program` crate.
 
 In summary, the `pool_rotate.rs` file defines a function that creates an instruction to rotate a pool in the Clockwork project. The instruction includes the necessary accounts and data required for the operation.
-## Questions: 
- 1. Question: What is the purpose of the `pool_rotate` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `pool_rotate` function?
    Answer: The `pool_rotate` function creates an Instruction for rotating a pool in the Clockwork network program, taking in several public keys as arguments.
 
 2. Question: What are the input parameters for the `pool_rotate` function and what do they represent?
@@ -31,4 +33,3 @@ In summary, the `pool_rotate.rs` file defines a function that creates an instruc
 
 5. Question: How is the `Instruction` struct being used in the `pool_rotate` function?
    Answer: The `Instruction` struct is being used to create a new instruction for the Clockwork network program with the specified program ID, accounts metadata, and serialized instruction data.
-    

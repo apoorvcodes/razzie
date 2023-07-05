@@ -12,8 +12,10 @@ The `handler` function takes a `Context<StakeDelegationsProcessDelegation>` as a
 The `handler` function returns a `ThreadResponse` containing the `dynamic_instruction`, `close_to`, and `trigger` fields. The `dynamic_instruction` field is set based on the next instruction calculated in step 4, while the `close_to` and `trigger` fields are set to `None`.
 
 In summary, the `process_delegation.rs` file is responsible for handling the delegation of stakes between worker accounts in the Clockwork project. It defines the `StakeDelegationsProcessDelegation` struct and the `handler` function, which transfers tokens between accounts and updates the delegation's stake amount.
-## Questions: 
- 1. Question: What is the purpose of the `StakeDelegationsProcessDelegation` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `StakeDelegationsProcessDelegation` struct?
    Answer: The `StakeDelegationsProcessDelegation` struct defines the accounts required for the `handler` function, which processes a single delegation in the Clockwork project.
 
 2. Question: How does the `handler` function transfer tokens from the delegation to the worker account?
@@ -27,4 +29,3 @@ In summary, the `process_delegation.rs` file is responsible for handling the del
 
 5. Question: What is the purpose of the `ThreadResponse` struct returned by the `handler` function?
    Answer: The `ThreadResponse` struct contains the `dynamic_instruction` for the next step in the process, along with optional fields for closing accounts and triggering events. This response is used to control the flow of the Clockwork project's processing.
-    

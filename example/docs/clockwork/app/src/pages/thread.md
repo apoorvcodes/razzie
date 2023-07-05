@@ -11,8 +11,10 @@ The `SimulationLogs` component also takes a `Thread` as a prop and is responsibl
 The `next_timestamp` function is a utility function that calculates the next timestamp for a given schedule string and returns it as an `Option<i64>`.
 
 Overall, this file is responsible for rendering the Thread Page, which displays detailed information about a specific thread and its simulation logs, using the Dioxus library and the Clockwork SDK.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadPage` function?
    Answer: The `ThreadPage` function is responsible for rendering the main thread page, which includes the thread information table and simulation logs.
 
 2. Question: How is the thread data fetched and set in the `ThreadPage` function?
@@ -26,4 +28,3 @@ Overall, this file is responsible for rendering the Thread Page, which displays 
 
 5. Question: What is the purpose of the `next_timestamp` function?
    Answer: The `next_timestamp` function calculates the next timestamp for a given schedule, taking into account the provided `after` timestamp. It returns an `Option<i64>` representing the next timestamp or `None` if there is no next timestamp.
-    

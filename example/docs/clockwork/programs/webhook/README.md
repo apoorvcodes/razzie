@@ -19,8 +19,10 @@ The `README.md` file typically contains the following sections:
 7. **License**: This section provides information on the software license under which Clockwork HTTP is distributed, as well as any copyright notices or attributions.
 
 In summary, the `README.md` file for Clockwork HTTP serves as the main source of documentation for the project, providing developers with the necessary information to understand, install, configure, and use the project effectively in their web applications.
-## Questions: 
- 1. Question: What is the purpose of the Clockwork Http project?
+
+## Questions:
+
+1. Question: What is the purpose of the Clockwork Http project?
    Answer: The purpose of the Clockwork Http project is not clear from the given code snippet, but it might be related to handling HTTP requests or scheduling tasks in a web application.
 
 2. Question: Are there any dependencies or prerequisites required to use Clockwork Http?
@@ -34,4 +36,3 @@ In summary, the `README.md` file for Clockwork HTTP serves as the main source of
 
 5. Question: Is there any documentation available for the Clockwork Http API or functions?
    Answer: The given code snippet does not provide any information about API documentation, but it is likely that there is documentation available, either in the full README.md file or in separate documentation files.
-    

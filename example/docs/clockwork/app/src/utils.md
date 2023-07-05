@@ -5,8 +5,10 @@ The `utils.rs` file is a utility module for the Clockwork project, providing two
 2. `format_timestamp(timestamp: i64) -> String`: This function takes a signed 64-bit integer `timestamp` as input and returns a formatted string representing the timestamp in RFC 2822 format. It first creates a `NaiveDateTime` object from the input `timestamp` using the `from_timestamp_opt` function, which returns an `Option` that is unwrapped to get the actual `NaiveDateTime` value. Then, it converts the `NaiveDateTime` object to a `DateTime<Utc>` object using the `from_utc` function, providing the `Utc` timezone. Finally, it formats the `DateTime<Utc>` object to a string using the `to_rfc2822` function and returns the result.
 
 These utility functions can be used by other modules in the Clockwork project to display balance and timestamp information in a consistent and human-readable format. Developers working with this module should be familiar with the Solana blockchain, the `anchor_lang` library, and the `chrono` crate for handling date and time operations.
-## Questions: 
- 1. Question: What is the purpose of the `format_balance` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `format_balance` function?
    Answer: The `format_balance` function takes an input of lamports (u64) and converts it to a formatted string representing the balance in SOL (the native token of the Solana blockchain) with a precision of 4 decimal places.
 
 2. Question: What is the purpose of the `format_timestamp` function?
@@ -20,4 +22,3 @@ These utility functions can be used by other modules in the Clockwork project to
 
 5. Question: What is the meaning of the "⊚" symbol in the `format_balance` function?
    Answer: The "⊚" symbol is a Unicode character used as a visual representation of the SOL token in the formatted balance string.
-    

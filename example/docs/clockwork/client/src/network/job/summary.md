@@ -13,5 +13,3 @@ The `output/clockwork/client/src/network/job` folder is part of the Clockwork pr
 6. `take_snapshot.rs`: This file provides a function `take_snapshot(thread: Pubkey) -> Instruction` that creates an instruction for taking a snapshot of a specific thread in the Clockwork network. The instruction can be used to send a transaction to the Solana blockchain, which will then be processed by the Clockwork network program.
 
 In summary, the `output/clockwork/client/src/network/job` folder contains Rust files responsible for creating Solana instructions for various operations in the Clockwork network program. These instructions are used to interact with the Solana blockchain and perform tasks such as deleting snapshots, incrementing epochs, processing unstakes, handling stake delegations, and taking snapshots. The `mod.rs` file organizes and manages these sub-modules, making their items accessible from the parent module. This folder is an essential part of the Clockwork project, providing the necessary functions to interact with the Clockwork network program on the Solana blockchain.
-
-    

@@ -19,5 +19,3 @@ In addition to the API endpoints, the file includes utility functions for encryp
 Lastly, the file includes a test module that verifies the correctness of the encryption and decryption functions. This ensures that the implemented cryptographic functions work as expected and maintain the security of the stored secrets.
 
 In summary, the `main.rs` file in the `output/clockwork/relayer/src` folder is a vital part of the Clockwork project, providing the core functionality for managing secrets and relaying webhooks through a web server. Developers working on the Clockwork project should familiarize themselves with this file to understand how the project handles secrets and webhook relaying.
-
-    

@@ -5,8 +5,10 @@ The `ordinal.rs` file is a part of the Clockwork project and is responsible for 
 2. `OrdinalSet`: This is a type alias for `BTreeSet<Ordinal>`. A `BTreeSet` is a sorted set data structure from the Rust standard library that is based on a B-Tree. It provides efficient insertion, deletion, and search operations. In this case, the `BTreeSet` is used to store a collection of `Ordinal` values. The comment above the `OrdinalSet` definition suggests that there are plans to change this type alias to an enum in the future. The enum would have two variants: one for a `BTreeSet` of ordinals and another for an `All` option. The `All` option would be used to save space by representing a range of ordinals from `inclusive_min` to `inclusive_max` and answering membership queries without explicitly storing all the ordinals in the range.
 
 In summary, the `ordinal.rs` file defines two type aliases, `Ordinal` and `OrdinalSet`, which are used to represent ordinal values and sets of ordinal values, respectively. The `OrdinalSet` is currently implemented as a `BTreeSet` of `Ordinal` values, but there are plans to change it to an enum in the future to save space when representing a range of ordinals.
-## Questions: 
- 1. Question: What is the purpose of the `Ordinal` type alias?
+
+## Questions:
+
+1. Question: What is the purpose of the `Ordinal` type alias?
    Answer: The `Ordinal` type alias is used to represent an ordinal number as a 32-bit unsigned integer (u32).
 
 2. Question: Why is the `OrdinalSet` currently implemented as a `BTreeSet`?
@@ -20,4 +22,3 @@ In summary, the `ordinal.rs` file defines two type aliases, `Ordinal` and `Ordin
 
 5. Question: What are the potential benefits of using an enum for `OrdinalSet` instead of the current `BTreeSet` implementation?
    Answer: The benefits of using an enum for `OrdinalSet` include reduced memory usage when representing a range of ordinals and potentially faster membership queries for the `All` option, as it would only need to check the range boundaries.
-    

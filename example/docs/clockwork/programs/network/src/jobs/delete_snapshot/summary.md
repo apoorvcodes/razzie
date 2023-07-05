@@ -11,5 +11,3 @@ The `process_frame.rs` file manages the deletion of snapshot process frames. It 
 The `process_snapshot.rs` file handles the deletion of a snapshot and its associated frames. It defines the `DeleteSnapshotProcessSnapshot` struct with the necessary accounts and constraints. The handler function takes a context of `DeleteSnapshotProcessSnapshot` and returns a `Result<ThreadResponse>`. It gets the accounts from the context, closes the snapshot account if necessary, and builds the next instruction for the thread based on the snapshot's state.
 
 In summary, the code in this folder is responsible for managing the deletion of snapshots, their associated frames, and entries in the Clockwork project. The files define the necessary structs, accounts, and constraints, and implement the logic for handling the deletion process. This functionality is crucial for developers working on the Clockwork project, as it allows them to maintain and manage the system state efficiently.
-
-    

@@ -11,5 +11,3 @@ The `thread` subfolder contains Rust files responsible for creating Solana instr
 The `webhook` subfolder contains Rust files responsible for creating and managing various instructions related to the Clockwork Webhook Program. The `instruction` subfolder within the `webhook` directory contains code for creating new APIs, initializing the program, and handling HTTP requests.
 
 In summary, the `output/clockwork/client/src` folder plays a vital role in the Clockwork project by providing the necessary Rust files and functions to create Solana instructions and handle various operations related to the Clockwork network program, threads, and webhooks. The modular structure of the code in these files makes it easier for developers to navigate and maintain the project. Understanding the code in these files is essential for developers working with the Clockwork project, as it provides a foundation for building and extending the system's functionality.
-
-    

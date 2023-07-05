@@ -11,8 +11,10 @@ Inside the loop, the function prints the formatted `DateTime` object to the cons
 Finally, the function returns an `Ok(())` result, indicating that the operation was successful.
 
 In summary, the `crontab.rs` file is responsible for fetching the current clock from the Clockwork API, parsing a given cron schedule, and printing the next 9 occurrences of the schedule based on the current time.
-## Questions: 
- 1. Question: What is the purpose of the `get` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `get` function?
    Answer: The `get` function takes a `Client` reference and a `schedule` string as input, and it prints the next 9 occurrences of the given schedule based on the current time from the client's clock.
 
 2. Question: What libraries are being used in this code?
@@ -26,4 +28,3 @@ In summary, the `crontab.rs` file is responsible for fetching the current clock 
 
 5. Question: How does the code limit the number of occurrences printed?
    Answer: The code uses a counter variable `i` to keep track of the number of occurrences printed. It increments `i` for each occurrence printed and breaks out of the loop when `i` is greater than 8, effectively limiting the output to 9 occurrences.
-    

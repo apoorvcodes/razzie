@@ -15,5 +15,3 @@ Here's a brief overview of each file in the folder:
 7. `years.rs`: Defines the `Years` struct for handling and manipulating years as a time unit field in the project.
 
 In summary, the `output/clockwork/cron/src/time_unit` folder is an essential part of the Clockwork project, providing functionality for handling various time unit fields and their specifications. The code in this folder allows developers to create, manipulate, and compare instances of different time unit fields, making it easier to work with schedules and time-based operations in the project.
-
-    

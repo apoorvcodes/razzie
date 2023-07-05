@@ -17,5 +17,3 @@ The `update-solana.sh` script is used to update the Solana version in a Clockwor
 The `ci` subfolder contains essential scripts for managing the Clockwork project's Continuous Integration (CI) environment. These scripts help developers create release tarballs, manage Rust versions, and determine the Solana version used in the project. This information is crucial for ensuring compatibility, debugging issues, and maintaining a smooth development process.
 
 In summary, the `output/clockwork/scripts` folder and its subfolders contain various scripts that automate essential tasks in the Clockwork project, streamlining the development process and ensuring consistency and efficiency in managing the project. Developers working on the Clockwork project can utilize these scripts to simplify their workflow and maintain a high level of code quality.
-
-    

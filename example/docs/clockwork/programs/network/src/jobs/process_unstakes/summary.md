@@ -9,5 +9,3 @@ The `output/clockwork/programs/network/src/jobs/process_unstakes` folder is part
 `unstake_process.rs` handles the unstaking process for a user. It defines the `UnstakeProcess` struct and the `handler` function, which is responsible for executing the unstaking process. The handler function takes a `Context<UnstakeProcess>` as input and returns a `Result<ThreadResponse>`. It performs a series of checks and operations to execute the unstaking process, such as verifying the unstake amount, transferring tokens, updating the delegation's locked stake balance, and closing the unstake account.
 
 In summary, the `process_unstakes` folder in the Clockwork project is responsible for managing and executing the unstaking process within the system. The four files work together to handle the various aspects of the unstaking process, such as job management, preprocessing, and processing. This folder plays a crucial role in the Clockwork protocol, as it allows users to unstake their assets and ensures the proper functioning of the system.
-
-    

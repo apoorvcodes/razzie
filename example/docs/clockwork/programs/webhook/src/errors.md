@@ -10,8 +10,10 @@ The `ClockworkError` enum is defined with the `#[error_code]` attribute, which i
 Each variant of the `ClockworkError` enum is annotated with the `#[msg]` attribute, which provides a human-readable error message associated with the specific error. These messages can be used for logging or displaying the error to the user.
 
 In summary, the `errors.rs` file in the Clockwork project defines a custom error enum called `ClockworkError` with four variants, each representing a specific error scenario. The file uses the `anchor_lang` library to define these custom error types and their associated error messages. This file is essential for handling errors specific to the Clockwork project and providing meaningful feedback to developers and users.
-## Questions: 
- 1. Question: What is the purpose of the `#[error_code]` attribute macro?
+
+## Questions:
+
+1. Question: What is the purpose of the `#[error_code]` attribute macro?
    Answer: The `#[error_code]` attribute macro is used to define a custom error type for the Clockwork project, allowing for more specific error handling and messaging.
 
 2. Question: How are the error messages associated with each variant of the `ClockworkError` enum?
@@ -25,4 +27,3 @@ In summary, the `errors.rs` file in the Clockwork project defines a custom error
 
 5. Question: What is the purpose of the `use anchor_lang::prelude::*;` statement?
    Answer: The `use anchor_lang::prelude::*;` statement imports all the necessary types and traits from the `anchor_lang` crate's prelude module, which simplifies the usage of the `anchor_lang` crate in the `errors.rs` file.
-    

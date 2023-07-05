@@ -1,6 +1,7 @@
 The `mod.rs` file is part of the Clockwork project and serves as the main module for the Executors functionality. It contains the definition and implementation of the `Executors` struct, which is responsible for managing the execution of transactions and webhooks. The file also defines the `AccountGet` trait, which is implemented for the `RpcClient` struct from the Solana client library.
 
 The `Executors` struct has four fields:
+
 1. `tx`: An instance of `TxExecutor`, which is responsible for executing transactions.
 2. `webhook`: An instance of `WebhookExecutor`, which is responsible for executing webhooks.
 3. `client`: An instance of `RpcClient`, which is used to interact with the Solana blockchain.
@@ -11,8 +12,10 @@ The `Executors` struct has a constructor `new` that takes a `PluginConfig` and i
 The `AccountGet` trait is defined with an async method `get`, which takes a reference to a `Pubkey` and returns a deserialized account data of type `T`. The trait is implemented for the `RpcClient` struct, which uses the `get_account_data` method to fetch the account data and then deserializes it using the `AccountDeserialize` trait.
 
 In summary, the `mod.rs` file in the Clockwork project defines the main module for managing the execution of transactions and webhooks, as well as providing an implementation for fetching and deserializing account data from the Solana blockchain.
-## Questions: 
- 1. Question: What is the purpose of the `Executors` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Executors` struct and its fields?
    Answer: The `Executors` struct is used to manage the execution of transactions and webhooks. It contains fields for a transaction executor (`tx`), a webhook executor (`webhook`), an RPC client (`client`), and a lock (`lock`) to ensure that only one process is executing at a time.
 
 2. Question: How does the `process_slot` function work, and what is its purpose?
@@ -26,4 +29,3 @@ In summary, the `mod.rs` file in the Clockwork project defines the main module f
 
 5. Question: What is the purpose of the `LOCAL_RPC_URL` constant, and how is it used in the code?
    Answer: The `LOCAL_RPC_URL` constant is a string representing the URL of the local RPC server. It is used when creating a new `RpcClient` instance in the `new` function of the `Executors` struct, with the specified commitment level set to `CommitmentConfig::processed()`.
-    

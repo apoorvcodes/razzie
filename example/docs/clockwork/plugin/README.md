@@ -12,8 +12,10 @@ As a developer, it is essential to read the `README.md` file before diving into 
 6. License information: Details about the project's licensing and any restrictions on its use or distribution.
 
 In summary, the `README.md` file for the Clockwork Geyser Plugin project is a crucial piece of documentation that provides an overview of the project and essential information for developers. It is important to read and understand this file before working with the project to ensure a smooth development experience and proper usage of the plugin.
-## Questions: 
- 1. Question: What is the purpose of the Clockwork Geyser Plugin?
+
+## Questions:
+
+1. Question: What is the purpose of the Clockwork Geyser Plugin?
    Answer: The Clockwork Geyser Plugin is a part of the Clockwork project, but the README.md file does not provide any information about its functionality or purpose.
 
 2. Question: How do I install and set up the Clockwork Geyser Plugin?
@@ -27,4 +29,3 @@ In summary, the `README.md` file for the Clockwork Geyser Plugin project is a cr
 
 5. Question: Is there any documentation or support available for the Clockwork Geyser Plugin?
    Answer: The README.md file does not provide any links to documentation or support resources, so a developer would need to search for additional information to learn more about the plugin and get help if needed.
-    

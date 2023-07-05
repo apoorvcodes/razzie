@@ -11,8 +11,10 @@ Inside the `Page` function, the `cx.render()` method is called with an `rsx!` bl
 The page layout consists of a `div` element with the class attributes "w-full h-full flex flex-row overflow-clip". This sets the width and height to full, displays the content in a flexbox with a row direction, and clips any overflowing content. Inside this `div`, the `Sidebar` component is included, followed by another `div` element with class attributes "w-full pl-8 pt-8 pb-24 pr-8 overflow-y-auto". This sets the width to full, adds padding to the left, top, bottom, and right, and allows vertical scrolling for overflowing content. The `&cx.props.children` expression is used to render the children elements passed to the `Page` component through the `PageProps` struct.
 
 In summary, the `page.rs` file defines the structure and layout of a page in the Clockwork application, including the Sidebar component and a content area with scrolling capabilities. It uses the Dioxus library and RSX syntax to create a reactive UI component with properties and state management.
-## Questions: 
- 1. Question: What is the purpose of the `PageProps` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `PageProps` struct?
    Answer: The `PageProps` struct is used to define the properties that can be passed to the `Page` function. It has a single field `children` of type `Element`, which represents the child elements to be rendered within the page.
 
 2. Question: What is the role of the `Sidebar` component in this code?
@@ -26,4 +28,3 @@ In summary, the `page.rs` file defines the structure and layout of a page in the
 
 5. Question: What is the significance of the `overflow-clip` and `overflow-y-auto` CSS classes in the code?
    Answer: The `overflow-clip` class is applied to the outer `div` element, ensuring that any content that overflows the boundaries of the element is clipped. The `overflow-y-auto` class is applied to the inner `div` element, allowing for a vertical scrollbar to appear if the content overflows the element's height.
-    

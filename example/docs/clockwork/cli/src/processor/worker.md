@@ -9,8 +9,10 @@ There are three main functions in this file:
 3. `update(client: &Client, id: u64, signatory: Option<Keypair>) -> Result<(), CliError>`: This function updates the worker with the given ID. It derives the worker keypair and builds a transaction to update the worker's settings, such as commission rate and signatory. The function sends and confirms the transaction, then calls the `get` function to display the updated worker's information. In case of any errors, it returns a `CliError`.
 
 These functions make use of the `Client` struct from the `clockwork_client` library to interact with the Solana blockchain and perform various operations related to workers.
-## Questions: 
- 1. Question: What is the purpose of the `get` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `get` function?
    Answer: The `get` function retrieves information about a worker with a given ID, including its fee balance, penalty balance, registry, and snapshot frame, and prints the information to the console.
 
 2. Question: How does the `create` function work?
@@ -24,4 +26,3 @@ These functions make use of the `Client` struct from the `clockwork_client` libr
 
 5. Question: What is the purpose of the `signatory` parameter in the `create` and `update` functions?
    Answer: The `signatory` parameter is a keypair used to sign the worker creation or update transaction. In the `create` function, it is required, while in the `update` function, it is optional. If not provided in the `update` function, the worker's current signatory is used.
-    

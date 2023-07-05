@@ -19,8 +19,10 @@ The `pool_update` function returns an `Instruction` struct, which is used to cre
 3. `data`: The serialized instruction data, which is created by calling the `data()` method on a `PoolUpdate` struct from the `clockwork_network_program::instruction` module. The `PoolUpdate` struct contains the new `settings` for the pool.
 
 In summary, the `pool_update.rs` file provides a function to create an instruction for updating the settings of a pool in the Clockwork network. The instruction includes the necessary account information and the new pool settings, which are then processed by the Clockwork network program.
-## Questions: 
- 1. Question: What is the purpose of the `pool_update` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `pool_update` function?
    Answer: The `pool_update` function is used to create an instruction for updating the pool settings in the Clockwork network program.
 
 2. Question: What are the input parameters for the `pool_update` function?
@@ -34,4 +36,3 @@ In summary, the `pool_update.rs` file provides a function to create an instructi
 
 5. Question: What is the purpose of the `clockwork_network_program::instruction::PoolUpdate` struct and its `data()` method?
    Answer: The `clockwork_network_program::instruction::PoolUpdate` struct is used to represent the pool update operation in the Clockwork network program, and its `data()` method is used to serialize the pool update settings into a format that can be included in the `Instruction` struct.
-    

@@ -19,5 +19,3 @@ The folder contains several Rust source files, each serving a specific purpose w
 The folder also contains a subfolder named `time_unit`, which is responsible for handling various time unit fields, such as days of the month, days of the week, hours, minutes, months, seconds, and years. The `time_unit` folder contains several Rust source files, each defining a struct and its associated methods for a specific time unit field. These structs implement the `TimeUnitField` trait, which provides a set of methods for working with time unit fields.
 
 In summary, the code in the `output/clockwork/cron/src` folder is an essential part of the Clockwork project, providing functionality for parsing cron expressions, representing schedules, and querying and manipulating schedules. The code in this folder allows developers to create, manipulate, and compare instances of different time unit fields, making it easier to work with schedules and time-based operations in the project.
-
-    

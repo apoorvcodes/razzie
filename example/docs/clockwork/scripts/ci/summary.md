@@ -7,5 +7,3 @@ The `output/clockwork/scripts/ci` folder contains three Bash scripts that are es
 3. `solana-version.sh`: This script prints the version of Solana used in the Clockwork project. It is useful for developers who need to know the exact version of Solana for compatibility or debugging purposes. The script changes the current working directory to the `plugin` folder and uses the `cargo read-manifest` command to read the `Cargo.toml` file. The output is piped to the `jq` command, which filters and extracts the required information from the JSON output. The script looks for the dependency with the name `"solana-geyser-plugin-interface"` and extracts the version requirement, printing it to the console.
 
 In summary, the `output/clockwork/scripts/ci` folder contains essential scripts for managing the Clockwork project's CI environment. These scripts help developers create release tarballs, manage Rust versions, and determine the Solana version used in the project. This information is crucial for ensuring compatibility, debugging issues, and maintaining a smooth development process.
-
-    

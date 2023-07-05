@@ -19,8 +19,10 @@ The `lib.rs` file is part of a project called Clockwork and contains the main da
 9. `SecretRevoke`: A struct representing a secret revocation request with fields `name` of type `String` and `delegate` of type `Pubkey`. It derives the `Deserialize` and `Serialize` traits from Serde.
 
 In summary, this file defines the main data structures and their serialization/deserialization for handling signed requests, relays, and secrets in the Clockwork project. It also provides an authentication method for verifying the signature of a signed request.
-## Questions: 
- 1. Question: What is the purpose of the `SignedRequest` struct and its `authenticate` method?
+
+## Questions:
+
+1. Question: What is the purpose of the `SignedRequest` struct and its `authenticate` method?
    Answer: The `SignedRequest` struct is a generic structure that holds a message, a signer's public key, and a signature. The `authenticate` method is used to verify if the signature is valid for the given message and signer's public key.
 
 2. Question: What is the role of the `Relay` struct?
@@ -34,4 +36,3 @@ In summary, this file defines the main data structures and their serialization/d
 
 5. Question: What is the purpose of the `solana_sdk` library in this code?
    Answer: The `solana_sdk` library is used for working with public keys and signatures in the context of the Solana blockchain. It provides the `Pubkey` and `Signature` types, which are used in the `SignedRequest` struct and its `authenticate` method.
-    

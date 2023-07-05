@@ -3,6 +3,7 @@ The `config.rs` file is part of the Clockwork project and is responsible for def
 The file starts by importing the `Duration` struct from the `std::time` module and the `CommitmentConfig` struct from the `solana_sdk::commitment_config` module. It then defines two constants for default timeout durations: `DEFAULT_RPC_TIMEOUT_SECONDS` and `DEFAULT_CONFIRM_TX_TIMEOUT_SECONDS`, which are set to 30 seconds and 5 seconds, respectively.
 
 The `CliConfig` struct is defined with the following fields:
+
 - `json_rpc_url`: A string representing the JSON-RPC URL.
 - `websocket_url`: A string representing the WebSocket URL.
 - `relayer_url`: A string representing the relayer URL.
@@ -14,8 +15,10 @@ The `CliConfig` struct is defined with the following fields:
 The `impl CliConfig` block provides a `load()` method that returns an instance of the `CliConfig` struct. This method reads the Solana configuration file using the `solana_cli_config::Config::load()` function and initializes a new `CliConfig` instance with the values from the Solana configuration. The `relayer_url` field is currently hardcoded to "127.0.0.1:8000" and should be updated to read from the Clockwork configuration file in the future.
 
 In summary, the `config.rs` file is responsible for defining the CLI configuration settings for the Clockwork project and provides a method to load these settings from a configuration file. It is essential for developers working on the project to understand the structure and usage of this file to properly configure and interact with the Clockwork CLI.
-## Questions: 
- 1. Question: What is the purpose of the `CliConfig` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `CliConfig` struct?
    Answer: The `CliConfig` struct is used to store configuration settings for the Clockwork project, including URLs for JSON-RPC, WebSocket, and relayer, as well as keypair path, RPC timeout, commitment configuration, and transaction confirmation timeout.
 
 2. Question: How are the default values for `DEFAULT_RPC_TIMEOUT_SECONDS` and `DEFAULT_CONFIRM_TX_TIMEOUT_SECONDS` determined?
@@ -29,4 +32,3 @@ In summary, the `config.rs` file is responsible for defining the CLI configurati
 
 5. Question: How is the `relayer_url` field in the `CliConfig` struct initialized, and is there a plan to change this in the future?
    Answer: The `relayer_url` field is currently initialized with a hardcoded value "127.0.0.1:8000". There is a comment in the code indicating a plan to read this value from the Clockwork configuration file in the future, instead of using a hardcoded value.
-    

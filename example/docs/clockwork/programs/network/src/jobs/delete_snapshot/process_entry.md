@@ -16,8 +16,10 @@ The `handler` function takes a `Context<DeleteSnapshotProcessEntry>` as input an
 The `handler` function returns a `ThreadResponse` containing the next instruction to be executed, if any, and no close_to or trigger values.
 
 This file is essential for developers working on the Clockwork project, as it provides the functionality to delete snapshot process entries and manage the state of the deletion process.
-## Questions: 
- 1. Question: What is the purpose of the `DeleteSnapshotProcessEntry` struct and its associated accounts?
+
+## Questions:
+
+1. Question: What is the purpose of the `DeleteSnapshotProcessEntry` struct and its associated accounts?
    Answer: The `DeleteSnapshotProcessEntry` struct is used to define the accounts required for deleting a snapshot process entry. It includes accounts for the config, registry, snapshot, snapshot_entry, snapshot_frame, and thread.
 
 2. Question: What does the `handler` function do in this code?
@@ -31,4 +33,3 @@ This file is essential for developers working on the Clockwork project, as it pr
 
 5. Question: What is the purpose of the `ThreadResponse` struct and its fields?
    Answer: The `ThreadResponse` struct is used to return the result of the handler function. It contains fields for the dynamic_instruction (the next instruction to be executed), close_to (an optional account to close the current account to), and trigger (an optional trigger to execute after the current instruction).
-    

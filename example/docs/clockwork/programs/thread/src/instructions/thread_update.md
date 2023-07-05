@@ -11,8 +11,10 @@ After updating the thread's properties, the function reallocates memory for the 
 Finally, the handler checks if additional lamports are required to maintain the thread's rent-exemption status. If so, it transfers the necessary lamports from the authority's account to the thread's account using Solana's `transfer` function.
 
 In summary, the `thread_update.rs` file provides the functionality to update a thread's properties in the Clockwork project. It handles account validation, property updates, memory reallocation, and rent-exemption maintenance.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadUpdate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadUpdate` struct and its associated fields?
    Answer: The `ThreadUpdate` struct represents the accounts required by the `thread_update` instruction. It contains fields for the authority (owner) of the thread, the Solana system program, and the thread to be updated.
 
 2. Question: How does the `handler` function update the thread's properties based on the provided `settings`?
@@ -26,4 +28,3 @@ In summary, the `thread_update.rs` file provides the functionality to update a t
 
 5. Question: What is the purpose of the `require!` macro used in the code, and what error does it raise if the condition is not met?
    Answer: The `require!` macro is used to enforce a condition that must be met for the code to proceed. In this case, it checks if the discriminant of the current thread trigger is equal to the discriminant of the new trigger provided in the settings. If the condition is not met, it raises a `ClockworkError::InvalidTriggerVariant` error.
-    

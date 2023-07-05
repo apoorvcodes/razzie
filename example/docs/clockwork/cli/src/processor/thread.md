@@ -13,8 +13,10 @@ The file contains several public functions for thread management:
 9. `parse_pubkey_from_id_or_address`: Helper function that returns a `Pubkey` based on either the provided `id` or `address`. It returns an error if both are not provided.
 
 These functions allow developers to interact with the Clockwork client and manage threads by creating, deleting, pausing, resuming, resetting, and updating them.
-## Questions: 
- 1. Question: What is the purpose of the `crate_info` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `crate_info` function?
    Answer: The `crate_info` function retrieves and prints the crate information using the Clockwork client.
 
 2. Question: How does the `create` function work and what are its parameters?
@@ -28,4 +30,3 @@ These functions allow developers to interact with the Clockwork client and manag
 
 5. Question: What is the purpose of the `update` function and what are its parameters?
    Answer: The `update` function updates a thread's settings (rate_limit and schedule) with the given parameters (client, id, rate_limit, and schedule) and sends the transaction to the network for confirmation.
-    

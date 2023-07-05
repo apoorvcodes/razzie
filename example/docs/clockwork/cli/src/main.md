@@ -15,8 +15,10 @@ The `main.rs` file is the entry point of the Clockwork project, which is a comma
    d. Handles errors using the `map_err()` method on the `Result` returned by the `process()` function. If an error occurs, it prints the error message to the console and returns the error as a `CliError`.
 
 In summary, the `main.rs` file serves as the entry point for the Clockwork project, handling command-line argument parsing and executing the main processing logic. It imports necessary modules and functions, and manages error handling for the application.
-## Questions: 
- 1. Question: What is the purpose of the `#[macro_use]` attribute?
+
+## Questions:
+
+1. Question: What is the purpose of the `#[macro_use]` attribute?
    Answer: The `#[macro_use]` attribute is used to import macros from the `version` crate, allowing the macros to be used within the current module.
 
 2. Question: What are the different modules being used in this project?
@@ -30,4 +32,3 @@ In summary, the `main.rs` file serves as the entry point for the Clockwork proje
 
 5. Question: What is the purpose of the `map_err` function in the `main` function?
    Answer: The `map_err` function is used to handle any errors returned by the `process` function, printing the error message to the console and returning the error itself to be propagated up the call stack.
-    

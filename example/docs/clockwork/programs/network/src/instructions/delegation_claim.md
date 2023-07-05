@@ -18,8 +18,10 @@ The function performs the following steps:
 3. Transfer the commission (specified by `amount`) to the worker by updating the lamports of the `delegation` and `pay_to` accounts. This is done using the `try_borrow_mut_lamports` method, which returns a mutable reference to the account's lamports. The function updates the lamports by subtracting the `amount` from the `delegation` account and adding it to the `pay_to` account. If any of these operations result in an overflow or underflow, the function will panic.
 
 After successfully executing the steps, the function returns `Ok(())`, indicating that the delegation claim has been processed successfully.
-## Questions: 
- 1. Question: What is the purpose of the `DelegationClaim` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DelegationClaim` struct?
    Answer: The `DelegationClaim` struct defines the account inputs required for the delegation claim operation, including the authority, pay_to, and delegation accounts, as well as the amount to be claimed.
 
 2. Question: What is the role of the `handler` function in this code?
@@ -33,4 +35,3 @@ After successfully executing the steps, the function returns `Ok(())`, indicatin
 
 5. Question: What is the purpose of the `SEED_DELEGATION` constant in the `#[account]` attribute for the delegation account?
    Answer: The `SEED_DELEGATION` constant is used as part of the seeds for generating the delegation account's address, ensuring that the account is uniquely associated with the worker and delegation ID.
-    

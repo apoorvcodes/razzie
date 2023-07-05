@@ -11,8 +11,10 @@ The `secret.rs` file is part of the Clockwork project and provides functionality
 5. `revoke`: This function revokes a delegate's access to a secret by its name. It takes a `Client`, a `String` (name), and a `Pubkey` (delegate) as input and returns a `Result`. It creates a `SecretRevoke` message, serializes it, signs it with the client's keypair, and sends a POST request to the `/secret_revoke` endpoint.
 
 All functions use the `SignedRequest` struct to send signed messages to the API. They also use the `reqwest` library for making HTTP requests and the `bincode` library for serialization. The functions return a `CliError` in case of any errors.
-## Questions: 
- 1. Question: What is the purpose of the `SignedRequest` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `SignedRequest` struct and its fields?
    Answer: The `SignedRequest` struct is used to create a request object containing the message (`msg`), the signer's public key (`signer`), and the signature of the message (`signature`). This is used to authenticate the request and ensure the message has not been tampered with.
 
 2. Question: What is the role of the `bincode::serialize` function and why is it used in this code?
@@ -26,4 +28,3 @@ All functions use the `SignedRequest` struct to send signed messages to the API.
 
 5. Question: What are the responsibilities of the `create`, `approve`, and `revoke` functions, and how do they differ from each other?
    Answer: The `create` function is responsible for creating a new secret with a given name and word. The `approve` function is used to grant access to a secret to a specified delegate by providing their public key. The `revoke` function is used to revoke access to a secret from a specified delegate. The main difference between these functions is the message type they use (`SecretCreate`, `SecretApprove`, and `SecretRevoke`) and the corresponding API endpoints they call.
-    

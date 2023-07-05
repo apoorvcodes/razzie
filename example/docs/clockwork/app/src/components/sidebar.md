@@ -1,8 +1,9 @@
 The `sidebar.rs` file is part of the Clockwork project and is responsible for rendering the sidebar navigation menu. It uses the Dioxus framework for building user interfaces and the Dioxus Router for handling navigation.
 
-The file contains two main components: `Sidebar` and `SidebarButton`. 
+The file contains two main components: `Sidebar` and `SidebarButton`.
 
 1. `Sidebar` component:
+
    - It takes a `Scope` as an input parameter and returns an `Element`.
    - It renders a `div` element with specific CSS classes to style the sidebar.
    - Inside the `div`, it renders four `SidebarButton` components with different titles and routes: "Blocks", "Files", "Programs", and "Secrets".
@@ -17,8 +18,10 @@ The file contains two main components: `Sidebar` and `SidebarButton`.
      - The content of the `Link` element is the `title` property from the component's props.
 
 In summary, the `sidebar.rs` file defines a sidebar navigation menu with four buttons, each representing a different route in the application. The `SidebarButton` component is responsible for rendering individual buttons and applying the appropriate styling based on whether the button's route is currently active or not.
-## Questions: 
- 1. Question: What is the purpose of the `Sidebar` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `Sidebar` function?
    Answer: The `Sidebar` function is responsible for rendering the sidebar with a list of `SidebarButton` components, each representing a different route (e.g., Blocks, Files, Programs, Secrets).
 
 2. Question: What are the `SidebarButtonProps` and why are they used?
@@ -32,4 +35,3 @@ In summary, the `sidebar.rs` file defines a sidebar navigation menu with four bu
 
 5. Question: What is the purpose of the `class` attribute in the `Link` component?
    Answer: The `class` attribute is used to apply different CSS classes to the `Link` component based on whether the button is selected or not. This allows for different styling (e.g., text color, background color) depending on the button's state.
-    

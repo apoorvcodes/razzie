@@ -16,8 +16,10 @@ The `handler` function takes a `Context<WebhookRespond>` as input and returns a 
 5. If the worker is authorized and the webhook is within the execution window, the worker is paid for executing the webhook. Otherwise, the webhook is considered spam or timed out, and the worker is not paid.
 
 There are some commented-out sections in the code, suggesting potential future improvements. For example, the fee payment logic could be updated to use an escrow account where all workers can claim equal rewards. Additionally, if the rewards are not claimed within a certain number of slots, the admin could claim the rewards and close the account.
-## Questions: 
- 1. Question: What is the purpose of the TIMEOUT_THRESHOLD constant?
+
+## Questions:
+
+1. Question: What is the purpose of the TIMEOUT_THRESHOLD constant?
    Answer: The TIMEOUT_THRESHOLD constant is used to define the maximum number of slots (100 in this case) within which a webhook must be executed before it is considered timed out.
 
 2. Question: How does the WebhookRespond struct work and what are its fields?
@@ -31,4 +33,3 @@ There are some commented-out sections in the code, suggesting potential future i
 
 5. Question: What are the commented-out TODOs suggesting as potential improvements to the code?
    Answer: The TODOs suggest two potential improvements: (1) Instead of paying the admin directly, the fee could be put in an escrow account where all workers could claim equal rewards, and (2) if the rewards are not claimed within a certain number of slots, the admin can claim the rewards and close the account.
-    

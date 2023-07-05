@@ -15,8 +15,10 @@ The `handler` function takes a `Context` object of type `RegistryUnlock` as its 
 3. It returns an `Ok` result to indicate that the operation was successful.
 
 In summary, this file provides a way to unlock a registry in the Clockwork project. The admin account associated with the registry configuration can perform this operation by calling the `handler` function with the appropriate context.
-## Questions: 
- 1. Question: What is the purpose of the `RegistryUnlock` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `RegistryUnlock` struct?
    Answer: The `RegistryUnlock` struct defines the account types and their constraints required for the `handler` function to unlock a registry.
 
 2. Question: What is the role of the `#[derive(Accounts)]` attribute?
@@ -30,4 +32,3 @@ In summary, this file provides a way to unlock a registry in the Clockwork proje
 
 5. Question: What is the return type of the `handler` function and what does it signify?
    Answer: The return type of the `handler` function is `Result<()>`. It signifies that the function returns a `Result` type with an empty tuple as the success value, and an error type if the operation fails.
-    

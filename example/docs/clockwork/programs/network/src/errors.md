@@ -13,8 +13,10 @@ The error variants defined in the `ClockworkError` enum are:
 7. `PoolFull`: Indicates that the worker cannot be added to the pool because it is already full.
 
 These error variants can be used throughout the Clockwork project to handle specific error cases and provide meaningful error messages to developers. When an error occurs, the appropriate `ClockworkError` variant can be returned, allowing the calling code to handle the error gracefully and provide useful feedback.
-## Questions: 
- 1. Question: What is the purpose of the `ClockworkError` enum?
+
+## Questions:
+
+1. Question: What is the purpose of the `ClockworkError` enum?
    Answer: The `ClockworkError` enum is used to define a set of custom error types specific to the Clockwork project, providing clear and descriptive error messages for various error scenarios that may occur within the project.
 
 2. Question: What is the role of the `#[error_code]` attribute macro?
@@ -28,4 +30,3 @@ These error variants can be used throughout the Clockwork project to handle spec
 
 5. Question: Is it possible to add more error variants to the `ClockworkError` enum in the future?
    Answer: Yes, it is possible to add more error variants to the `ClockworkError` enum by simply defining new variants with their respective `#[msg("...")]` attributes, allowing for easy extensibility of the error handling in the Clockwork project.
-    

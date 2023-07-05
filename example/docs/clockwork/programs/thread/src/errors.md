@@ -21,8 +21,10 @@ The `errors.rs` file is part of the Clockwork project and defines the custom err
 10. `WithdrawalTooLarge`: This error occurs when a user attempts to withdraw SOL that would put a thread below its minimum rent threshold.
 
 Each error variant is annotated with a `#[msg]` attribute, which provides a human-readable description of the error. This helps developers understand the cause of the error and take appropriate action to resolve it.
-## Questions: 
- 1. Question: What is the purpose of the `ClockworkError` enum?
+
+## Questions:
+
+1. Question: What is the purpose of the `ClockworkError` enum?
    Answer: The `ClockworkError` enum defines a set of custom error types specific to the Clockwork thread program, which can be thrown during the execution of the program to indicate various error conditions.
 
 2. Question: What is the significance of the `#[error_code]` attribute?
@@ -36,4 +38,3 @@ Each error variant is annotated with a `#[msg]` attribute, which provides a huma
 
 5. Question: How is the `UnauthorizedWrite` error variant used in the program?
    Answer: The `UnauthorizedWrite` error variant is thrown when an inner instruction attempts to write to an unauthorized address, indicating that the instruction is trying to modify data it does not have permission to access.
-    

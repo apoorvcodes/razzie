@@ -15,8 +15,10 @@ The `Hours` struct implements the `TimeUnitField` trait, which requires the foll
 Additionally, the `PartialEq` trait is implemented for the `Hours` struct, which allows for comparison of two `Hours` instances using the `==` operator. The `eq` method is defined to compare the `ordinals` of the two instances.
 
 In summary, the `hours.rs` file defines the `Hours` struct and its associated methods for handling the hours component of a time unit in the Clockwork project. It provides functionality for creating, comparing, and working with hours, as well as defining the valid range and supported ordinals for the hours field.
-## Questions: 
- 1. Question: What is the purpose of the `Hours` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Hours` struct and its fields?
    Answer: The `Hours` struct represents a set of hours in a clock and contains an optional field `ordinals` of type `OrdinalSet` which stores the specific hours in the set.
 
 2. Question: How does the `TimeUnitField` trait relate to the `Hours` struct?
@@ -30,4 +32,3 @@ In summary, the `hours.rs` file defines the `Hours` struct and its associated me
 
 5. Question: How does the `PartialEq` implementation for `Hours` determine if two instances are equal?
    Answer: The `PartialEq` implementation for `Hours` compares the `ordinals` of both instances using the `ordinals()` method, and returns true if they are equal, otherwise false.
-    

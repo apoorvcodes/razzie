@@ -13,8 +13,10 @@ In the `README.md` file, you should include sections such as:
 7. **Contact**: Contact information for the project maintainers or support team, in case developers have questions or need assistance.
 
 By providing a comprehensive and well-structured `README.md` file, you can ensure that developers have all the necessary information to successfully use and contribute to the Clockwork SDK project.
-## Questions: 
- 1. Question: What is the purpose of the Clockwork SDK?
+
+## Questions:
+
+1. Question: What is the purpose of the Clockwork SDK?
    Answer: The Clockwork SDK is a software development kit designed to provide developers with the necessary tools and resources to build applications or integrate features related to the Clockwork project.
 
 2. Question: What programming languages and platforms are supported by the Clockwork SDK?
@@ -28,4 +30,3 @@ By providing a comprehensive and well-structured `README.md` file, you can ensur
 
 5. Question: How can developers contribute to the Clockwork SDK project, and are there any guidelines for contributing?
    Answer: The README.md file does not provide information about contributing to the project, so developers interested in contributing should look for additional resources, such as a CONTRIBUTING.md file or guidelines in the documentation.
-    

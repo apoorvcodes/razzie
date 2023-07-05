@@ -11,8 +11,10 @@ The `config.rs` file is part of the Clockwork project and is responsible for man
 5. `impl ConfigAccount for Account<'_, Config>`: This implementation block provides the concrete implementation of the `ConfigAccount` trait for the `Account<'_, Config>` type. It defines the `init()` and `update()` methods as described above.
 
 In summary, the `config.rs` file is responsible for managing the configuration settings of the Clockwork project. It defines the `Config` and `ConfigSettings` structs to store the settings, and the `ConfigAccount` trait to initialize and update the settings. The `ConfigAccount` trait is implemented for the `Account<'_, Config>` type, allowing the application to interact with the configuration settings.
-## Questions: 
- 1. Question: What is the purpose of the `SEED_CONFIG` constant?
+
+## Questions:
+
+1. Question: What is the purpose of the `SEED_CONFIG` constant?
    Answer: The `SEED_CONFIG` constant is a byte string used as a seed to generate a unique program address for the `Config` struct.
 
 2. Question: What is the difference between the `Config` and `ConfigSettings` structs?
@@ -26,4 +28,3 @@ In summary, the `config.rs` file is responsible for managing the configuration s
 
 5. Question: What is the purpose of the `update()` method in the `ConfigAccount` trait implementation?
    Answer: The `update()` method is used to update the fields of a `Config` account with the values provided in a `ConfigSettings` struct.
-    

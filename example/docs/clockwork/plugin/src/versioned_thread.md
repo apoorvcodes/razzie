@@ -9,8 +9,10 @@ The `AccountDeserialize` trait is implemented for the `VersionedThread` enum, pr
 Lastly, the `TryFrom` trait is implemented for the `VersionedThread` enum, allowing it to be converted from a `Vec<u8>` using the `try_from` method. This method calls the `try_deserialize` method to perform the conversion.
 
 In summary, the `versioned_thread.rs` file provides a unified way to handle different versions of the Thread state structure in the Clockwork project, allowing developers to work with both versions seamlessly.
-## Questions: 
- 1. Question: What is the purpose of the `VersionedThread` enum?
+
+## Questions:
+
+1. Question: What is the purpose of the `VersionedThread` enum?
    Answer: The `VersionedThread` enum is used to represent different versions of the `Thread` struct, specifically `ThreadV1` and `ThreadV2`, allowing the code to handle both versions in a unified way.
 
 2. Question: How does the `impl VersionedThread` block handle methods for different versions of the `Thread` struct?
@@ -24,4 +26,3 @@ In summary, the `versioned_thread.rs` file provides a unified way to handle diff
 
 5. Question: Why are there `unsafe` blocks used in the `exec_context` and `next_instruction` methods?
    Answer: The `unsafe` blocks are used to perform a transmute operation, which converts one type to another without changing the underlying binary representation. This is done to convert between different versions of the `TriggerContext` and `AccountMetaData` structs, which are assumed to have compatible memory layouts.
-    

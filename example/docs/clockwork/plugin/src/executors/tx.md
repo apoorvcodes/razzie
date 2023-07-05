@@ -17,8 +17,10 @@ The `TxExecutor` struct has several methods:
 The `exponential_backoff_threshold` function calculates the threshold for exponential backoff based on the number of simulation failures.
 
 The `TPU_CLIENT` is a lazy static instance of `TpuClient` that connects to the local RPC and WebSocket URLs. It is used for simulating and submitting transactions.
-## Questions: 
- 1. Question: What is the purpose of the `TxExecutor` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `TxExecutor` struct?
    Answer: The `TxExecutor` struct is responsible for managing and executing transactions in the clockwork project. It maintains the configuration, executable threads, transaction history, dropped threads, and keypair for the transactions.
 
 2. Question: What is the role of the `execute_txs` function in the `TxExecutor` struct?
@@ -32,4 +34,3 @@ The `TPU_CLIENT` is a lazy static instance of `TpuClient` that connects to the l
 
 5. Question: What is the purpose of the `exponential_backoff_threshold` function?
    Answer: The `exponential_backoff_threshold` function calculates the threshold for exponential backoff based on the metadata of an executable thread. It is used to determine when a thread should be executed, taking into account the number of simulation failures.
-    

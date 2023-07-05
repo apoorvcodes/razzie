@@ -9,8 +9,10 @@ The `execute_webhooks` function is an asynchronous method that takes a reference
 The `Debug` trait is implemented for the `WebhookExecutor` struct, which provides a custom implementation of the `fmt` function. This function takes a mutable reference to a `std::fmt::Formatter` and returns a `std::fmt::Result`. It writes a simple string "webhook-executor" to the formatter.
 
 Note that there is a commented-out section of code in the `execute_webhooks` function, which appears to be an alternative implementation using a different approach for sending HTTP requests. This code may be a work in progress or a placeholder for future improvements.
-## Questions: 
- 1. Question: What is the purpose of the `WebhookExecutor` struct and its associated methods?
+
+## Questions:
+
+1. Question: What is the purpose of the `WebhookExecutor` struct and its associated methods?
    Answer: The `WebhookExecutor` struct is responsible for executing webhooks with the given configuration. It has a method `execute_webhooks` that takes a list of pubkeys and sends a request to the specified URL for each webhook.
 
 2. Question: Why is the `execute_webhooks` method using an `Arc<Self>` and an `Arc<RpcClient>`?
@@ -24,4 +26,3 @@ Note that there is a commented-out section of code in the `execute_webhooks` fun
 
 5. Question: What is the purpose of the `Debug` trait implementation for `WebhookExecutor`?
    Answer: The `Debug` trait implementation for `WebhookExecutor` allows it to be formatted using the `{:?}` format specifier, which is useful for debugging and logging purposes. In this case, it simply outputs "webhook-executor" when formatted.
-    

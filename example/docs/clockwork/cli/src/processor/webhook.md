@@ -11,8 +11,10 @@ There are two main functions in this file:
 Both functions return a `Result` type, which allows for proper error handling in case of any issues during the execution of the functions.
 
 In summary, the `webhook.rs` file is responsible for creating and retrieving webhooks in the Clockwork project. It interacts with the Clockwork client and Solana smart contracts to manage webhooks and their associated data.
-## Questions: 
- 1. Question: What is the purpose of the `create` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `create` function?
    Answer: The `create` function is responsible for creating a new webhook with the specified parameters (body, id, method, and url) and sending the instruction to the Solana blockchain using the provided client.
 
 2. Question: What is the purpose of the `get` function?
@@ -26,4 +28,3 @@ In summary, the `webhook.rs` file is responsible for creating and retrieving web
 
 5. Question: What is the purpose of the `todo!()` macro in the `get` function?
    Answer: The `todo!()` macro is a placeholder for future implementation. It indicates that the function is not yet complete and needs further development. When the `todo!()` macro is executed, it will panic with a message indicating that the code is not yet implemented.
-    

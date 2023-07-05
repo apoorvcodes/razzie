@@ -13,8 +13,10 @@ The `handler` function takes a `Context<UnstakeProcess>` as input and returns a 
 Finally, the `handler` function builds the next instruction for the thread. If there are more unstakes to process, it creates an `Instruction` for the next `UnstakePreprocess` and adds it to the `dynamic_instruction` field of the `ThreadResponse`. If there are no more unstakes to process, the `dynamic_instruction` field is set to `None`.
 
 The `handler` function returns a `ThreadResponse` containing the `dynamic_instruction`, `close_to`, and `trigger` fields. The `dynamic_instruction` field is used to execute the next unstake process, while the `close_to` and `trigger` fields are set to `None`.
-## Questions: 
- 1. Question: What is the purpose of the `UnstakeProcess` struct and its associated accounts?
+
+## Questions:
+
+1. Question: What is the purpose of the `UnstakeProcess` struct and its associated accounts?
    Answer: The `UnstakeProcess` struct represents the accounts required for the unstaking process in the Clockwork project. It includes accounts such as authority, authority_tokens, config, delegation, registry, thread, token_program, unstake, worker, and worker_tokens.
 
 2. Question: How does the `handler` function work and what is its return type?
@@ -28,4 +30,3 @@ The `handler` function returns a `ThreadResponse` containing the `dynamic_instru
 
 5. Question: What is the purpose of the `ThreadResponse` struct and how is it used in the `handler` function?
    Answer: The `ThreadResponse` struct represents the response of the thread after the unstaking process. It contains fields such as dynamic_instruction, close_to, and trigger. In the `handler` function, a `ThreadResponse` object is created and returned with the appropriate values for these fields based on the unstaking process.
-    

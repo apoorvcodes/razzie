@@ -20,8 +20,10 @@ The function performs the following steps:
 The function returns `Ok(())` upon successful completion.
 
 In summary, the `pool_update.rs` file is responsible for updating the settings of a pool, reallocating memory for the pool account, and ensuring rent-exemption by transferring lamports if necessary. It uses the `anchor_lang` library and the `std::mem::size_of` function for its implementation.
-## Questions: 
- 1. Question: What is the purpose of the `PoolUpdate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `PoolUpdate` struct and its associated fields?
    Answer: The `PoolUpdate` struct is used to define the account inputs required for updating a pool. It includes fields for the admin, config, payer, pool, and system_program accounts.
 
 2. Question: What is the role of the `handler` function in this code?
@@ -35,4 +37,3 @@ In summary, the `pool_update.rs` file is responsible for updating the settings o
 
 5. Question: How does the code handle transferring lamports if required for maintaining rent-exemption?
    Answer: The code calculates the minimum rent required for the new data length and checks if the pool account has enough lamports. If not, it performs a transfer of the required lamports from the `payer` account to the `pool` account using the `transfer` function.
-    

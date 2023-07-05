@@ -17,8 +17,10 @@ The `handler` function takes a context of type `DelegationWithdraw` and an `amou
 The handler function uses a `CpiContext` with a signer to authorize the transfer. The seeds and bump used for the `delegation` account are also provided to the `transfer` function.
 
 In summary, the `delegation_withdraw.rs` file is responsible for handling the withdrawal of delegated tokens in the Clockwork project. It defines a struct with the necessary accounts and a handler function that transfers the specified amount of tokens from the delegation account to the authority account.
-## Questions: 
- 1. Question: What is the purpose of the `DelegationWithdraw` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DelegationWithdraw` struct?
    Answer: The `DelegationWithdraw` struct defines the account inputs and their constraints for the delegation withdrawal operation, which is used to transfer tokens from the delegation account back to the authority account.
 
 2. Question: What does the `#[instruction(amount: u64)]` attribute do?
@@ -32,4 +34,3 @@ In summary, the `delegation_withdraw.rs` file is responsible for handling the wi
 
 5. Question: How is the `transfer` function called in the `handler` function?
    Answer: The `transfer` function is called with a `CpiContext` created using the `token_program` account, a `Transfer` struct containing the `from`, `to`, and `authority` accounts, and the seeds for the `delegation` account. The `amount` parameter is also passed to the `transfer` function.
-    

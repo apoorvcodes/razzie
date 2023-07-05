@@ -13,8 +13,10 @@ The file imports necessary libraries and modules, defines constants for file pat
 The file also includes utility functions for encryption, decryption, fetching secrets, and checking approval status. The encryption and decryption functions use the ElGamal encryption scheme, which is a public-key cryptosystem. The `fetch_decrypted_secret` and `fetch_secret` functions are used to retrieve secrets from the filesystem, while the `is_approved` function checks if a delegate is approved to access a secret.
 
 Finally, the file includes a test module that verifies the correctness of the encryption and decryption functions.
-## Questions: 
- 1. Question: What is the purpose of the `ENCRYPTION_KEYPAIR_PATH`, `SECRETS_PATH`, and `RPC_URL` constants?
+
+## Questions:
+
+1. Question: What is the purpose of the `ENCRYPTION_KEYPAIR_PATH`, `SECRETS_PATH`, and `RPC_URL` constants?
    Answer: These constants define the file paths for the encryption keypair and secrets storage, as well as the URL for the RPC server. They are used throughout the code to access and store encryption keys, secrets, and interact with the RPC server.
 
 2. Question: How does the `hydrate_secret` function work?
@@ -28,4 +30,3 @@ Finally, the file includes a test module that verifies the correctness of the en
 
 5. Question: What is the purpose of the various `#[post("/...")]` functions, such as `secret_create`, `secret_get`, `secret_list`, etc.?
    Answer: These functions are Actix-web route handlers that define the behavior of the web server when receiving HTTP POST requests to the specified paths. They handle various actions related to secrets, such as creating, retrieving, listing, approving, and revoking secrets.
-    

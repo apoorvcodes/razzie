@@ -9,8 +9,10 @@ The `delegation.rs` file is part of the Clockwork project and contains functions
 4. `get(client: &Client, delegation_id: u64, worker_id: u64)`: This function retrieves information about a delegation with the given `delegation_id` and `worker_id`. It fetches the configuration data, delegation data, and delegation's token account data from the network, and then prints the delegation address, delegation details, and liquid balance.
 
 All functions return a `Result<(), CliError>` type, which means they either return an empty tuple on success or a `CliError` on failure. The `CliError` enum is defined in the `errors.rs` file and contains error variants for account not found and account data not parsable.
-## Questions: 
- 1. Question: What is the purpose of the `create` function, and what are its inputs and outputs?
+
+## Questions:
+
+1. Question: What is the purpose of the `create` function, and what are its inputs and outputs?
    Answer: The `create` function is used to create a new delegation for a worker. It takes a reference to a `Client` and a `worker_id` as inputs and returns a `Result` with an empty tuple or a `CliError`.
 
 2. Question: What is the purpose of the `deposit` function, and what are its inputs and outputs?
@@ -24,4 +26,3 @@ All functions return a `Result<(), CliError>` type, which means they either retu
 
 5. Question: What is the purpose of the `TODO` comments in the `deposit` and `withdraw` functions?
    Answer: The `TODO` comments indicate that there is a planned feature to map the amount using the mint's decimals, which has not been implemented yet. This would likely involve converting the input amount based on the token's decimal precision.
-    

@@ -9,8 +9,10 @@ The `handler` function takes a `Context` object with the `StakeDelegationsJob` t
 - `trigger`: This field is also set to `None`, indicating that there is no trigger for the job.
 
 In summary, the `job.rs` file in the Clockwork project defines the `StakeDelegationsJob` struct and its handler function, which is responsible for managing stake delegations jobs in the system. The handler function constructs a `ThreadResponse` object based on the current state of the `registry` account and returns it as a result.
-## Questions: 
- 1. Question: What is the purpose of the `StakeDelegationsJob` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `StakeDelegationsJob` struct?
    Answer: The `StakeDelegationsJob` struct defines the account inputs required for the stake delegations job, including the configuration, registry, and thread accounts.
 
 2. Question: What is the purpose of the `handler` function?
@@ -24,4 +26,3 @@ In summary, the `job.rs` file in the Clockwork project defines the `StakeDelegat
 
 5. Question: What is the significance of the `use` statements at the beginning of the code?
    Answer: The `use` statements import the necessary modules and types from external crates and other parts of the project, making them available for use within the `job.rs` file.
-    

@@ -13,8 +13,10 @@ The `TimeUnitField` trait implementation for `DaysOfWeek` provides several metho
 The `DaysOfWeek` struct also implements the `PartialEq` trait, which allows for comparison of two `DaysOfWeek` instances for equality. The `eq` method compares the `OrdinalSet` values of the two instances to determine if they are equal.
 
 In summary, the `days_of_week.rs` file defines a struct and its associated behavior for representing and working with days of the week in the context of the Clockwork project.
-## Questions: 
- 1. Question: What is the purpose of the `DaysOfWeek` struct and what does it represent?
+
+## Questions:
+
+1. Question: What is the purpose of the `DaysOfWeek` struct and what does it represent?
    Answer: The `DaysOfWeek` struct represents a set of days of the week and is used to store the ordinals of the days in an `OrdinalSet`.
 
 2. Question: How does the `TimeUnitField` trait relate to the `DaysOfWeek` struct?
@@ -28,4 +30,3 @@ In summary, the `days_of_week.rs` file defines a struct and its associated behav
 
 5. Question: How does the `PartialEq` implementation for `DaysOfWeek` determine if two instances are equal?
    Answer: The `PartialEq` implementation for `DaysOfWeek` compares the `OrdinalSet` of the two instances using the `ordinals` function. If the sets are equal, the instances are considered equal.
-    

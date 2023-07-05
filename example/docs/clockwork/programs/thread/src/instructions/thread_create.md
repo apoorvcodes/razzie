@@ -7,8 +7,10 @@ The `handler` function is the main entry point for the `thread_create` instructi
 The `transfer` function from the `system_program` is used to transfer the SOL between accounts. The `CpiContext` is created with the system program's account info and the `Transfer` struct containing the payer and thread account info.
 
 In summary, the `thread_create.rs` file is responsible for creating a new thread in the Clockwork project, initializing it with the provided parameters, and transferring the specified amount of SOL from the payer to the thread. This file is essential for developers working on the Clockwork project, as it defines the core functionality for creating and initializing threads.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadCreate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadCreate` struct and its associated fields?
    Answer: The `ThreadCreate` struct defines the accounts required by the `thread_create` instruction. It includes fields for the authority (owner) of the thread, the payer for account initializations, the Solana system program, and the thread to be created.
 
 2. Question: How is the space for the `thread` account calculated in the `ThreadCreate` struct?
@@ -22,4 +24,3 @@ In summary, the `thread_create.rs` file is responsible for creating a new thread
 
 5. Question: How is the transfer of SOL from the payer to the thread account handled in the `handler` function?
    Answer: The transfer of SOL is handled using the `transfer` function from the Solana system program, which takes a `CpiContext` with the system program's account info and a `Transfer` struct containing the payer's and thread's account info. The specified `amount` of SOL is transferred from the payer to the thread account.
-    

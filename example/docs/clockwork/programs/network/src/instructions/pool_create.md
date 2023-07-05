@@ -16,8 +16,10 @@ The `handler` function takes a `Context<PoolCreate>` as its argument and returns
 3. Increments the `registry.total_pools` counter using a checked addition to prevent overflow errors.
 
 In summary, the `pool_create.rs` file is responsible for creating and initializing a new pool in the Clockwork project. It defines the `PoolCreate` struct with necessary account fields and a `handler` function that initializes the pool and updates the registry's pool counter.
-## Questions: 
- 1. Question: What is the purpose of the `PoolCreate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `PoolCreate` struct and its associated fields?
    Answer: The `PoolCreate` struct is used to define the account types and constraints required for creating a new pool in the clockwork project. It contains fields for admin, config, payer, pool, registry, and system_program, each with specific attributes and constraints.
 
 2. Question: How are the seeds and bump values used in the `#[account]` attributes for the `pool` and `registry` fields?
@@ -31,4 +33,3 @@ In summary, the `pool_create.rs` file is responsible for creating and initializi
 
 5. Question: What is the purpose of the `constraint` attribute in the `#[account]` attribute for the `registry` field?
    Answer: The `constraint` attribute is used to enforce a custom constraint on the `registry` account. In this case, it checks if the registry is locked and returns a `ClockworkError::RegistryLocked` error if the constraint is not met. This ensures that the registry is not locked before creating a new pool.
-    

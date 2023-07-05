@@ -9,8 +9,10 @@ Various parsing functions are defined for different parts of a cron expression, 
 The `schedule` function is the main entry point for parsing a cron expression. It uses the `all_consuming` combinator to ensure that the entire input string is parsed and calls either the `shorthand` or `longhand` function to parse the expression. The `shorthand` function handles predefined cron keywords like `@yearly`, `@monthly`, `@weekly`, `@daily`, and `@hourly`. The `longhand` function handles more complex cron expressions with specific fields for seconds, minutes, hours, days of the month, months, days of the week, and years.
 
 The file also includes a `test` module that contains various unit tests for the parsing functions, ensuring that they work correctly for valid and invalid cron expressions.
-## Questions: 
- 1. Question: What is the purpose of the `FromStr` and `TryFrom` implementations for the `Schedule` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `FromStr` and `TryFrom` implementations for the `Schedule` struct?
    Answer: The `FromStr` and `TryFrom` implementations for the `Schedule` struct provide a way to create a `Schedule` instance from a string representation of a cron expression. They handle parsing the expression and returning a `Result` containing either a valid `Schedule` or an error.
 
 2. Question: How does the `FromField` trait work and what is its purpose?
@@ -24,4 +26,3 @@ The file also includes a `test` module that contains various unit tests for the 
 
 5. Question: What is the purpose of the `schedule` function and how does it work?
    Answer: The `schedule` function is the main entry point for parsing a cron expression string into a `ScheduleFields` instance. It uses the nom parsing library to parse the input string and combines the results of the shorthand and longhand parsing functions. The function returns a `Result` containing either a valid `ScheduleFields` instance or an error.
-    

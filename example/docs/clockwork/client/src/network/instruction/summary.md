@@ -29,5 +29,3 @@ The files in this folder are:
 13. `worker_update.rs`: This file defines a function `worker_update` that creates an instruction for updating a worker's settings in the Clockwork network.
 
 These files and functions are essential for developers to interact with the Clockwork network program on the Solana blockchain. By using these functions, developers can create instructions to perform various operations such as updating configurations, creating and managing delegations, initializing the network program, creating and updating pools, registering nonce hashes, unlocking the registry, and creating and updating workers.
-
-    

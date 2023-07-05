@@ -15,8 +15,10 @@ The `delegation_withdraw` function creates and returns an `Instruction` object t
 3. `data`: The data field of the `Instruction` object contains the serialized `DelegationWithdraw` instruction data, which includes the `amount` to be withdrawn.
 
 In summary, the `delegation_withdraw.rs` file defines a function that creates an `Instruction` object for withdrawing delegated tokens in the Clockwork project. This instruction includes the necessary account metadata and data required to perform the withdrawal operation on the Solana blockchain.
-## Questions: 
- 1. Question: What is the purpose of the `delegation_withdraw` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `delegation_withdraw` function?
    Answer: The `delegation_withdraw` function is used to create an instruction for withdrawing a specified amount from a delegation account in the Clockwork network.
 
 2. Question: What are the input parameters for the `delegation_withdraw` function?
@@ -30,4 +32,3 @@ In summary, the `delegation_withdraw.rs` file defines a function that creates an
 
 5. Question: What is the purpose of the `AccountMeta` instances in the `accounts` vector?
    Answer: The `AccountMeta` instances in the `accounts` vector are used to specify the accounts that will be involved in the execution of the `delegation_withdraw` instruction, including their read and write permissions.
-    

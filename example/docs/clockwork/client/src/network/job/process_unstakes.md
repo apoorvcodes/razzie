@@ -12,8 +12,10 @@ Inside the `process_unstakes` function, an `Instruction` struct is created with 
 3. `data`: This is set to the serialized data of a `ProcessUnstakesJob` struct from the `clockwork_network_program::instruction` module. This data is used by the Clockwork network program to identify the specific instruction type and process it accordingly.
 
 In summary, the `process_unstakes.rs` file is responsible for creating an instruction to process unstakes in the Clockwork network. It takes a thread's public key as input and returns an `Instruction` struct with the necessary information for the Clockwork network program to process the unstaking request.
-## Questions: 
- 1. Question: What is the purpose of the `process_unstakes` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `process_unstakes` function?
    Answer: The `process_unstakes` function creates an `Instruction` for processing unstakes in the Clockwork network program, with the necessary account metadata and data.
 
 2. Question: What are the dependencies being imported from `anchor_lang` and `clockwork_network_program`?
@@ -27,4 +29,3 @@ In summary, the `process_unstakes.rs` file is responsible for creating an instru
 
 5. Question: Why is the `thread` parameter of type `Pubkey` in the `process_unstakes` function?
    Answer: The `thread` parameter represents the public key of the thread account involved in the unstaking process, which is required for the instruction to be executed correctly.
-    

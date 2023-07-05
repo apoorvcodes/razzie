@@ -7,5 +7,3 @@ The `localnet.rs` file sets up and manages a local test network (localnet) for d
 The `snapshot.rs` file handles snapshot-related functionality, such as retrieving and displaying snapshot and snapshot entry data. The `thread.rs` file provides functionality for managing threads by creating, deleting, pausing, resuming, resetting, and updating them. The `webhook.rs` file is responsible for creating and retrieving webhooks in the Clockwork project. The `worker.rs` file contains functions to manage workers in the network.
 
 In summary, the `processor` folder in the Clockwork project contains code that handles various aspects of the Clockwork network and processes CLI commands. Each file in the folder is responsible for a specific functionality, and the `mod.rs` file serves as the main module for processing CLI commands. The code in this folder is essential for developers to interact with and manage the Clockwork network.
-
-    

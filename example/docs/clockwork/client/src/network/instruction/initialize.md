@@ -15,8 +15,10 @@ The function returns an `Instruction` struct, which is used to define a Solana i
 3. `data`: This field contains the serialized data for the `Initialize` instruction. The `data` method is called on an empty `Initialize` struct from the `clockwork_network_program::instruction` module.
 
 In summary, the `initialize.rs` file defines a function that creates an `Instruction` for initializing the Clockwork network program with the given administrator and mint public keys. The instruction includes the necessary accounts and data required for the initialization process.
-## Questions: 
- 1. Question: What is the purpose of the `initialize` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `initialize` function?
    Answer: The `initialize` function is used to create an `Instruction` for initializing the clockwork network program with the given admin and mint public keys.
 
 2. Question: What are the dependencies being imported at the beginning of the code?
@@ -30,4 +32,3 @@ In summary, the `initialize.rs` file defines a function that creates an `Instruc
 
 5. Question: What is the purpose of the `true` and `false` values passed as the second argument to the `AccountMeta::new` and `AccountMeta::new_readonly` functions?
    Answer: The second argument to these functions is a boolean value that indicates whether the account is a signer or not. If the value is `true`, the account is considered a signer, meaning it must provide a valid signature for the instruction to be executed. If the value is `false`, the account is not required to sign the instruction.
-    

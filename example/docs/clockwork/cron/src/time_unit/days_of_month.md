@@ -15,8 +15,10 @@ The `DaysOfMonth` struct implements the `TimeUnitField` trait, which provides a 
 The `DaysOfMonth` struct also implements the `PartialEq` trait, which allows for comparing two instances of `DaysOfMonth` for equality. The `eq` method is implemented to compare the `ordinals` field of both instances.
 
 In summary, the `days_of_month.rs` file defines a `DaysOfMonth` struct that represents the days of a month in a calendar and provides methods for working with this time unit field. The struct implements the `TimeUnitField` and `PartialEq` traits, allowing for easy manipulation and comparison of `DaysOfMonth` instances.
-## Questions: 
- 1. Question: What is the purpose of the `DaysOfMonth` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DaysOfMonth` struct?
    Answer: The `DaysOfMonth` struct represents a set of days within a month, with an optional `OrdinalSet` to store the specific days.
 
 2. Question: How does the `TimeUnitField` trait relate to the `DaysOfMonth` struct?
@@ -30,4 +32,3 @@ In summary, the `days_of_month.rs` file defines a `DaysOfMonth` struct that repr
 
 5. Question: What is the purpose of the `Cow` type in the `name` method?
    Answer: The `Cow` (short for "clone on write") type is used in the `name` method to return a string that can be either borrowed or owned, depending on the context. This allows for more efficient memory usage when the string is not modified.
-    

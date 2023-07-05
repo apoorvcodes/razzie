@@ -14,8 +14,10 @@ The `handler` function is the main logic of this file. It takes a context of typ
 6. If everything is successful, return `Ok(())`.
 
 This file is essential for managing the fee collection process in the Clockwork project. Developers working with this file should be familiar with the Anchor framework, Solana accounts, and the Clockwork project's fee and penalty mechanisms.
-## Questions: 
- 1. Question: What is the purpose of the `FeeCollect` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `FeeCollect` struct and its associated fields?
    Answer: The `FeeCollect` struct is used to define the account structures required for the fee collection process. It has two fields: `fee`, which is a mutable account of type `Fee`, and `signer`, which is a signer account.
 
 2. Question: What does the `handler` function do, and what are its input parameters?
@@ -29,4 +31,3 @@ This file is essential for managing the fee collection process in the Clockwork 
 
 5. Question: What is the purpose of the `require!` macro, and what error is returned if the condition is not met?
    Answer: The `require!` macro is used to check if the total balance (sum of collected fees, penalty fees, and minimum rent balance) is greater than or equal to the account's lamport balance. If this condition is not met, the `ClockworkError::InsufficientFeeBalance` error is returned.
-    

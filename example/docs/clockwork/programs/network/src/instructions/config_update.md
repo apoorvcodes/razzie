@@ -7,8 +7,10 @@ The `ConfigUpdate` struct also has an associated `Accounts` trait, which is deri
 The file also defines a `handler` function, which is the main entry point for updating the configuration settings. The function takes two arguments: a `Context` object containing the `ConfigUpdate` accounts and a `ConfigSettings` object containing the new settings to be applied. The `handler` function updates the configuration settings by calling the `update` method on the `config` account with the new `settings` object. The `Result<()>` return type indicates that the function returns an empty result if the update is successful, or an error if the update fails.
 
 In summary, the `config_update.rs` file is responsible for updating the configuration settings of the Clockwork project. It defines a `ConfigUpdate` struct with associated account validation rules and a `handler` function to perform the update. The file relies on the `anchor_lang` prelude and the `state` module from the crate.
-## Questions: 
- 1. Question: What is the purpose of the `ConfigUpdate` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ConfigUpdate` struct?
    Answer: The `ConfigUpdate` struct is used to define the account types and their relationships required for updating the configuration settings in the clockwork project.
 
 2. Question: What is the role of the `#[derive(Accounts)]` attribute?
@@ -22,4 +24,3 @@ In summary, the `config_update.rs` file is responsible for updating the configur
 
 5. Question: What is the type of the `settings` parameter in the `handler` function?
    Answer: The `settings` parameter is of type `ConfigSettings`, which is a user-defined type representing the configuration settings to be updated in the clockwork project.
-    

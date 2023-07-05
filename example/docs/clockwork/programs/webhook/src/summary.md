@@ -9,5 +9,3 @@ The `instructions` subfolder contains three Rust files responsible for creating 
 The `state` subfolder is responsible for organizing and managing the "webhook" sub-module and defining the core data structures and behavior for webhooks within the system. The `mod.rs` file serves as the main module file for the "webhook" sub-module, declaring the "webhook" sub-module and re-exporting its public items. The `webhook.rs` file defines the structure and behavior of webhooks, containing several data structures and traits, such as the `Webhook` struct, `WebhookAccount` trait, `HttpMethod` enum, and `Relayer` enum.
 
 In summary, the `output/clockwork/programs/webhook/src` folder and its subfolders play a crucial role in the Clockwork project, defining the main program logic, custom error types, state management, and instructions for creating and responding to webhooks. Developers working on the Clockwork project should be familiar with the structure and organization of this folder and its contents, as it is essential for understanding how webhooks are structured and function within the larger project.
-
-    

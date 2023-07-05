@@ -15,8 +15,10 @@ The `handler` function takes a `Context<ThreadInstructionRemove>` and an `index`
 The function returns a `Result<()>`, which indicates whether the removal was successful or not. If the removal is successful, it returns `Ok(())`.
 
 In summary, this file provides the functionality to remove instructions from a thread in the Clockwork project. It defines the necessary accounts and structures for the removal process and implements the handler function to perform the actual removal.
-## Questions: 
- 1. Question: What is the purpose of the `thread_instruction_remove` instruction?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_instruction_remove` instruction?
    Answer: The `thread_instruction_remove` instruction is used to remove an instruction from a thread by its index.
 
 2. Question: What are the required accounts for the `thread_instruction_remove` instruction?
@@ -30,4 +32,3 @@ In summary, this file provides the functionality to remove instructions from a t
 
 5. Question: What is the purpose of the `Ok(())` at the end of the `handler` function?
    Answer: The `Ok(())` is used to indicate that the function has executed successfully without any errors.
-    

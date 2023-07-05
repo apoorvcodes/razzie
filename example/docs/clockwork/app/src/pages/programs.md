@@ -9,8 +9,10 @@ The `Page` component is used as the root element of the Programs Page. It has a 
 Below the `h1` element, the `ThreadsTable` component is included. This component is responsible for rendering the table of threads on the Programs Page.
 
 In summary, the `programs.rs` file is responsible for rendering the Programs Page in the Clockwork project. It uses the Dioxus library and RSX syntax to define the structure and styling of the page, which includes a title and a table of threads.
-## Questions: 
- 1. Question: What is the purpose of the `use dioxus::prelude::*;` statement?
+
+## Questions:
+
+1. Question: What is the purpose of the `use dioxus::prelude::*;` statement?
    Answer: This statement imports all the necessary items from the `dioxus::prelude` module, which is a part of the Dioxus framework, to make them available for use in the current module.
 
 2. Question: What is the role of the `ThreadsTable` component in this code?
@@ -24,4 +26,3 @@ In summary, the `programs.rs` file is responsible for rendering the Programs Pag
 
 5. Question: What does the `class: "text-2xl font-semibold mb-6"` attribute do in the `h1` element within the `Page` component?
    Answer: This attribute sets the CSS class for the `h1` element, applying the specified styles (text size, font weight, and margin-bottom) to the "Programs" heading. These styles are likely defined in an external CSS file or a global stylesheet.
-    

@@ -13,8 +13,10 @@ The `refresh-program-ids.sh` script is a Bash script used in the Clockwork proje
 6. Rebuild: Finally, the `anchor build` command is called again to rebuild the project with the updated program IDs.
 
 In summary, this script automates the process of refreshing the program IDs for the clockwork_network, clockwork_thread, and clockwork_webhook programs in the Clockwork project. It cleans the build artifacts, rebuilds the project, obtains the new public key addresses, updates the source code and configuration files with the new program IDs, and rebuilds the project again with the updated settings. This is useful for developers working on the project, as it ensures that the program IDs are always up-to-date and consistent across the source code and configuration files.
-## Questions: 
- 1. Question: What is the purpose of the `cargo clean` command in this script?
+
+## Questions:
+
+1. Question: What is the purpose of the `cargo clean` command in this script?
    Answer: The `cargo clean` command is used to delete the target folder, which contains the build artifacts, to ensure a clean build environment before starting the build process with Anchor.
 
 2. Question: What does the `anchor build` command do in this script?
@@ -28,4 +30,3 @@ In summary, this script automates the process of refreshing the program IDs for 
 
 5. Question: Why is the `anchor build` command run again at the end of the script?
    Answer: The `anchor build` command is run again at the end of the script to rebuild the Clockwork project with the updated program ID public key addresses, ensuring that the compiled programs have the correct program IDs.
-    

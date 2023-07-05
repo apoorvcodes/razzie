@@ -11,8 +11,10 @@ The BlocksPage component consists of a `Page` component, which wraps a `div` ele
 Inside the `div`, two components are included: `BlocksTable` and `MarketsTable`. These components are responsible for rendering the tables of blocks and markets, respectively. By including them in the BlocksPage component, they will be displayed on the page when the BlocksPage is rendered.
 
 In summary, the `blocks.rs` file defines the BlocksPage component, which displays a table of blocks and a table of markets using the Dioxus library and the project's own components. The file demonstrates how to create a UI component in Rust using RSX syntax and Dioxus types.
-## Questions: 
- 1. Question: What is the purpose of the `BlocksPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `BlocksPage` function?
    Answer: The `BlocksPage` function is responsible for rendering the BlocksPage, which consists of a `Page` component containing a `BlocksTable` and a `MarketsTable` within a div element.
 
 2. Question: What are the `BlocksTable` and `MarketsTable` components?
@@ -26,4 +28,3 @@ In summary, the `blocks.rs` file defines the BlocksPage component, which display
 
 5. Question: What is the `Scope` type in the `BlocksPage` function signature?
    Answer: The `Scope` type is a part of the Dioxus library and represents the context in which the `BlocksPage` function is being called, allowing the function to access and manipulate the state and lifecycle of the component.
-    

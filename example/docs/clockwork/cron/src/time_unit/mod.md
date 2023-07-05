@@ -7,8 +7,10 @@ The `TimeUnitField` trait provides methods for working with time unit fields. It
 The `mod.rs` file also provides examples for using the `TimeUnitSpec` trait methods, such as creating a schedule from a cron expression, checking if a specific year is included in the schedule, and counting the number of specified years.
 
 In summary, the `mod.rs` file is responsible for handling time units and their specifications in the Clockwork project. It provides traits and methods for working with schedules, ordinals, and time unit fields, making it an essential part of the project's functionality.
-## Questions: 
- 1. Question: What is the purpose of the `TimeUnitSpec` trait?
+
+## Questions:
+
+1. Question: What is the purpose of the `TimeUnitSpec` trait?
    Answer: The `TimeUnitSpec` trait provides methods for working with a schedule's configured ordinals for each individual unit of time, such as checking if a specific ordinal is included, counting the number of ordinals, and checking if all possible ordinals are included.
 
 2. Question: How does the `TimeUnitField` trait differ from the `TimeUnitSpec` trait?
@@ -22,4 +24,3 @@ In summary, the `mod.rs` file is responsible for handling time units and their s
 
 5. Question: What is the purpose of the `validate_ordinal` method in the `TimeUnitField` trait?
    Answer: The `validate_ordinal` method checks if a given ordinal is within the valid range for the specific time unit field. If the ordinal is not within the valid range, it returns an error with a message indicating the issue.
-    

@@ -7,8 +7,10 @@ The file also defines a trait called `ProgramLogsDeserializable`, which is used 
 The `ProgramLogsDeserializable` trait is implemented for any type `T` that implements the `AnchorDeserialize` trait. The implementation of `try_from_program_logs` for `T` first constructs a preimage string using the program ID, then searches the program logs for a string starting with the preimage. If found, it extracts the return data after the preimage, decodes it from base64, and attempts to deserialize it into an instance of `T`. If any of these steps fail, the function returns an `ErrorCode::AccountDidNotDeserialize` error.
 
 In summary, the `lib.rs` file in the "clockwork" project provides a foundation for the project's functionality by defining the `CrateInfo` struct and the `ProgramLogsDeserializable` trait, as well as implementing the trait for types that can be deserialized using the `AnchorDeserialize` trait.
-## Questions: 
- 1. Question: What is the purpose of the `CrateInfo` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `CrateInfo` struct?
    Answer: The `CrateInfo` struct is used to store build information for the crate, including a link to the crate specification and an arbitrary blob that can be set by developers.
 
 2. Question: How is the `Display` trait implemented for the `CrateInfo` struct?
@@ -22,4 +24,3 @@ In summary, the `lib.rs` file in the "clockwork" project provides a foundation f
 
 5. Question: What is the purpose of the `ErrorCode` enum in the error handling of the `try_from_program_logs` function?
    Answer: The `ErrorCode` enum is used to represent different error cases that may occur during the deserialization process, such as when the account data does not deserialize correctly.
-    

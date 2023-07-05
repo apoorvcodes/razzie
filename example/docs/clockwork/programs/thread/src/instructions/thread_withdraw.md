@@ -16,8 +16,10 @@ The `handler` function is the main implementation of the `thread_withdraw` instr
 4. Update the lamports of the thread and pay_to accounts by subtracting the `amount` from the thread account and adding it to the pay_to account.
 
 The function returns an `Ok(())` result if the withdrawal is successful.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadWithdraw` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadWithdraw` struct and its associated fields?
    Answer: The `ThreadWithdraw` struct defines the accounts required by the `thread_withdraw` instruction. It includes fields for the authority (owner) of the thread, the account to withdraw lamports to, and the thread itself.
 
 2. Question: What is the purpose of the `handler` function and its input parameters?
@@ -31,4 +33,3 @@ The function returns an `Ok(())` result if the withdrawal is successful.
 
 5. Question: How are the lamports withdrawn from the thread and added to the `pay_to` account in the `handler` function?
    Answer: The lamports are withdrawn from the thread by subtracting the withdrawal amount from the thread's current lamport balance and updating the thread's lamport balance. The lamports are then added to the `pay_to` account by adding the withdrawal amount to the `pay_to` account's current lamport balance and updating the `pay_to` account's lamport balance.
-    

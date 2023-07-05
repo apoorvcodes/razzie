@@ -13,8 +13,10 @@ The `webhook_create` function takes in a context of type `WebhookCreate`, a requ
 The `webhook_respond` function takes in a context of type `WebhookRespond` and calls the `handler` function from the `webhook_respond` module with this context. It returns the result of the handler function.
 
 In summary, the `lib.rs` file in the Clockwork project defines the main program logic and functions for creating and responding to webhooks using the Anchor framework for Solana. It imports necessary modules and components, declares the program ID, and provides the implementation for the `webhook_create` and `webhook_respond` functions.
-## Questions: 
- 1. Question: What is the purpose of the `declare_id!` macro and the string inside it?
+
+## Questions:
+
+1. Question: What is the purpose of the `declare_id!` macro and the string inside it?
    Answer: The `declare_id!` macro is used to define the unique program ID for the clockwork project. The string inside it is the unique identifier for the program on the Solana blockchain.
 
 2. Question: What are the input parameters for the `webhook_create` function and what do they represent?
@@ -28,4 +30,3 @@ In summary, the `lib.rs` file in the Clockwork project defines the main program 
 
 5. Question: What is the purpose of the `#[program]` attribute macro in the code?
    Answer: The `#[program]` attribute macro is used to define the entry point for the Solana program. It is part of the Anchor framework and helps in generating the necessary boilerplate code for the program.
-    

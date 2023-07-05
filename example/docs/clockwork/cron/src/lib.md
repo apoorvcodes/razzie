@@ -17,8 +17,10 @@ The library consists of several modules:
 The library also re-exports the `Schedule` struct and the `TimeUnitSpec` enum at the top level, so users can import them directly from the `clockwork_cron` crate.
 
 In summary, the `lib.rs` file is the main entry point for the Clockwork cron expression parser and schedule explorer library. It provides an example of how to use the library and defines several modules that implement the parsing, querying, and representation of cron schedules.
-## Questions: 
- 1. Question: What is the purpose of the `#![deny(rust_2018_idioms)]` line at the beginning of the code?
+
+## Questions:
+
+1. Question: What is the purpose of the `#![deny(rust_2018_idioms)]` line at the beginning of the code?
    Answer: This line is an attribute that tells the Rust compiler to deny any code that uses idioms that were considered outdated or deprecated in the 2018 edition of Rust. This helps ensure that the code follows the latest best practices and guidelines.
 
 2. Question: What is the purpose of the `clockwork_cron::Schedule` struct and how is it used in the example code?
@@ -39,4 +41,3 @@ In summary, the `lib.rs` file is the main entry point for the Clockwork cron exp
    - `schedule`: Defines the `Schedule` struct and its associated methods.
    - `specifier`: Contains types and functions for working with cron specifiers.
    - `time_unit`: Defines the `TimeUnitSpec` struct and its associated methods.
-    

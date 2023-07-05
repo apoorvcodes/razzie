@@ -3,6 +3,7 @@ The `snapshot.rs` file is part of the Clockwork project and defines the structur
 The `SEED_SNAPSHOT` constant is a byte string used as a seed for generating program addresses for Snapshot accounts.
 
 The `Snapshot` struct contains three fields:
+
 1. `id`: a unique identifier for the snapshot (u64).
 2. `total_frames`: the total number of frames in the snapshot (u64).
 3. `total_stake`: the total stake in the snapshot (u64).
@@ -10,14 +11,17 @@ The `Snapshot` struct contains three fields:
 The `Snapshot` struct also has an associated implementation block that provides a method called `pubkey`, which takes an `id` as input and returns the program address for the Snapshot account with that `id`. This is done using the `find_program_address` function from the `Pubkey` struct in the `anchor_lang` library.
 
 The `SnapshotAccount` trait is defined with two methods:
+
 1. `pubkey`: returns the public key of the Snapshot account.
 2. `init`: initializes a Snapshot account with a given `id`, setting the `total_frames` and `total_stake` fields to 0.
 
 The `SnapshotAccount` trait is then implemented for the `Account` struct with the `Snapshot` type. The `pubkey` method implementation calls the `pubkey` method from the `Snapshot` struct, while the `init` method implementation sets the `id`, `total_frames`, and `total_stake` fields of the Snapshot account and returns an `Ok` result.
 
 In summary, the `snapshot.rs` file defines the structure and behavior of a Snapshot object in the Clockwork project, providing methods for generating program addresses and initializing Snapshot accounts.
-## Questions: 
- 1. Question: What is the purpose of the `Snapshot` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Snapshot` struct and its fields?
    Answer: The `Snapshot` struct represents a snapshot of the state of the clockwork project, with fields `id` for a unique identifier, `total_frames` for the total number of frames in the snapshot, and `total_stake` for the total stake associated with the snapshot.
 
 2. Question: How is the `pubkey` function in the `Snapshot` impl block used?
@@ -31,4 +35,3 @@ In summary, the `snapshot.rs` file defines the structure and behavior of a Snaps
 
 5. Question: What is the purpose of the `SEED_SNAPSHOT` constant?
    Answer: The `SEED_SNAPSHOT` constant is a byte string used as a seed for generating unique public keys for snapshot accounts using the `find_program_address` function.
-    

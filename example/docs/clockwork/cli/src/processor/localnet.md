@@ -19,8 +19,10 @@ The `lib_path` function returns the library path for a given home directory and 
 The `get_clockwork_config` function reads the Clockwork configuration file and returns its content as a serde_yaml::Value.
 
 The `TestValidatorHelpers` trait provides helper functions for the Command struct, including `add_programs_with_path`, `bpf_program`, `geyser_plugin_config`, `network_url`, and `clone_addresses`. These functions are used to configure the test validator process with the necessary arguments and options.
-## Questions: 
- 1. Question: What is the purpose of the `start` function in this code?
+
+## Questions:
+
+1. Question: What is the purpose of the `start` function in this code?
    Answer: The `start` function is responsible for starting the local test validator, initializing Clockwork, registering a worker, creating threads, and waiting for the validator process to be killed.
 
 2. Question: How does the `check_test_validator_version` function work?
@@ -34,4 +36,3 @@ The `TestValidatorHelpers` trait provides helper functions for the Command struc
 
 5. Question: What is the purpose of the `TestValidatorHelpers` trait and its implementations?
    Answer: The `TestValidatorHelpers` trait provides helper methods for the `Command` struct to simplify the process of starting a test validator with the required arguments, such as adding BPF programs, setting the network URL, and specifying clone addresses.
-    

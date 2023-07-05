@@ -12,8 +12,10 @@ The `thread_update` function returns an `Instruction` struct, which is used to c
 - `data`: This field contains the serialized data of the `ThreadUpdate` struct from the `clockwork_thread_program::instruction` module, which includes the new `settings` for the thread.
 
 In summary, the `thread_update.rs` file defines a function that creates an instruction to update the settings of a thread in the Clockwork thread program. This instruction includes the necessary accounts and data required for the Clockwork thread program to process the update.
-## Questions: 
- 1. Question: What is the purpose of the `thread_update` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_update` function?
    Answer: The `thread_update` function is used to create an instruction for updating the settings of a thread in the Clockwork project.
 
 2. Question: What are the input parameters for the `thread_update` function?
@@ -27,4 +29,3 @@ In summary, the `thread_update.rs` file defines a function that creates an instr
 
 5. Question: What is the purpose of the `clockwork_thread_program::instruction::ThreadUpdate` struct and its usage in the `data` field of the `Instruction` struct?
    Answer: The `ThreadUpdate` struct is used to define the data required for updating a thread's settings. It is instantiated with the `settings` parameter and then serialized into the `data` field of the `Instruction` struct using the `data()` method.
-    

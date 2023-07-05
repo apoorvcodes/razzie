@@ -9,8 +9,10 @@ The `cargo-publish.sh` script is a Bash script used to automate the process of p
 4. Publish downstream bins and libs: This section publishes two downstream components - `clockwork-client` and `clockwork-cli`. These components are more likely to fail due to dependency issues with the Anchor framework. As with the previous sections, each component is published using the `cargo publish -p` command, followed by a `sleep 25` command to introduce a 25-second delay between each publish action.
 
 In summary, the `cargo-publish.sh` script automates the process of publishing Clockwork project components to crates.io by sequentially publishing shared libraries, programs, SDK, and downstream components with a 25-second delay between each publish action to ensure proper processing by the registry.
-## Questions: 
- 1. Question: What is the purpose of the `cargo-publish.sh` script?
+
+## Questions:
+
+1. Question: What is the purpose of the `cargo-publish.sh` script?
    Answer: The purpose of the `cargo-publish.sh` script is to publish various components of the Clockwork project, including shared libraries, programs, SDK, and downstream binaries and libraries, using the `cargo publish` command.
 
 2. Question: Why are there `sleep 25` commands between each `cargo publish` command?
@@ -24,4 +26,3 @@ In summary, the `cargo-publish.sh` script automates the process of publishing Cl
 
 5. Question: Is there any error handling or logging implemented in this script?
    Answer: There is no explicit error handling or logging implemented in this script. If a `cargo publish` command fails, the script will continue to execute the remaining commands without any indication of the failure.
-    

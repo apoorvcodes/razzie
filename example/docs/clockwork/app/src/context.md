@@ -7,8 +7,10 @@ The `User` struct has two public fields: `pubkey` and `account`. Both of these f
 2. `account`: This field is of type `Option<Account>` and represents the user's account on the Solana blockchain. The `Account` type is imported from the `solana_client_wasm::solana_sdk::account` module, which is a part of the Solana Client WebAssembly (Wasm) library. This library provides functionality for interacting with the Solana blockchain from a web browser using WebAssembly. The `Account` type contains information about the user's account, such as their current balance and any associated data.
 
 In summary, the `context.rs` file defines a `User` struct that represents a user on the Solana blockchain, with optional fields for their public key and account information. This file makes use of the Anchor and Solana Client Wasm libraries to provide the necessary types and functionality for working with the Solana platform.
-## Questions: 
- 1. Question: What is the purpose of the `User` struct in the context of the clockwork project?
+
+## Questions:
+
+1. Question: What is the purpose of the `User` struct in the context of the clockwork project?
    Answer: The `User` struct represents a user in the clockwork project, containing their public key and account information, both of which are optional.
 
 2. Question: Why are both `pubkey` and `account` fields in the `User` struct wrapped in `Option`?
@@ -22,4 +24,3 @@ In summary, the `context.rs` file defines a `User` struct that represents a user
 
 5. Question: Are there any methods or functions associated with the `User` struct in this file?
    Answer: In the provided code snippet, there are no methods or functions associated with the `User` struct. However, there might be additional code in the `context.rs` file or other files in the project that define methods or functions for the `User` struct.
-    

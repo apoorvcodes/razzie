@@ -9,8 +9,10 @@ The `connect_text` variable is set to display either the abbreviated public key 
 An `Abbreviated` trait is defined with a single method, `abbreviated()`, which returns a `String`. This trait is implemented for the `Pubkey` struct from the Solana library. The `abbreviated()` method takes a public key and returns a shortened version of it, displaying only the first four and last four characters, separated by an ellipsis.
 
 In summary, the `connect_button.rs` file defines a ConnectButton component that allows users to connect or disconnect their account in the Clockwork project. The component handles user interactions, updates the `User` context, and displays the connection status.
-## Questions: 
- 1. Question: What is the purpose of the `ConnectButton` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `ConnectButton` function?
    Answer: The `ConnectButton` function creates an interactive button element that connects or disconnects the user's account when clicked, depending on the current state of the user's account.
 
 2. Question: How does the `handle_click` closure work?
@@ -24,4 +26,3 @@ In summary, the `connect_button.rs` file defines a ConnectButton component that 
 
 5. Question: How is the `WasmClient` used in this code?
    Answer: The `WasmClient` is used to create a new client instance with a specified URL, which is then used to fetch the user's account information (using `client.get_account()`) when the user connects.
-    

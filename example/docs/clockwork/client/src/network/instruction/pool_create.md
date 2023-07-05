@@ -21,8 +21,10 @@ The function constructs an `Instruction` object with the following properties:
 - `data`: The serialized instruction data for creating a new pool, obtained by calling the `data()` method on a `PoolCreate` object from the `clockwork_network_program::instruction` module.
 
 In summary, the `pool_create.rs` file defines a function that creates an `Instruction` object for creating a new pool in the Clockwork network. This instruction can be used by a Solana client to send a transaction to the Solana blockchain, which will create the new pool and update the Clockwork network's state accordingly.
-## Questions: 
- 1. Question: What is the purpose of the `pool_create` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `pool_create` function?
    Answer: The `pool_create` function is used to create a new pool in the Clockwork project by generating an instruction with the necessary account metadata and program ID.
 
 2. Question: What are the input parameters for the `pool_create` function?
@@ -36,4 +38,3 @@ In summary, the `pool_create.rs` file defines a function that creates an `Instru
 
 5. Question: What is the significance of the `system_program::ID` in the `accounts` vector?
    Answer: The `system_program::ID` is included as a read-only account metadata in the `accounts` vector to indicate that the instruction interacts with the Solana system program, which is responsible for managing account creation and other low-level operations.
-    

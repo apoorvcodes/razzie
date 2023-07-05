@@ -7,8 +7,10 @@ The `handler` function takes a `Context<ThreadKickoff>` as input and returns a `
 The `next_timestamp` function is a helper function that takes an `i64` timestamp and a `String` schedule as input and returns an `Option<i64>`. It calculates the next scheduled timestamp after the given timestamp based on the provided schedule.
 
 In summary, the `thread_kickoff.rs` file is responsible for handling the kickoff of threads in the Clockwork project based on various triggers. It defines the `ThreadKickoff` struct and implements the `handler` function to process the kickoff of threads, updating the thread's `exec_context` and `next_instruction` fields as needed.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadKickoff` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadKickoff` struct?
    Answer: The `ThreadKickoff` struct defines the accounts required by the `thread_kickoff` instruction, including the signatory, the thread to kickoff, and the worker.
 
 2. Question: How does the `handler` function determine which trigger type to use?
@@ -22,4 +24,3 @@ In summary, the `thread_kickoff.rs` file is responsible for handling the kickoff
 
 5. Question: What happens when the trigger is active, and the code reaches the end of the `handler` function?
    Answer: If the trigger is active, the code updates the `next_instruction` field of the thread with the first instruction from the `instructions` list, reallocates the thread account using `thread.realloc()?`, and returns `Ok(())`.
-    

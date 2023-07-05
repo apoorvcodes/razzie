@@ -14,10 +14,12 @@ After declaring these sub-modules, the file then re-exports all the public items
 For example, if there is a function called `delete` in the `delete_snapshot` module, a developer can access it using `clockwork::delete()` instead of `clockwork::delete_snapshot::delete()`.
 
 In summary, the `mod.rs` file in the Clockwork project organizes and manages a set of related sub-modules, making it easier for developers to access and use the provided functionalities.
-## Questions: 
- 1. What is the purpose of each module in this code?
 
-   Each module in this code represents a specific functionality related to the clockwork project, such as deleting snapshots, distributing fees, incrementing epochs, processing unstakes, managing stake delegations, and taking snapshots.
+## Questions:
+
+1.  What is the purpose of each module in this code?
+
+Each module in this code represents a specific functionality related to the clockwork project, such as deleting snapshots, distributing fees, incrementing epochs, processing unstakes, managing stake delegations, and taking snapshots.
 
 2. Why are the modules declared as `pub mod`?
 
@@ -34,4 +36,3 @@ In summary, the `mod.rs` file in the Clockwork project organizes and manages a s
 5. How can I use the functions and types defined in these modules in my own code?
 
    To use the functions and types defined in these modules, you would need to import the clockwork library and then access the desired functionality using the appropriate module name or directly if the `pub use` statements are used. For example, you might write `use clockwork::distribute_fees::some_function;` or `use clockwork::some_function;` depending on how the library is structured.
-    

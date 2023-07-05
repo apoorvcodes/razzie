@@ -13,8 +13,10 @@ The `handler` function takes a `Context<DelegationCreate>` as its argument and p
 The `handler` function returns a `Result<()>` indicating the success or failure of the operation.
 
 In summary, the `delegation_create.rs` file is responsible for creating and initializing a new delegation account and updating the worker's total delegations counter. It uses various accounts to manage the state and associated tokens of the delegation.
-## Questions: 
- 1. Question: What is the purpose of the `DelegationCreate` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DelegationCreate` struct?
    Answer: The `DelegationCreate` struct defines the account types and constraints required for creating a new delegation in the Clockwork project.
 
 2. Question: How are the seeds for the `delegation` account generated?
@@ -28,4 +30,3 @@ In summary, the `delegation_create.rs` file is responsible for creating and init
 
 5. Question: How is the worker's total delegations counter incremented in the `handler` function?
    Answer: The worker's total delegations counter is incremented using the `checked_add` method, which ensures that the addition does not overflow, and then unwrapping the result to update the counter.
-    

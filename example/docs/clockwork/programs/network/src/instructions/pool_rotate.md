@@ -20,8 +20,10 @@ The `handler` function is the main entry point for the pool rotation process. It
 The `is_rotation_window_open` function checks if the rotation window is open for a given registry, snapshot, and snapshot frame. It takes references to the `Account<Registry>`, `Account<Snapshot>`, and `Account<SnapshotFrame>` as input and returns a `Result<bool>`. The function calculates the sample by taking the remainder of the registry nonce divided by the snapshot's total stake. If the sample is within the stake range of the snapshot frame, the function returns `true`; otherwise, it returns `false`.
 
 Note that there is a TODO comment at the beginning of the file, suggesting that the pool rotation should be made a function of the epoch pubkey, and workers should self-select into the delegate pool on deterministic epochs. If a worker is not active, they will not rotate into the pool, giving current workers extra time in the pool.
-## Questions: 
- 1. Question: What is the purpose of the `PoolRotate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `PoolRotate` struct and its associated fields?
    Answer: The `PoolRotate` struct is used to define the account information required for the pool rotation process. It includes fields for the configuration, pool, registry, signatory, snapshot, snapshot frame, and worker accounts.
 
 2. Question: What does the `handler` function do in this code?
@@ -35,4 +37,3 @@ Note that there is a TODO comment at the beginning of the file, suggesting that 
 
 5. Question: What error is raised if the worker is already in the pool?
    Answer: If the worker is already in the pool, the `ClockworkError::AlreadyInPool` error is raised.
-    

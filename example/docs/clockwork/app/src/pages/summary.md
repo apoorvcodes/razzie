@@ -7,5 +7,3 @@ The RSX (Rust Syntax eXtension) macro is used in these files to write HTML-like 
 Some files also interact with the Clockwork SDK or other libraries to fetch data or perform actions, such as creating a new secret or fetching thread information. These interactions are typically done asynchronously using hooks like `use_future` or utility functions.
 
 In summary, the `output/clockwork/app/src/pages` folder contains Rust files responsible for rendering different pages and components within the Clockwork project using the Dioxus library. The files define various pages and components, each with a main function that takes a `Scope` object and returns an `Element`. The RSX macro is used to write HTML-like syntax in Rust code, and CSS classes are used for styling. Some files also interact with the Clockwork SDK or other libraries to fetch data or perform actions.
-
-    

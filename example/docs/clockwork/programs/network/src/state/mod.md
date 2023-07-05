@@ -7,10 +7,12 @@ The code consists of two main sections:
 2. Re-exporting sub-modules: The `pub use` keyword is used to re-export the contents of each sub-module, making them publicly accessible to other parts of the codebase. This allows developers to use the functionality provided by these sub-modules without having to explicitly import them in their code. By re-exporting the sub-modules, the `mod.rs` file acts as a central hub for managing the project's sub-modules.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing the various sub-modules within the project. It declares and re-exports the sub-modules, making them accessible to other parts of the codebase. This file is essential for maintaining a clean and organized code structure, allowing developers to easily navigate and understand the project's structure.
-## Questions: 
- 1. What is the purpose of each module in the `clockwork` project?
 
-   Each module in the `clockwork` project handles a specific functionality, such as configuration, delegation, fees, penalties, pool management, registry, snapshots, unstaking, and worker management.
+## Questions:
+
+1.  What is the purpose of each module in the `clockwork` project?
+
+Each module in the `clockwork` project handles a specific functionality, such as configuration, delegation, fees, penalties, pool management, registry, snapshots, unstaking, and worker management.
 
 2. How are the modules organized and structured within the project?
 
@@ -27,4 +29,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 5. Are there any performance considerations or optimizations in the code?
 
    The provided code does not show any specific performance considerations or optimizations. However, it is expected that each module would be designed and implemented with performance in mind, considering factors such as memory usage, computational complexity, and concurrency.
-    

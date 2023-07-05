@@ -17,8 +17,10 @@ The `handler` function takes a `Context<Initialize>` as its argument and returns
 4. Initializes the `snapshot` account with an index of 0.
 
 Upon successful execution, the `handler` function returns `Ok(())`, indicating that the accounts have been initialized correctly. This file is essential for setting up the initial state of the Clockwork project and ensuring that the required accounts are in place for further operations.
-## Questions: 
- 1. Question: What is the purpose of the `Initialize` struct and its associated attributes?
+
+## Questions:
+
+1. Question: What is the purpose of the `Initialize` struct and its associated attributes?
    Answer: The `Initialize` struct is used to define the account requirements for the initialization process of the clockwork project. It contains various account attributes such as admin, config, mint, registry, snapshot, and system_program, which are used during the initialization process.
 
 2. Question: What is the role of the `#[account()]` macro in the code?
@@ -32,4 +34,3 @@ Upon successful execution, the `handler` function returns `Ok(())`, indicating t
 
 5. Question: What is the purpose of the `size_of` function used in the `space` attribute of the accounts?
    Answer: The `size_of` function is used to calculate the memory size required for storing the account data. It is used in the `space` attribute to allocate the necessary memory for each account during initialization.
-    

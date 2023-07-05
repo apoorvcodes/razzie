@@ -16,8 +16,10 @@ The `Instruction` object is created with the following fields:
 - `data`: The data for the `UnstakeProcess` instruction.
 
 The `handler` function returns the `ThreadResponse` object, which contains the `dynamic_instruction` field with the next instruction for the epoch thread. This allows the Clockwork protocol to continue processing the unstaking operation.
-## Questions: 
- 1. Question: What is the purpose of the `UnstakePreprocess` struct and its associated accounts?
+
+## Questions:
+
+1. Question: What is the purpose of the `UnstakePreprocess` struct and its associated accounts?
    Answer: The `UnstakePreprocess` struct is used to define the accounts required for the unstaking preprocessing step in the Clockwork project. It includes the config, registry, thread, and unstake accounts with their respective constraints.
 
 2. Question: What does the `handler` function do and what does it return?
@@ -31,4 +33,3 @@ The `handler` function returns the `ThreadResponse` object, which contains the `
 
 5. Question: What are the constraints on the `registry` account in the `UnstakePreprocess` struct?
    Answer: The `registry` account must have the same address as `Registry::pubkey()` and its `locked` field must be true. This ensures that the registry account being used is the correct one and that it is in a locked state.
-    

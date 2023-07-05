@@ -13,5 +13,3 @@ The `parser.rs` file is responsible for parsing command-line arguments and conve
 The `processor` subfolder contains code for processing various CLI commands and managing different aspects of the Clockwork network. Each file in the folder is responsible for a specific functionality, and the `mod.rs` file serves as the main module for processing CLI commands. The code in this folder is essential for developers to interact with and manage the Clockwork network.
 
 In summary, the `output/clockwork/cli/src` folder contains the source code for the Clockwork CLI application, which allows users to interact with the Clockwork network and manage various aspects. The code in this folder is essential for developers working on the project to understand the structure and usage of the CLI, as well as to properly configure and interact with the Clockwork network. The project uses popular Rust libraries like `clap`, `serde`, and `thiserror` to create a robust and user-friendly command-line interface.
-
-    

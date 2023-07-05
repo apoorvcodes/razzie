@@ -11,5 +11,3 @@ Finally, the generated code is converted back into a `TokenStream` using the `pr
 There is some commented-out code in the file, which seems to be related to another procedural macro called `Clockwork`. However, this code is not currently being used and is not relevant to the `TryFromData` macro.
 
 In summary, the `lib.rs` file in the `output/clockwork/macros/src` folder provides a custom derive macro called `TryFromData` that generates an implementation of the `TryFrom<Vec<u8>>` trait for a given struct, allowing it to be deserialized from a byte vector. This functionality is useful for converting binary data into structured data types and can be a valuable addition to the larger Clockwork project.
-
-    

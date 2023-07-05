@@ -13,5 +13,3 @@ The folder contains five files: `api_new.rs`, `initialize.rs`, `mod.rs`, `reques
 5. `request_new.rs`: This file is responsible for creating a new HTTP request instruction in the Clockwork Webhook Program. It takes parameters such as API key, caller, unique identifier, HTTP method, payer, and route to create a new `Instruction` object, which can be used by the Clockwork Webhook Program to process the HTTP request.
 
 In summary, the `instruction` folder plays a crucial role in the Clockwork project by providing the necessary functions and structures for creating and managing instructions related to the Clockwork Webhook Program. These instructions enable developers to interact with the system, create new APIs, initialize the program, and handle HTTP requests. Understanding the code in this folder is essential for developers working with the Clockwork project, as it provides a foundation for building and extending the system's functionality.
-
-    

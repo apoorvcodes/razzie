@@ -12,8 +12,10 @@ The `ThreadReset` struct has two associated attributes for the `thread` field:
 The `handler` function is the main entry point for the `thread_reset` instruction. It takes a `Context<ThreadReset>` as its argument and returns a `Result<()>`. Inside the function, the `thread` account is first retrieved from the context. Then, the `next_instruction` field of the thread is set to `None`, effectively resetting the thread's state. Finally, the function returns `Ok(())` to indicate successful execution.
 
 In summary, the `thread_reset.rs` file provides the implementation for resetting a thread's state in the Clockwork project. It defines the `ThreadReset` struct with the necessary account fields and attributes, as well as the `handler` function that performs the actual reset operation.
-## Questions: 
- 1. Question: What is the purpose of the `thread_reset` instruction?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_reset` instruction?
    Answer: The `thread_reset` instruction is used to reset the next instruction of a given thread, effectively pausing the thread.
 
 2. Question: What are the required accounts for the `ThreadReset` struct?
@@ -27,4 +29,3 @@ In summary, the `thread_reset.rs` file provides the implementation for resetting
 
 5. Question: What does the `handler` function do, and what is its return type?
    Answer: The `handler` function is the main function that executes the `thread_reset` instruction. It takes a `Context<ThreadReset>` as input and returns a `Result<()>`, indicating whether the operation was successful or not.
-    

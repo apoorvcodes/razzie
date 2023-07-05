@@ -5,8 +5,10 @@ The `NextAfterQuery` struct has an `initial_datetime` field, which is the starti
 The `PrevFromQuery` struct is similar to `NextAfterQuery`, but it's used to find the previous occurrence of a specific time unit before a given `DateTime`. It also has an `initial_datetime` field and boolean fields to track if it's the first occurrence of each time unit. The struct provides methods to get the upper bound of each time unit and reset the state of the struct for each time unit. The `from` method creates a new `PrevFromQuery` instance by subtracting one second from the given `DateTime`.
 
 Both structs use the `Ordinal` type from the `ordinal` module and the time unit types from the `time_unit` module, such as `DaysOfMonth`, `Hours`, `Minutes`, `Months`, `Seconds`, and `TimeUnitField`. The `chrono` crate is used for handling date and time operations, such as adding or subtracting durations from `DateTime` objects.
-## Questions: 
- 1. Question: What is the purpose of the `NextAfterQuery` and `PrevFromQuery` structs?
+
+## Questions:
+
+1. Question: What is the purpose of the `NextAfterQuery` and `PrevFromQuery` structs?
    Answer: The `NextAfterQuery` struct is used to find the next occurrence of a specified time unit after a given initial datetime, while the `PrevFromQuery` struct is used to find the previous occurrence of a specified time unit before a given initial datetime.
 
 2. Question: What is the role of the `TimeZone` trait bound on the generic type `Z` in both structs?
@@ -20,4 +22,3 @@ Both structs use the `Ordinal` type from the `ordinal` module and the time unit 
 
 5. Question: What is the purpose of the `TODO` comment at the beginning of the code?
    Answer: The `TODO` comment suggests that there might be a possibility to refactor the code and use a single query struct instead of having separate `NextAfterQuery` and `PrevFromQuery` structs. This indicates that the developer might be considering future improvements to the code structure.
-    

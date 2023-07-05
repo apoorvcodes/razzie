@@ -12,8 +12,10 @@ In this specific `mod.rs` file, there are six sub-modules being declared and re-
 After declaring these sub-modules, the `mod.rs` file re-exports all items from each sub-module using the `pub use` keyword. This makes the items from each sub-module accessible from the parent module, allowing developers to import and use them directly without needing to reference the sub-modules individually.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing six sub-modules related to snapshots, fees, epochs, unstaking, staking delegations, and taking snapshots. It also re-exports all items from these sub-modules, making them accessible from the parent module.
-## Questions: 
- 1. Question: What is the purpose of each module in this file?
+
+## Questions:
+
+1. Question: What is the purpose of each module in this file?
    Answer: Each module represents a specific functionality in the clockwork project, such as deleting snapshots, distributing fees, incrementing epochs, processing unstakes, managing stake delegations, and taking snapshots.
 
 2. Question: How are the modules organized in the project structure?
@@ -27,4 +29,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 
 5. Question: Are there any tests available for these modules?
    Answer: The code provided does not show any tests, but there might be separate test files in the project structure that test the functionality of each module.
-    

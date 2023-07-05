@@ -13,8 +13,10 @@ The `WebhookObserver` has three methods:
 The `WebhookObserver` also implements the `Debug` trait, which provides a custom implementation of the `fmt` method. This method returns a formatted string representation of the `WebhookObserver` for debugging purposes.
 
 In summary, the `webhook.rs` file defines a `WebhookObserver` struct that manages a set of webhook public keys and provides methods to observe and process webhooks in a thread-safe manner.
-## Questions: 
- 1. Question: What is the purpose of the `WebhookObserver` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `WebhookObserver` struct?
    Answer: The `WebhookObserver` struct is used to manage a set of webhooks that can be processed. It provides methods to observe and process webhooks based on their public keys.
 
 2. Question: How does the `observe_webhook` method work?
@@ -28,4 +30,3 @@ In summary, the `webhook.rs` file defines a `WebhookObserver` struct that manage
 
 5. Question: What is the purpose of the `RwLock` used in the `webhooks` field of the `WebhookObserver` struct?
    Answer: The `RwLock` is used to provide thread-safe read and write access to the `webhooks` field, allowing multiple readers or a single writer to access the data concurrently.
-    

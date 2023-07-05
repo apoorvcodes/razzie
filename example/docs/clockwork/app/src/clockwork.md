@@ -9,8 +9,10 @@ The file contains three main functions:
 3. `simulate_thread(thread: Thread)`: This function simulates the execution of a thread. It connects to the Helius API using an API key and constructs a `WasmClient` object. It then creates a `Transaction` object with specific instructions, such as `ComputeBudgetInstruction` and `ThreadKickoff` or `ThreadExec`. The function simulates the transaction using the `simulate_transaction()` method and returns a `ClientResult` object containing an `Option<TransactionError>` and an `Option<Vec<String>>` for logs.
 
 In summary, the `clockwork.rs` file provides functions to interact with the Clockwork SDK and the Helius API, allowing developers to retrieve and simulate threads.
-## Questions: 
- 1. Question: What is the purpose of the `get_threads` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `get_threads` function?
    Answer: The `get_threads` function retrieves a list of threads and their associated accounts from the Clockwork program on the Helius API, using the provided API key.
 
 2. Question: How does the `get_thread` function work?
@@ -24,4 +26,3 @@ In summary, the `clockwork.rs` file provides functions to interact with the Cloc
 
 5. Question: What is the purpose of the `first_instruction` variable in the `simulate_thread` function?
    Answer: The `first_instruction` variable is used to determine the appropriate instruction to execute based on the state of the input `Thread`. If the thread has a `next_instruction`, the `ThreadKickoff` instruction is used; otherwise, the `ThreadExec` instruction is used.
-    

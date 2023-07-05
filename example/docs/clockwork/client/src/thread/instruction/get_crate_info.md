@@ -9,8 +9,10 @@ The main function in this file is `get_crate_info()`, which returns an `Instruct
 3. `data`: This is set to the serialized data of a `GetCrateInfo` struct from the `clockwork_thread_program::instruction` module. This data will be used by the on-chain program to determine which operation to perform and any necessary parameters.
 
 In summary, the `get_crate_info.rs` file defines a function that creates an instruction to fetch crate information from the Clockwork Thread Program on the Solana blockchain. The instruction requires read-only access to the system program account and includes serialized data from a `GetCrateInfo` struct to specify the operation and its parameters.
-## Questions: 
- 1. Question: What is the purpose of the `get_crate_info` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `get_crate_info` function?
    Answer: The `get_crate_info` function creates and returns an `Instruction` object with the necessary information to interact with the Clockwork program and retrieve crate information.
 
 2. Question: What is the `clockwork_thread_program::ID` used for in the `Instruction` struct?
@@ -24,4 +26,3 @@ In summary, the `get_crate_info.rs` file defines a function that creates an inst
 
 5. Question: What is the purpose of the `InstructionData` trait in the `anchor_lang` import statement?
    Answer: The `InstructionData` trait is used to define the serialization and deserialization methods for instruction data, which are required for creating and processing instructions in the Clockwork program.
-    

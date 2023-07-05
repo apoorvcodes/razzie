@@ -14,8 +14,10 @@ The `handler` function is the main entry point for updating a worker. It takes a
 4. Check if additional lamports are required to maintain rent-exemption for the worker account. If so, transfer the necessary lamports from the `authority` account to the `worker` account using Solana's `transfer` function.
 
 The `handler` function returns a `Result<()>` indicating the success or failure of the worker update process.
-## Questions: 
- 1. Question: What is the purpose of the `WorkerUpdate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `WorkerUpdate` struct and its associated fields?
    Answer: The `WorkerUpdate` struct is used to define the account inputs required for the worker update operation. It includes fields for the authority (signer), system program, and worker account, with specific constraints on each account.
 
 2. Question: How does the `handler` function update the worker and what are the input parameters?
@@ -29,4 +31,3 @@ The `handler` function returns a `Result<()>` indicating the success or failure 
 
 5. Question: What is the purpose of the `use` statement at the beginning of the code?
    Answer: The `use` statement imports the necessary modules and types from external crates and the current crate, making them available for use within the `worker_update.rs` file.
-    

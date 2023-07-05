@@ -14,8 +14,10 @@ The `handler` function takes a `Context<PenaltyClaim>` as input and returns a `R
 3. Update the lamport balances of the `penalty` and `pay_to` accounts by subtracting the claimable balance from the penalty account and adding it to the pay_to account.
 
 This file is essential for managing penalty claims in the Clockwork project. Developers working with this file should be familiar with the Clockwork project's overall structure and the purpose of penalty claims. They should also understand the Anchor framework, as it is used for defining accounts and handling errors.
-## Questions: 
- 1. Question: What is the purpose of the `PenaltyClaim` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `PenaltyClaim` struct and its associated fields?
    Answer: The `PenaltyClaim` struct represents the account information required for claiming a penalty. It includes fields for the admin, config, pay_to, and penalty accounts.
 
 2. Question: How is the `handler` function used and what does it return?
@@ -29,4 +31,3 @@ This file is essential for managing penalty claims in the Clockwork project. Dev
 
 5. Question: How are the penalty and pay_to account balances updated in the `handler` function?
    Answer: The penalty account's balance is reduced by the claimable balance, and the pay_to account's balance is increased by the claimable balance using the `try_borrow_mut_lamports` method.
-    

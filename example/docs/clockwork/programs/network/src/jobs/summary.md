@@ -13,5 +13,3 @@ The `stake_delegations` sub-module is responsible for managing stake delegations
 The `take_snapshot` sub-module contains the implementation of taking a snapshot of the system state. It involves creating snapshot entries for delegations, initializing snapshot frames for workers, and creating a new snapshot of the system state. The folder contains four Rust files: `create_entry.rs`, `create_frame.rs`, `create_snapshot.rs`, and `job.rs`, as well as a `mod.rs` file for module organization and exporting.
 
 In summary, the code in the `output/clockwork/programs/network/src/jobs` folder is responsible for implementing various job functionalities related to the system state in the Clockwork project. The folder is organized into several sub-modules, each responsible for a specific functionality. This organization makes it easier for developers to navigate and understand the project, allowing them to efficiently maintain and manage the system state.
-
-    

@@ -13,8 +13,10 @@ The function then updates the execution context of the thread. If the `exec_cont
 Finally, the function returns `Ok(())` to indicate successful completion.
 
 In summary, the `thread_resume.rs` file provides the implementation for resuming a paused thread and updating its execution context in the Clockwork project. It defines the `ThreadResume` struct with necessary account constraints and implements the `handler` function to perform the resuming operation.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadResume` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadResume` struct and its fields?
    Answer: The `ThreadResume` struct represents the accounts required by the `thread_resume` instruction. It has two fields: `authority`, which represents the owner of the thread, and `thread`, which represents the thread to be resumed.
 
 2. Question: What is the purpose of the `handler` function and its input parameter `ctx`?
@@ -28,4 +30,3 @@ In summary, the `thread_resume.rs` file provides the implementation for resuming
 
 5. Question: What is the purpose of the `Ok(())` statement at the end of the `handler` function?
    Answer: The `Ok(())` statement indicates that the function has completed successfully without any errors. It returns a `Result` type with an empty tuple, signaling that the thread has been successfully resumed.
-    

@@ -7,5 +7,3 @@ Inside the `<svg>` element, there are multiple `<path>` elements, each represent
 In the context of the larger Clockwork project, the `CLOCKWORK.svg` file serves as a reusable asset that can be included in various parts of the application, such as the header, footer, or any other section where the Clockwork logo is required. Since it is an SVG file, developers can easily scale the logo to fit different screen sizes and resolutions without losing quality. This is particularly important for responsive web design, where the logo may need to be displayed at various sizes depending on the user's device.
 
 In summary, the `output/clockwork/app/img/CLOCKWORK.svg` file is an essential asset in the Clockwork project, containing the vector representation of the Clockwork logo. The logo is composed of several white text characters and shapes, defined by a series of `<path>` elements with specific coordinates and commands. Developers can use this file to include the Clockwork logo in their projects, ensuring that the logo remains crisp and clear at any size or resolution.
-
-    

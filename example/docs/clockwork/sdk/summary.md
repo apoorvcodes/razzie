@@ -11,5 +11,3 @@ The file is organized into several sections:
 4. `cpi` module: This module provides a set of functions that act as wrappers for the Cross-Program Invocation (CPI) functions in the `clockwork_thread_program::cpi` module. These functions include `thread_create`, `thread_delete`, `thread_pause`, `thread_resume`, `thread_reset`, `thread_update`, and `thread_withdraw`. Each function takes a `CpiContext` and additional arguments as needed, and then calls the corresponding function from the `clockwork_thread_program::cpi` module. By providing these wrapper functions, the library simplifies the process of invoking CPI functions in the Clockwork system.
 
 In summary, the `lib.rs` file in the Clockwork project serves as a convenient entry point for accessing various components of the `clockwork_thread_program` crate. It re-exports types and functions related to the state, utilities, and CPI functionality, making it easier for developers to use these components in their projects. This file plays a crucial role in the overall organization and usability of the Clockwork library, and it is essential for developers who want to interact with the Clockwork system.
-
-    

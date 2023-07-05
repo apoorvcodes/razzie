@@ -10,8 +10,10 @@ There are four sub-modules declared in this file:
 The `pub use` statements in the file are re-exporting the contents of each sub-module, making them accessible to other modules within the Clockwork project. This means that when a developer imports the parent module containing this `mod.rs` file, they will also have access to the structs, functions, and other items defined in the sub-modules.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing the public interface of its sub-modules, making it easier for developers to access and use the functionality provided by the `job`, `process_entry`, `process_frame`, and `process_snapshot` modules.
-## Questions: 
- 1. What is the purpose of the `clockwork` project?
+
+## Questions:
+
+1. What is the purpose of the `clockwork` project?
    A super smart developer might want to know the overall goal or functionality of the `clockwork` project to better understand the context of the code in `mod.rs`.
 
 2. What are the responsibilities of each module (job, process_entry, process_frame, process_snapshot)?
@@ -25,4 +27,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 
 5. Is there any documentation or examples available for using these modules?
    A developer might want to know if there is any documentation or examples available for using these modules to better understand how to use them and integrate them into their own code.
-    

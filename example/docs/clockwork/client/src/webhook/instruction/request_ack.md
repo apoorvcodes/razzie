@@ -17,8 +17,10 @@ The `request_ack()` function returns an `Instruction` object, which is a Solana 
 3. `data`: The instruction data is set to the serialized data of a `RequestAck` object from the Clockwork Webhook Program.
 
 In summary, the `request_ack.rs` file is responsible for creating a Solana instruction to request an acknowledgement from a worker in the Clockwork system. It uses the `anchor_lang` library and takes four public keys as input to generate the instruction.
-## Questions: 
- 1. Question: What is the purpose of the `request_ack` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `request_ack` function?
    Answer: The `request_ack` function is used to create an Instruction for requesting an acknowledgement in the Clockwork project, taking in the ack_authority, caller, request, and worker public keys as input parameters.
 
 2. Question: What are the `config_pubkey` and `fee_pubkey` variables used for?
@@ -32,4 +34,3 @@ In summary, the `request_ack.rs` file is responsible for creating a Solana instr
 
 5. Question: How is the `system_program::ID` and `sysvar::clock::ID` used in the `request_ack` function?
    Answer: The `system_program::ID` and `sysvar::clock::ID` are used as read-only account metadata in the Instruction, providing access to the system program and clock sysvar for the Clockwork project.
-    

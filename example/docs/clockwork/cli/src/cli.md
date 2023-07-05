@@ -7,8 +7,10 @@ The `app()` function creates a new `Command` object called "Clockwork" and sets 
 For example, the "config" subcommand has two subcommands: "get" and "set". The "set" subcommand has three arguments: "admin", "epoch_thread", and "hasher_thread". Similarly, the "thread" subcommand has multiple subcommands like "create", "delete", "get", "pause", "resume", "reset", and "update", each with its own set of arguments.
 
 The `app()` function returns the fully constructed `Command` object, which can be used by the main application to parse command-line arguments and execute the appropriate actions based on the user's input.
-## Questions: 
- 1. Question: What is the purpose of the `CliCommand` enum?
+
+## Questions:
+
+1. Question: What is the purpose of the `CliCommand` enum?
    Answer: The `CliCommand` enum represents the various commands that can be executed through the command-line interface (CLI) for the Clockwork project. Each variant corresponds to a specific command or subcommand with its associated parameters.
 
 2. Question: How are the command-line arguments parsed and mapped to the `CliCommand` enum?
@@ -27,4 +29,3 @@ The `app()` function returns the fully constructed `Command` object, which can b
    - `clockwork_client::thread::state::{SerializableInstruction, Trigger}`: Types related to thread state from the Clockwork client.
    - `clockwork_client::webhook::state::HttpMethod`: A type representing HTTP methods for webhooks from the Clockwork client.
    - `solana_sdk::{pubkey::Pubkey, signature::Keypair}`: Types from the Solana SDK for working with public keys and keypairs.
-    

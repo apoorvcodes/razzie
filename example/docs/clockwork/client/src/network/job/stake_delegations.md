@@ -17,8 +17,10 @@ The `Instruction` object created in this function has the following properties:
 3. `data`: This is the serialized data of the `StakeDelegationsJob` struct from the `clockwork_network_program::instruction` module. This data is used by the Clockwork network program to process the stake delegation instruction.
 
 In summary, the `stake_delegations.rs` file is responsible for creating an instruction to handle stake delegations in the Clockwork network program. It takes a thread's public key as input and returns an instruction object with the necessary account metadata and data for the program to process the stake delegation.
-## Questions: 
- 1. Question: What is the purpose of the `stake_delegations` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `stake_delegations` function?
    Answer: The `stake_delegations` function creates an `Instruction` for the stake delegations job in the Clockwork network program.
 
 2. Question: What are the dependencies being imported at the beginning of the code?
@@ -32,4 +34,3 @@ In summary, the `stake_delegations.rs` file is responsible for creating an instr
 
 5. Question: How is the `data` field of the `Instruction` struct being populated?
    Answer: The `data` field is populated using the `data()` method of the `clockwork_network_program::instruction::StakeDelegationsJob` struct, which serializes the instruction data.
-    

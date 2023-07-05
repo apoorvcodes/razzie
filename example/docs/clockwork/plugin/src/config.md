@@ -5,6 +5,7 @@ The file starts by importing the necessary modules and libraries, such as `serde
 Two static variables are defined: `DEFAULT_TRANSACTION_TIMEOUT_THRESHOLD` with a value of 150 and `DEFAULT_THREAD_COUNT` with a value of 10. These variables represent the default values for the transaction timeout threshold and the number of threads, respectively.
 
 The `PluginConfig` struct is defined with the following fields:
+
 - `keypath`: An optional string representing the path to the key file.
 - `sentry_url`: An optional string representing the URL of the Sentry service.
 - `thread_count`: A usize representing the number of threads to be used.
@@ -14,8 +15,10 @@ The `PluginConfig` struct is defined with the following fields:
 The `Default` trait is implemented for `PluginConfig`, providing a default configuration with `keypath` and `sentry_url` set to `None`, `transaction_timeout_threshold` set to the default value of 150, `thread_count` set to the default value of 10, and `worker_id` set to 0.
 
 The `PluginConfig` struct also has a method called `read_from`, which takes a generic parameter `P` that implements the `AsRef<Path>` trait. This method is responsible for reading the configuration from a JSON file. It opens the file, deserializes the JSON data into a `PluginConfig` instance, and returns the instance wrapped in a `PluginResult`. If there is an error during deserialization, a `GeyserPluginError::ConfigFileReadError` is returned with the error message.
-## Questions: 
- 1. Question: What is the purpose of the `PluginConfig` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `PluginConfig` struct?
    Answer: The `PluginConfig` struct is used to store the configuration settings for the clockwork project, such as keypath, sentry_url, thread_count, transaction_timeout_threshold, and worker_id.
 
 2. Question: How does the `read_from` function work and what does it return?
@@ -29,4 +32,3 @@ The `PluginConfig` struct also has a method called `read_from`, which takes a ge
 
 5. Question: What are the possible errors that can be returned by the `read_from` function?
    Answer: The `read_from` function can return a `GeyserPluginError::ConfigFileReadError` if there is an issue with reading the configuration file or deserializing its contents into a `PluginConfig` instance.
-    

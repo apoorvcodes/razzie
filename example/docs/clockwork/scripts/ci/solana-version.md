@@ -9,8 +9,10 @@ Once inside the `plugin` folder, the script uses the `cargo read-manifest` comma
 The `jq` command is used to filter and extract the required information from the JSON output. Specifically, it looks for the dependency with the name `"solana-geyser-plugin-interface"` using the expression `'.dependencies[] | select(.name == "solana-geyser-plugin-interface")'`. Once the desired dependency is found, the script extracts the version requirement (`.req`) and prints it to the console using the `-r` flag, which outputs raw strings instead of JSON-encoded strings.
 
 In summary, the `solana-version.sh` script is a useful tool for developers working on the Clockwork project, as it allows them to quickly and easily determine the version of Solana being used. This information can be crucial for ensuring compatibility and debugging issues related to the Solana dependency.
-## Questions: 
- 1. Question: What is the purpose of the `#!/usr/bin/env bash` line at the beginning of the script?
+
+## Questions:
+
+1. Question: What is the purpose of the `#!/usr/bin/env bash` line at the beginning of the script?
    Answer: This line is called a shebang, and it specifies the interpreter for running the script, which in this case is the Bash shell.
 
 2. Question: What does the `set -e` command do in this script?
@@ -24,4 +26,3 @@ In summary, the `solana-version.sh` script is a useful tool for developers worki
 
 5. Question: How does the `jq -r '.dependencies[] | select(.name == "solana-geyser-plugin-interface") | .req'` command work, and what is its purpose in the script?
    Answer: This command uses the `jq` tool to parse the JSON output from `cargo read-manifest`. It filters the dependencies array to find the one with the name "solana-geyser-plugin-interface" and then extracts the value of the "req" field. The purpose of this command is to print the version requirement of the "solana-geyser-plugin-interface" dependency.
-    

@@ -13,8 +13,10 @@ The `config.json` file is a configuration file for the Clockwork project, which 
    This setting specifies the number of worker threads that the application should use for parallel processing. The value is set to 10, which means that the application will create and utilize 10 separate threads to perform various tasks concurrently. This can significantly improve the performance and efficiency of the application, especially on systems with multiple CPU cores.
 
 In summary, the `config.json` file is a crucial part of the Clockwork project, as it contains essential settings and parameters that impact the application's behavior and performance. Developers working on the project should be familiar with the purpose and usage of each setting in this file to ensure the correct configuration and optimal performance of the application.
-## Questions: 
- 1. Question: What is the purpose of the "libpath" key in the configuration file?
+
+## Questions:
+
+1. Question: What is the purpose of the "libpath" key in the configuration file?
    Answer: The "libpath" key specifies the path to the dynamic library file for the clockwork plugin, which is likely used for extending or customizing the functionality of the project.
 
 2. Question: What does the "keypath" key represent in the configuration file?
@@ -28,4 +30,3 @@ In summary, the `config.json` file is a crucial part of the Clockwork project, a
 
 5. Question: Are there any other configuration keys that might be relevant for this project, or is this the complete set of configuration options?
    Answer: This code snippet only shows a subset of the configuration options, and there might be other keys relevant to the project depending on its specific requirements and features.
-    

@@ -7,8 +7,10 @@ The code in this file consists of two lines:
 2. `pub use job::*;`: This line re-exports all the public items (such as structs, enums, functions, etc.) defined in the `job` submodule. By using the `*` wildcard, it ensures that any public item within the `job` submodule is made available to other modules that import this main module. This is useful for simplifying the import statements in other parts of the project, as they can directly access the items from the `job` submodule without having to specify the full path.
 
 In summary, the `mod.rs` file in the clockwork project is responsible for organizing and publicly exporting the `job` submodule and its contents. This allows other parts of the project to easily access and use the items defined within the `job` submodule.
-## Questions: 
- 1. What is the purpose of the `clockwork` project?
+
+## Questions:
+
+1. What is the purpose of the `clockwork` project?
    A super smart developer might want to know the overall goal or functionality of the project to better understand the context of the code in `mod.rs`.
 
 2. What does the `job` module contain?
@@ -22,4 +24,3 @@ In summary, the `mod.rs` file in the clockwork project is responsible for organi
 
 5. Are there any specific naming conventions or coding standards followed in the `clockwork` project?
    A super smart developer might want to know if there are any specific coding standards or naming conventions followed in the project, to ensure consistency and maintainability of the code.
-    

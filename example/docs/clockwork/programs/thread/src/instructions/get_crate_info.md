@@ -9,10 +9,12 @@ The `handler` function is the main entry point for the `get_crate_info` instruct
 A new `CrateInfo` instance is created with the `spec` and `blob` variables, and the `msg!` macro is used to log the `CrateInfo` as a message. Finally, the function returns the `CrateInfo` instance wrapped in an `Ok` variant of the `Result` type.
 
 In summary, the `get_crate_info.rs` file defines the `GetCrateInfo` struct and the `handler` function for the `get_crate_info` instruction. The purpose of this instruction is to return a `CrateInfo` instance containing the specification URL and an empty blob string.
-## Questions: 
- 1. Question: What is the purpose of the `GetCrateInfo` struct and why is the `system_program` field included?
 
-   Answer: The `GetCrateInfo` struct is used to define the accounts required for the `get_crate_info` instruction. The `system_program` field is included because Anchor does not support empty structs, as mentioned in the comments. Although the system program is not actually used, it is included to satisfy Anchor's requirements.
+## Questions:
+
+1.  Question: What is the purpose of the `GetCrateInfo` struct and why is the `system_program` field included?
+
+Answer: The `GetCrateInfo` struct is used to define the accounts required for the `get_crate_info` instruction. The `system_program` field is included because Anchor does not support empty structs, as mentioned in the comments. Although the system program is not actually used, it is included to satisfy Anchor's requirements.
 
 2. Question: What does the `handler` function do and what does it return?
 
@@ -29,4 +31,3 @@ In summary, the `get_crate_info.rs` file defines the `GetCrateInfo` struct and t
 5. Question: Why is the `blob` field in the `CrateInfo` struct initialized with an empty string?
 
    Answer: The `blob` field is initialized with an empty string because it is not used in this specific implementation. It is included in the struct for potential future use or to satisfy the requirements of the `CrateInfo` struct.
-    

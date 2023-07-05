@@ -16,8 +16,10 @@ The `mod.rs` file is part of the Clockwork project and serves as a module declar
 In addition to declaring these sub-modules, the `mod.rs` file also re-exports their contents using the `pub use` keyword. This allows other parts of the Clockwork project to access the functionality provided by these sub-modules without having to explicitly import each one individually. Instead, they can simply import the top-level module containing this `mod.rs` file, and all the sub-modules' contents will be available for use.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing the various sub-modules related to the project's functionality. It declares and re-exports the contents of these sub-modules, making it easy for other parts of the project to access and use their functionality.
-## Questions: 
- 1. Question: What is the purpose of each module in this file?
+
+## Questions:
+
+1. Question: What is the purpose of each module in this file?
    Answer: Each module represents a specific functionality or operation related to the clockwork project, such as creating or updating delegations, pools, and workers, as well as handling registry and configuration updates.
 
 2. Question: Are there any dependencies between these modules?
@@ -31,4 +33,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 
 5. Question: How are these modules used by other parts of the clockwork project?
    Answer: The `pub use` statements re-export the contents of each module, making them available for other parts of the project to import and use.
-    

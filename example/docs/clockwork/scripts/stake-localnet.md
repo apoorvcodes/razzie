@@ -9,8 +9,10 @@ The `stake-localnet.sh` script is a part of the Clockwork project and is respons
 4. `cargo run -- node stake 100000000000 $(solana address -k ../test-ledger/validator-keypair.json)`: This command stakes the local node with 100 tokens (100,000,000,000 lamports) on the Clockwork network. The `node stake` command is followed by the staking amount and the validator's public key, which is obtained using the `solana address` command with the `-k` flag and the `validator-keypair.json` file as an argument.
 
 In summary, the `stake-localnet.sh` script is used to register and stake a local node as a validator on the Clockwork network. It assumes that the necessary tools and files are located in the `cli` folder and the `validator-keypair.json` file is in the `test-ledger` directory. The script stakes the local node with 100 tokens and introduces a 2-second delay between the registration and staking processes to ensure proper execution.
-## Questions: 
- 1. Question: What is the purpose of the `stake-localnet.sh` script?
+
+## Questions:
+
+1. Question: What is the purpose of the `stake-localnet.sh` script?
    Answer: The purpose of the `stake-localnet.sh` script is to stake a local node with the Clockwork network.
 
 2. Question: What does the `cd cli` command do?
@@ -24,4 +26,3 @@ In summary, the `stake-localnet.sh` script is used to register and stake a local
 
 5. Question: How is the staking amount and validator keypair specified in the script?
    Answer: The staking amount is specified as 100000000000 (100 tokens) in the `cargo run -- node stake` command, and the validator keypair is specified using the `../test-ledger/validator-keypair.json` file path in both the `node register` and `solana address` commands.
-    

@@ -9,8 +9,10 @@ Next, the webhook account is initialized with the provided details, such as the 
 Finally, the function transfers the `WEBHOOK_FEE` from the payer's account to the webhook's account using the `transfer` function. This fee is held in escrow within the webhook account.
 
 In summary, the `webhook_create.rs` file is responsible for creating a new webhook with the provided details and transferring the required fee from the payer's account to the webhook's account.
-## Questions: 
- 1. Question: What is the purpose of the `WEBHOOK_FEE` constant?
+
+## Questions:
+
+1. Question: What is the purpose of the `WEBHOOK_FEE` constant?
    Answer: The `WEBHOOK_FEE` constant is used to define the fee amount (1,000,000) that will be transferred into the webhook account to hold in escrow when a webhook is created.
 
 2. Question: What are the input parameters for the `WebhookCreate` struct?
@@ -24,4 +26,3 @@ In summary, the `webhook_create.rs` file is responsible for creating a new webho
 
 5. Question: What is the return type of the `handler` function and what does it signify?
    Answer: The return type of the `handler` function is `Result<()>`. It signifies that the function will return either an empty tuple (Ok(())) on successful execution or an error (Err) if any issues occur during the process.
-    

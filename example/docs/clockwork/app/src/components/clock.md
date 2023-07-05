@@ -7,8 +7,10 @@ The `Clock` function takes a `Scope` as an argument and returns an `Element`. It
 The `use_future` function is used to create an asynchronous loop that continuously updates the state variables. It clones the state variables and creates a new `WasmClient` instance with a specified URL to connect to the Solana blockchain. Inside the loop, the `blockhash`, `slot`, and `time` variables are updated with the latest data from the Solana blockchain and the current time. The loop waits for 1000 milliseconds (1 second) before repeating the process.
 
 The `cx.render` function is used to create the HTML structure for the Clock component. It creates a `div` element with a fixed position at the bottom-right corner of the page and some padding. Inside the `div`, a `Link` component is used to create a hyperlink to the Solana block explorer for the current slot. The link displays the block number, slot, and time in RFC3339 format, and opens in a new tab when clicked. The link also has a hover effect that underlines the text.
-## Questions: 
- 1. Question: What is the purpose of the `Clock` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `Clock` function?
    Answer: The `Clock` function is responsible for creating an Element that displays the latest blockhash, slot, and time, and updates these values every second.
 
 2. Question: How does the code handle updating the blockhash, slot, and time values?
@@ -22,4 +24,3 @@ The `cx.render` function is used to create the HTML structure for the Clock comp
 
 5. Question: What is the purpose of the `gloo_timers::future::TimeoutFuture::new(1000).await` line?
    Answer: This line creates a timer that waits for 1000 milliseconds (1 second) before continuing the loop, ensuring that the blockhash, slot, and time values are updated every second.
-    

@@ -9,5 +9,3 @@ The `snapshot_entry.rs` file defines the structure and functionality of a Snapsh
 The `mod.rs` file serves as the main module file for organizing and managing the sub-modules within the project. It declares and re-exports the sub-modules, making them accessible to other parts of the codebase.
 
 In summary, the `state` folder in the Clockwork project contains the core data structures and their associated behavior for managing the state of the application. These data structures are essential for maintaining a clean and organized code structure, allowing developers to easily navigate and understand the project's structure. The folder consists of 11 Rust files, each defining a specific data structure, and a `mod.rs` file that serves as the main module file for organizing and managing the sub-modules.
-
-    

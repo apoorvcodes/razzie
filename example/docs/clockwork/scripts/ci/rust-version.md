@@ -29,8 +29,10 @@ After setting the environment variables, developers can build the project using 
 $ cargo +"$rust_stable" build
 $ cargo +"$rust_nightly" build
 ```
-## Questions: 
- 1. Question: What is the purpose of this script?
+
+## Questions:
+
+1. Question: What is the purpose of this script?
    Answer: The purpose of this script is to manage Rust versions for use in a CI environment, allowing users to easily switch between stable and nightly Rust versions.
 
 2. Question: How does the script determine the stable and nightly Rust versions to use?
@@ -44,4 +46,3 @@ $ cargo +"$rust_nightly" build
 
 5. Question: How can a developer build their project with either the stable or nightly Rust version?
    Answer: After sourcing the script, a developer can use the `cargo +"$rust_stable"` or `cargo +"$rust_nightly"` commands to build their project with the specified Rust version. For example, running `cargo +"$rust_stable" build` will build the project using the stable Rust version.
-    

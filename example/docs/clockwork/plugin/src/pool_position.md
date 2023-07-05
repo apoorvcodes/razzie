@@ -12,10 +12,12 @@ The `PoolPosition` structure also derives the `Clone` and `Debug` traits, allowi
 Next, the `Default` trait is implemented for the `PoolPosition` structure. This trait provides a default constructor for the structure, which initializes its fields with default values. In this case, the `default()` function sets the `current_position` field to `None` and initializes the `workers` field as an empty vector.
 
 In summary, the `pool_position.rs` file defines a `PoolPosition` structure that stores information about the current position in a pool and its associated workers. It also provides a default implementation for the structure, allowing it to be easily created and initialized with default values. This file is an essential part of the Clockwork project, as it helps manage the state of the pool and its workers.
-## Questions: 
- 1. What is the purpose of the `PoolPosition` struct?
 
-   The `PoolPosition` struct represents a position in a pool, containing an optional current position and a vector of workers associated with that position.
+## Questions:
+
+1.  What is the purpose of the `PoolPosition` struct?
+
+The `PoolPosition` struct represents a position in a pool, containing an optional current position and a vector of workers associated with that position.
 
 2. What is the significance of the `Option<u64>` type for the `current_position` field?
 
@@ -32,4 +34,3 @@ In summary, the `pool_position.rs` file defines a `PoolPosition` structure that 
 5. What are the default values for the fields of the `PoolPosition` struct when using the `Default` implementation?
 
    When using the `Default` implementation, the `current_position` field is set to `None`, and the `workers` field is initialized as an empty vector.
-    

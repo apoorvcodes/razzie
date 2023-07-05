@@ -13,8 +13,10 @@ The `config_update` function returns an `Instruction` object, which is a data st
 3. `data`: The serialized data of the `ConfigUpdate` instruction, which is created using the `clockwork_network_program::instruction::ConfigUpdate` struct and the provided `settings`. The `data` method is called on this struct to obtain the serialized data.
 
 In summary, the `config_update.rs` file is responsible for creating a Solana instruction to update the configuration settings of the Clockwork network program. It does this by defining a `config_update` function that takes the administrator's public key and the new configuration settings as input and returns an `Instruction` object with the necessary data.
-## Questions: 
- 1. Question: What is the purpose of the `config_update` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `config_update` function?
    Answer: The `config_update` function is used to create an instruction for updating the configuration settings of the clockwork network program.
 
 2. Question: What are the input parameters for the `config_update` function?
@@ -28,4 +30,3 @@ In summary, the `config_update.rs` file is responsible for creating a Solana ins
 
 5. Question: What is the return type of the `config_update` function and what does it represent?
    Answer: The return type of the `config_update` function is `Instruction`, which represents a Solana program instruction. In this case, it represents an instruction to update the configuration settings of the clockwork network program.
-    

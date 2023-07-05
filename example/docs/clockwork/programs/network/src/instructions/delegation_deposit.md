@@ -17,8 +17,10 @@ The `handler` function takes a context of type `DelegationDeposit` and an `amoun
 After the transfer is completed, the function returns `Ok(())` to indicate a successful operation.
 
 In summary, the `delegation_deposit.rs` file is responsible for transferring tokens from an authority's token account to a delegation's token account in the Clockwork project. It defines a struct called `DelegationDeposit` and a handler function called `handler` to perform the transfer operation.
-## Questions: 
- 1. Question: What is the purpose of the `DelegationDeposit` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DelegationDeposit` struct?
    Answer: The `DelegationDeposit` struct defines the account inputs and their constraints for the delegation deposit operation, which is used to deposit tokens from the authority's account to the delegation's account.
 
 2. Question: How is the `handler` function used in this code?
@@ -32,4 +34,3 @@ In summary, the `delegation_deposit.rs` file is responsible for transferring tok
 
 5. Question: What is the purpose of the `associated_token` attribute in the account constraints?
    Answer: The `associated_token` attribute is used to ensure that the specified account is an associated token account, which is a specific type of token account that is derived from a particular owner and mint. This constraint helps to ensure that the correct token accounts are used for the deposit operation.
-    

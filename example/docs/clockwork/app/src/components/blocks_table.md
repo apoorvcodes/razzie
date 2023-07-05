@@ -7,8 +7,10 @@ The `get_block` function is an asynchronous function that fetches the latest blo
 The `BlocksTable` function renders the table using the Dioxus `rsx!` macro, which allows for JSX-like syntax. The table header is created using the `Header` function, which returns an `Element` representing the header row with columns for "Blockhash" and "Transactions". The table body is populated with the block information stored in the `block` state. If a block is available, a table row (`tr`) is created with two table cells (`td`), displaying the blockhash and the number of transactions in the block.
 
 In summary, the `blocks_table.rs` file is responsible for fetching and displaying a table of recent blocks from the Solana blockchain using the Helius API. It uses Dioxus for rendering the user interface and Solana Client Wasm for interacting with the blockchain.
-## Questions: 
- 1. Question: What is the purpose of the `BlocksTable` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `BlocksTable` function?
    Answer: The `BlocksTable` function is responsible for rendering a table that displays information about the most recent block, such as the blockhash and the number of transactions in the block.
 
 2. Question: How does the code handle updating the block information?
@@ -22,4 +24,3 @@ In summary, the `blocks_table.rs` file is responsible for fetching and displayin
 
 5. Question: What is the purpose of the `HELIUS_API_KEY` constant in the `get_block` function?
    Answer: The `HELIUS_API_KEY` constant is used to store the API key required to access the Helius API, which is fetched from the environment using the `dotenv!` macro. This API key is then used to construct the URL for the Helius RPC endpoint.
-    

@@ -14,8 +14,10 @@ The `Months` struct implements the `TimeUnitField` trait, which requires the fol
 Additionally, the `Months` struct implements the `PartialEq` trait, which allows for comparison of two `Months` instances for equality. Two `Months` instances are considered equal if their `ordinals` sets are equal.
 
 In summary, the `months.rs` file provides a `Months` struct and its associated methods for handling month-related operations in the Clockwork project. This includes converting month names to ordinal values, managing sets of ordinals representing months, and comparing two `Months` instances for equality.
-## Questions: 
- 1. Question: What is the purpose of the `Months` struct and its `ordinals` field?
+
+## Questions:
+
+1. Question: What is the purpose of the `Months` struct and its `ordinals` field?
    Answer: The `Months` struct represents a collection of months, and the `ordinals` field is an optional `OrdinalSet` that stores the ordinal values of the months in the collection.
 
 2. Question: How does the `TimeUnitField` trait relate to the `Months` struct?
@@ -29,4 +31,3 @@ In summary, the `months.rs` file provides a `Months` struct and its associated m
 
 5. Question: What is the purpose of the `Cow` type used in the `name` method?
    Answer: The `Cow` (short for "clone on write") type is used in the `name` method to return a string that can be either borrowed or owned, depending on the context. This allows for more efficient memory usage, as the string can be borrowed if it's a static string, or cloned if it needs to be owned by the caller.
-    

@@ -19,10 +19,12 @@ The `ClockworkPlugin` struct is re-exported from the `plugin` module, making it 
 The `#[no_mangle]` attribute and `#[allow(improper_ctypes_definitions)]` attribute are applied to the `_create_plugin` function, which is an unsafe extern "C" function. This function is the main entry point for the Solana validator to load and interact with the Clockwork plugin. It creates a new instance of the `ClockworkPlugin` struct and returns a raw pointer to it. The safety comment explains that the Solana validator and the plugin must be compiled with the same Rust compiler version and Solana core version to avoid undefined behavior and potential memory corruption.
 
 In summary, the `lib.rs` file serves as the main entry point for the Clockwork project, defining the structure of the plugin and providing the necessary interface for the Solana validator to interact with it.
-## Questions: 
- 1. Question: What is the purpose of the `ClockworkPlugin`?
 
-   Answer: The `ClockworkPlugin` is a custom implementation of the `GeyserPlugin` trait, which is part of the `solana_geyser_plugin_interface`. It is likely used to extend or modify the behavior of a Solana validator.
+## Questions:
+
+1.  Question: What is the purpose of the `ClockworkPlugin`?
+
+Answer: The `ClockworkPlugin` is a custom implementation of the `GeyserPlugin` trait, which is part of the `solana_geyser_plugin_interface`. It is likely used to extend or modify the behavior of a Solana validator.
 
 2. Question: What are the different modules in this library and their responsibilities?
 
@@ -39,4 +41,3 @@ In summary, the `lib.rs` file serves as the main entry point for the Clockwork p
 5. Question: What are the safety requirements mentioned in the comment above the `_create_plugin` function?
 
    Answer: The safety requirements state that the Solana validator and this plugin must be compiled with the same Rust compiler version and Solana core version. Loading the plugin with mismatching versions can result in undefined behavior and memory corruption.
-    

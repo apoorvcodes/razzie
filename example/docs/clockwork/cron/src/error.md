@@ -13,8 +13,10 @@ The `error.rs` file is part of a project called "clockwork" and is responsible f
 6. The `From<ErrorKind>` trait is implemented for the `Error` struct. This allows for easy conversion from an `ErrorKind` to an `Error`. The `from` method is implemented, which takes an `ErrorKind` as input and returns an `Error`. Inside the method, an `Error` instance is created with the given `ErrorKind` and returned.
 
 In summary, the `error.rs` file defines a custom error type and its associated error kinds for the "clockwork" project. It also implements the necessary traits to make the custom error type compatible with Rust's standard error handling mechanisms.
-## Questions: 
- 1. Question: What is the purpose of the `Error` struct and `ErrorKind` enum in this code?
+
+## Questions:
+
+1. Question: What is the purpose of the `Error` struct and `ErrorKind` enum in this code?
    Answer: The `Error` struct represents a custom error type for the clockwork project, and the `ErrorKind` enum defines the different kinds of errors that can occur within the project, such as an invalid expression error.
 
 2. Question: How does the implementation of `fmt::Display` for `Error` work?
@@ -28,4 +30,3 @@ In summary, the `error.rs` file defines a custom error type and its associated e
 
 5. Question: Are there any other error variants that should be added to the `ErrorKind` enum?
    Answer: Based on the current code, there is only one error variant, `Expression`. However, depending on the requirements and functionality of the clockwork project, additional error variants may need to be added to handle other types of errors that could occur.
-    

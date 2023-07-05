@@ -13,8 +13,10 @@ The `ThreadResponse` struct is a response value that target programs can return 
 The `SerializableInstruction` struct represents the data needed to execute an instruction on Solana. It contains the program ID, accounts metadata, and data passed to the instruction processor. Implementations for converting between `Instruction` and `SerializableInstruction` types and deserializing `SerializableInstruction` from a byte vector are provided.
 
 The `SerializableAccount` struct represents account metadata needed to execute an instruction on Solana. It contains the public key, a flag indicating if the account is a signer, and a flag indicating if the account is writable. Helper methods for creating mutable and read-only instances of `SerializableAccount` are provided.
-## Questions: 
- 1. Question: What is the purpose of the `PAYER_PUBKEY` static variable?
+
+## Questions:
+
+1. Question: What is the purpose of the `PAYER_PUBKEY` static variable?
    Answer: The `PAYER_PUBKEY` is a stand-in public key for delegating a payer address to a worker. All workers are reimbursed by the user for lamports spent during this delegation.
 
 2. Question: What does the `ClockData` struct represent?
@@ -28,4 +30,3 @@ The `SerializableAccount` struct represents account metadata needed to execute a
 
 5. Question: What is the purpose of the `SerializableInstruction` and `SerializableAccount` structs?
    Answer: The `SerializableInstruction` struct represents the data needed to execute an instruction on Solana, while the `SerializableAccount` struct represents the account metadata needed to execute an instruction. These structs are used to serialize and deserialize instructions and account metadata for storage and processing.
-    

@@ -19,5 +19,3 @@ The `webhook.rs` file defines the structure and behavior of webhooks, which are 
 The file also imports necessary modules and dependencies, such as `std`, `anchor_lang`, and `serde`. It defines a constant `SEED_WEBHOOK`, which is a byte slice containing the string "webhook" and is used as a seed for generating program addresses.
 
 In summary, the `output/clockwork/programs/webhook/src/state` folder is an essential part of the Clockwork project, responsible for organizing and managing the "webhook" sub-module and defining the core data structures and behavior for webhooks within the system. Developers working on the Clockwork project should be aware of this folder's role in managing the "webhook" sub-module and its contents, as it is crucial for understanding how webhooks are structured and function within the larger project.
-
-    

@@ -9,8 +9,10 @@ Next, the handler initializes the worker, fee, and penalty accounts by calling t
 Finally, the handler updates the registry's total_workers counter by incrementing it by 1. If successful, the function returns `Ok(())`.
 
 In summary, the `worker_create.rs` file is responsible for creating and initializing a new worker and its associated accounts in the Clockwork project. It uses the Anchor framework and Solana program library to define the accounts and implement the logic for creating a worker.
-## Questions: 
- 1. Question: What is the purpose of the `WorkerCreate` struct and its associated fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `WorkerCreate` struct and its associated fields?
    Answer: The `WorkerCreate` struct is used to define the account structure required for creating a new worker in the Clockwork project. It contains various fields representing different accounts and their properties, such as the associated token program, authority, config, fee, penalty, mint, registry, rent, signatory, system program, token program, worker, and worker tokens.
 
 2. Question: How are the seeds and bump values used in the `#[account]` attributes for the `fee`, `penalty`, and `worker` fields?
@@ -24,4 +26,3 @@ In summary, the `worker_create.rs` file is responsible for creating and initiali
 
 5. Question: What is the purpose of the `ClockworkError::RegistryLocked` and `ClockworkError::InvalidSignatory` constraints in the `#[account]` attributes for the `registry` and `signatory` fields?
    Answer: These constraints are used to enforce specific conditions on the `registry` and `signatory` accounts. The `ClockworkError::RegistryLocked` constraint ensures that the registry is not locked, while the `ClockworkError::InvalidSignatory` constraint ensures that the signatory key is not equal to the authority key. If these conditions are not met, the transaction will fail with the corresponding error.
-    

@@ -16,10 +16,12 @@ The file contains the following sub-modules:
 After declaring the sub-modules, the `mod.rs` file also re-exports them using the `pub use` keyword. This makes the sub-modules and their contents accessible to other parts of the project when the main module is imported. For example, if another file imports the main module using `use clockwork::home;`, it will have access to the `home` sub-module and its contents.
 
 In summary, the `mod.rs` file in the Clockwork project is responsible for organizing and managing the sub-modules, making it easier for developers to navigate and understand the project structure. It also ensures that the sub-modules are accessible to other parts of the project when needed.
-## Questions: 
- 1. What is the purpose of each module in this code?
 
-   Each module represents a different functionality or component of the clockwork project, such as handling blocks, files, home, market, secrets, and threads.
+## Questions:
+
+1.  What is the purpose of each module in this code?
+
+Each module represents a different functionality or component of the clockwork project, such as handling blocks, files, home, market, secrets, and threads.
 
 2. Why are all the modules declared as `pub`?
 
@@ -36,4 +38,3 @@ In summary, the `mod.rs` file in the Clockwork project is responsible for organi
 5. How can I add a new module to this code?
 
    To add a new module, you would create a new file with the desired module name (e.g., `new_module.rs`) and then add a `pub mod new_module;` declaration in the `mod.rs` file. Additionally, you would add a `pub use new_module::*;` statement to re-export the contents of the new module.
-    

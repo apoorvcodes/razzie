@@ -11,8 +11,10 @@ The function then builds the next instruction for the thread based on the worker
 Finally, the `handler` function returns a `ThreadResponse` object containing the dynamic instruction, close_to, and trigger fields.
 
 In summary, the `create_frame.rs` file is responsible for creating and initializing snapshot frames for workers in the Clockwork project. It defines the `TakeSnapshotCreateFrame` struct and the `handler` function, which are used to create and initialize snapshot frames for workers based on their delegations and the total frames of the snapshot.
-## Questions: 
- 1. Question: What is the purpose of the `TakeSnapshotCreateFrame` struct and its associated constraints?
+
+## Questions:
+
+1. Question: What is the purpose of the `TakeSnapshotCreateFrame` struct and its associated constraints?
    Answer: The `TakeSnapshotCreateFrame` struct defines the accounts and their constraints required for creating a snapshot frame in the Clockwork project. The constraints ensure that the accounts meet certain conditions before the snapshot frame can be created.
 
 2. Question: What does the `handler` function do in this code?
@@ -26,4 +28,3 @@ In summary, the `create_frame.rs` file is responsible for creating and initializ
 
 5. Question: How does the code determine the next instruction for the thread?
    Answer: The next instruction for the thread is determined based on the worker's total delegations and the snapshot's total frames. If the worker has delegations, a snapshot entry is created for each delegation. If the worker has no delegations and the snapshot's total frames are less than the registry's total workers, a snapshot frame is created for the next worker. Otherwise, no instruction is generated.
-    

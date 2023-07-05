@@ -13,8 +13,10 @@ The Router component contains several Route components, each with a "to" attribu
 Additionally, the Router component includes the HotKeys and Navbar components, which provide global hotkey functionality and a navigation bar for the application, respectively.
 
 In summary, the `main.rs` file sets up the main structure and routing for the Clockwork web application, initializes the wasm_logger, and launches the application with the App component as the root element.
-## Questions: 
- 1. Question: What is the purpose of the `#![allow(non_snake_case)]` attribute at the beginning of the code?
+
+## Questions:
+
+1. Question: What is the purpose of the `#![allow(non_snake_case)]` attribute at the beginning of the code?
    Answer: This attribute allows the code to use non-snake_case naming conventions without triggering a warning from the Rust compiler.
 
 2. Question: What are the different modules being imported in this code?
@@ -28,4 +30,3 @@ In summary, the `main.rs` file sets up the main structure and routing for the Cl
 
 5. Question: How are the different routes defined in the `Router` component?
    Answer: The routes are defined using the `Route` component with the `to` attribute specifying the path, and the corresponding page component (e.g., HomePage, BlocksPage, etc.) as the child of the `Route` component.
-    

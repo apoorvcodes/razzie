@@ -17,8 +17,10 @@ The `handler` function takes a `Context<ProcessUnstakesJob>` as input and return
 4. Return a `ThreadResponse` containing the created `Instruction` (if any), and set the `close_to` and `trigger` fields to `None`.
 
 In summary, the `job.rs` file defines the `ProcessUnstakesJob` struct and its handler function, which is responsible for processing unstaking jobs in the Clockwork system. The handler function checks if there are any unstaking jobs to process and creates the necessary instruction for the unstaking process if required.
-## Questions: 
- 1. Question: What is the purpose of the `ProcessUnstakesJob` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ProcessUnstakesJob` struct?
    Answer: The `ProcessUnstakesJob` struct is used to define the account inputs required for processing unstakes jobs in the Clockwork project.
 
 2. Question: What are the constraints on the `registry` account in the `ProcessUnstakesJob` struct?
@@ -32,4 +34,3 @@ In summary, the `job.rs` file defines the `ProcessUnstakesJob` struct and its ha
 
 5. Question: What is the purpose of the `ThreadResponse` struct returned by the `handler` function?
    Answer: The `ThreadResponse` struct contains information about the next dynamic instruction for the thread, an optional account to close, and an optional trigger for the thread.
-    

@@ -16,8 +16,10 @@ The function creates an `Instruction` object with the following properties:
 - `data`: the serialized instruction data for the `DelegationDeposit` operation, which includes the `amount` to be deposited.
 
 In summary, the `delegation_deposit.rs` file provides a function to create an `Instruction` for depositing tokens from an authority account to a delegation account in the Clockwork network. This instruction can then be used by a developer to interact with the Clockwork network program and perform the delegation deposit operation.
-## Questions: 
- 1. Question: What is the purpose of the `delegation_deposit` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `delegation_deposit` function?
    Answer: The `delegation_deposit` function creates an instruction for depositing a specified amount of tokens into a delegation account, with the given authority, delegation, and mint public keys.
 
 2. Question: What are the input parameters for the `delegation_deposit` function?
@@ -31,4 +33,3 @@ In summary, the `delegation_deposit.rs` file provides a function to create an `I
 
 5. Question: What is the purpose of the `clockwork_network_program::instruction::DelegationDeposit` struct and its `data` method?
    Answer: The `clockwork_network_program::instruction::DelegationDeposit` struct represents the data for a delegation deposit instruction. The `data` method serializes the struct into a byte vector, which is used as the `data` field in the `Instruction` struct.
-    

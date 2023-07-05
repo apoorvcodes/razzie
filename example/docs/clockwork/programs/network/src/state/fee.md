@@ -11,8 +11,10 @@ The `FeeAccount` trait is defined with two methods: `pubkey` and `init`. The `pu
 Finally, the `FeeAccount` trait is implemented for the `Account<'_, Fee>` type. The implementation simply delegates the `pubkey` and `init` methods to the corresponding methods of the `Fee` struct.
 
 In summary, the `fee.rs` file defines the structure and operations for managing the escrow of lamport balances owed to workers in the Clockwork project. It provides a way to initialize and interact with fee accounts, allowing the project to handle fee distribution for workers.
-## Questions: 
- 1. Question: What is the purpose of the `Fee` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `Fee` struct?
    Answer: The `Fee` struct is used to represent an escrow account that holds the lamport balance owed to a particular worker.
 
 2. Question: What does the `pubkey` function in the `Fee` impl block do?
@@ -26,4 +28,3 @@ In summary, the `fee.rs` file defines the structure and operations for managing 
 
 5. Question: What is the purpose of the `SEED_FEE` constant?
    Answer: The `SEED_FEE` constant is a seed value used to derive the public key of a fee account in combination with the worker's public key and the program's ID.
-    

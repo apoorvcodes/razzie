@@ -7,8 +7,10 @@ The `TryFrom` trait implementation for `AccountUpdateEvent` takes a mutable refe
 If the account is a sysvar clock account, it deserializes the account data into a `Clock` struct and returns an `AccountUpdateEvent::Clock` variant. If the account belongs to the thread v1 or v2 program, it checks the discriminator and deserializes the account data into a `ThreadV1` or `ThreadV2` struct, respectively, and returns an `AccountUpdateEvent::Thread` variant with the corresponding version. If the account belongs to the webhook program, it deserializes the account data into a `Webhook` struct and returns an `AccountUpdateEvent::Webhook` variant.
 
 If the account does not match any of the above conditions, the function returns a `GeyserPluginError::AccountsUpdateError` with a message indicating that the account is not relevant to the Clockwork plugin.
-## Questions: 
- 1. Question: What is the purpose of the `AccountUpdateEvent` enum and its variants?
+
+## Questions:
+
+1. Question: What is the purpose of the `AccountUpdateEvent` enum and its variants?
    Answer: The `AccountUpdateEvent` enum represents different types of account update events that can occur in the Clockwork system, such as updates to the Clock, Thread, or Webhook. Each variant holds the relevant data for that specific event type.
 
 2. Question: How does the `TryFrom` trait implementation for `AccountUpdateEvent` work?
@@ -22,4 +24,3 @@ If the account does not match any of the above conditions, the function returns 
 
 5. Question: What is the significance of checking `account_info.data.len() > 8` before parsing the account data for Thread v1, Thread v2, and Webhook?
    Answer: The check `account_info.data.len() > 8` ensures that there is enough data in the account to parse the discriminator (the first 8 bytes) and the actual data structure. This helps prevent parsing errors and ensures that the account data is valid for the expected type.
-    

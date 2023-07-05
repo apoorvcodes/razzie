@@ -9,8 +9,10 @@ The `handler` function is the main function in this file, which takes a `Context
 Finally, the function returns a `ThreadResponse` object with its `close_to`, `dynamic_instruction`, and `trigger` fields set to `None`. This indicates that there are no additional actions or events to be triggered after the epoch cutover process is complete.
 
 In summary, the `job.rs` file handles the epoch cutover process in the Clockwork project by incrementing the current epoch and unlocking the registry account.
-## Questions: 
- 1. Question: What is the purpose of the `EpochCutover` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `EpochCutover` struct?
    Answer: The `EpochCutover` struct defines the account types and their properties required for the epoch cutover process in the Clockwork project.
 
 2. Question: What is the role of the `#[derive(Accounts)]` attribute?
@@ -24,4 +26,3 @@ In summary, the `job.rs` file handles the epoch cutover process in the Clockwork
 
 5. Question: What is the significance of the `use` statements at the beginning of the code?
    Answer: The `use` statements import the necessary modules and types from external libraries (such as `anchor_lang` and `clockwork_utils`) and the current crate (`crate::state::*`) to be used within the `job.rs` file.
-    

@@ -9,8 +9,10 @@ Inside the `HomePage` function, the `cx.render()` method is called with an `rsx!
 The `HomePage` function returns an `Element`, which is the rendered output of the function. This `Element` can be used by other parts of the application to display the home page.
 
 In summary, the `home.rs` file is responsible for rendering the home page of the Clockwork project using the Dioxus library. It defines a single function, `HomePage`, which takes a `Scope` as an argument and returns an `Element` containing the rendered output.
-## Questions: 
- 1. Question: What is the purpose of the `use dioxus::prelude::*;` statement?
+
+## Questions:
+
+1. Question: What is the purpose of the `use dioxus::prelude::*;` statement?
    Answer: This statement imports all the necessary items from the `dioxus::prelude` module, which is a collection of commonly used types and traits for working with the Dioxus framework.
 
 2. Question: What is the `HomePage` function and what does it return?
@@ -24,4 +26,3 @@ In summary, the `home.rs` file is responsible for rendering the home page of the
 
 5. Question: How can the `HomePage` function be used in other parts of the Clockwork project?
    Answer: The `HomePage` function can be imported and used in other parts of the Clockwork project to render the home page component whenever it is needed, such as in a router or a parent component.
-    

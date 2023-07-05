@@ -9,8 +9,10 @@ Inside the `MarketPage` function, the `cx.render` method is called with an RSX (
 The `h1` heading has two properties: `class` and the text content. The `class` property is set to "text-2xl font-semibold", which are likely CSS classes that control the appearance of the heading. The text content of the heading is set to "Market", which is the title of the Market Page.
 
 In summary, the `market.rs` file is responsible for rendering the Market Page of the Clockwork project. It uses the Dioxus library and RSX syntax to define a simple user interface with a heading. The `MarketPage` function is the main entry point for this file and takes a `Scope` argument to manage the rendering context.
-## Questions: 
- 1. Question: What is the purpose of the `MarketPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `MarketPage` function?
    Answer: The `MarketPage` function is responsible for rendering the Market page with a specific layout and style, using the `Page` component and the `dioxus` library.
 
 2. Question: What is the `dioxus` library used for in this code?
@@ -24,4 +26,3 @@ In summary, the `market.rs` file is responsible for rendering the Market Page of
 
 5. Question: What is the `class` attribute used for in the `h1` element inside the `Page` component?
    Answer: The `class` attribute is used to apply CSS classes to the `h1` element, in this case, setting the text size to 2xl, and the font weight to semi-bold.
-    

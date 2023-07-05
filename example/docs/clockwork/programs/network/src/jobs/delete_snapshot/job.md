@@ -19,8 +19,10 @@ The `handler` function takes a `Context<DeleteSnapshotJob>` as its argument and 
    - `trigger`: None, indicating that no additional triggers should be executed after the instruction is executed.
 
 In summary, the `job.rs` file defines the `DeleteSnapshotJob` struct and its handler function, which is responsible for deleting a snapshot of the state in the Clockwork system. The handler function creates and returns a `ThreadResponse` containing the necessary instruction to perform the deletion.
-## Questions: 
- 1. Question: What is the purpose of the `DeleteSnapshotJob` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DeleteSnapshotJob` struct?
    Answer: The `DeleteSnapshotJob` struct is used to define the account inputs required for the `handler` function, which is responsible for deleting a snapshot job.
 
 2. Question: What are the constraints on the `registry` account in the `DeleteSnapshotJob` struct?
@@ -34,4 +36,3 @@ In summary, the `job.rs` file defines the `DeleteSnapshotJob` struct and its han
 
 5. Question: How is the `Instruction` for deleting a snapshot created in the `handler` function?
    Answer: The `Instruction` is created by specifying the program ID (`crate::ID`), the accounts required for the `DeleteSnapshotProcessSnapshot` operation, and the data for the `DeleteSnapshotProcessSnapshot` instruction. The instruction is then converted into an `InstructionData` type and included in the `ThreadResponse`.
-    

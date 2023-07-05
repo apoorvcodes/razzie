@@ -3,6 +3,7 @@ The `pool.rs` file is part of the Clockwork project and defines the structure an
 The file defines three main structures: `Pool`, `PoolSettings`, and `PoolAccount`.
 
 1. `Pool`: This structure represents a pool of workers. It has three fields:
+
    - `id`: A unique identifier for the pool (u64).
    - `size`: The maximum number of workers allowed in the pool (usize).
    - `workers`: A double-ended queue (VecDeque) containing the public keys (Pubkey) of the workers in the pool.
@@ -10,6 +11,7 @@ The file defines three main structures: `Pool`, `PoolSettings`, and `PoolAccount
    The `Pool` structure also has an associated function `pubkey`, which takes an `id` and returns the program address for the pool.
 
 2. `PoolSettings`: This structure holds the configuration settings for a pool. It has one field:
+
    - `size`: The maximum number of workers allowed in the pool (usize).
 
 3. `PoolAccount`: This is a trait that defines the behavior of a pool account. It has four methods:
@@ -21,8 +23,10 @@ The file defines three main structures: `Pool`, `PoolSettings`, and `PoolAccount
 The `PoolAccount` trait is implemented for the `Account<'_, Pool>` type, which is a reference to a Solana account with the `Pool` structure. The implementation provides the functionality for initializing, rotating, and updating the pool account.
 
 In summary, the `pool.rs` file defines the data structures and behavior for managing a pool of workers in the Clockwork project. It allows for the creation, rotation, and updating of worker pools, as well as the configuration of pool settings.
-## Questions: 
- 1. Question: What is the purpose of the `Pool` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Pool` struct and its fields?
    Answer: The `Pool` struct represents a pool of workers, with fields `id` for a unique identifier, `size` for the maximum number of workers allowed in the pool, and `workers` as a `VecDeque` containing the public keys of the workers.
 
 2. Question: How is the `pubkey` function in the `Pool` implementation used?
@@ -36,4 +40,3 @@ In summary, the `pool.rs` file defines the data structures and behavior for mana
 
 5. Question: How does the `rotate` function in the `PoolAccount` implementation work?
    Answer: The `rotate` function takes a `worker` as input, pushes the worker's public key into the `workers` `VecDeque`, and then drains the pool to the configured size limit by removing workers from the front of the `VecDeque` until the length of the `workers` is equal to the `size`. This ensures that the pool maintains the correct number of workers.
-    

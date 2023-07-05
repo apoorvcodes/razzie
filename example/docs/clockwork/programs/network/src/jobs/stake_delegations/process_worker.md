@@ -7,8 +7,10 @@ The `handler` function takes a `Context<StakeDelegationsProcessWorker>` as input
 If the worker has no delegations, the function checks if there is a next worker in the registry. If there is a next worker, it creates an instruction to process the next worker's delegations using the `StakeDelegationsProcessWorker` struct and the `StakeDelegationsProcessWorker` instruction data.
 
 Finally, the function returns a `ThreadResponse` containing the dynamic instruction (if any), and no `close_to` or `trigger` values. The dynamic instruction is used to either stake the worker's deposits or move on to the next worker, depending on the worker's delegations.
-## Questions: 
- 1. Question: What is the purpose of the `StakeDelegationsProcessWorker` struct and its associated accounts?
+
+## Questions:
+
+1. Question: What is the purpose of the `StakeDelegationsProcessWorker` struct and its associated accounts?
    Answer: The `StakeDelegationsProcessWorker` struct is used to define the accounts required for processing stake delegations for a worker. It includes the configuration, registry, thread, and worker accounts.
 
 2. Question: How does the `handler` function determine the next instruction for the thread?
@@ -22,4 +24,3 @@ Finally, the function returns a `ThreadResponse` containing the dynamic instruct
 
 5. Question: What is the purpose of the `ThreadResponse` struct returned by the `handler` function?
    Answer: The `ThreadResponse` struct is used to return the next instruction for the thread (`dynamic_instruction`), along with optional fields for closing accounts (`close_to`) and triggering events (`trigger`).
-    

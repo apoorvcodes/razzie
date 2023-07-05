@@ -17,8 +17,10 @@ The `CliError` enum consists of the following variants:
 11. `KeypairNotFound`: Represents an error when no default signer is found. It takes a `String` parameter that provides additional information about the missing keypair.
 
 Developers working with the Clockwork project can use these custom error types to handle specific error cases and provide more informative error messages to users.
-## Questions: 
- 1. Question: What is the purpose of the `CliError` enum?
+
+## Questions:
+
+1. Question: What is the purpose of the `CliError` enum?
    Answer: The `CliError` enum is used to define various types of errors that can occur within the Clockwork project, providing a clear and concise way to handle and display error messages to the user.
 
 2. Question: What is the role of the `thiserror::Error` trait in this code?
@@ -32,4 +34,3 @@ Developers working with the Clockwork project can use these custom error types t
 
 5. Question: How can a developer add a new error variant to the `CliError` enum?
    Answer: To add a new error variant, the developer can simply add a new variant to the `CliError` enum, following the existing pattern. They should provide a descriptive name for the variant, any associated data (if needed), and an `#[error()]` attribute with a custom error message.
-    

@@ -16,8 +16,10 @@ When a "keydown" event is triggered, the closure checks the pressed key and perf
 - "K" or "k": Turns off `goto_mode`, decrements the `list_index`, and focuses the previous list item with the ID "list-item-{id}".
 
 The function then returns an empty `div` element, as the main purpose of this component is to handle hotkeys and not to render any visible content.
-## Questions: 
- 1. Question: What is the purpose of the `HotKeys` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `HotKeys` function?
    Answer: The `HotKeys` function is responsible for handling keyboard shortcuts in the application, allowing users to navigate to different routes and interact with a list using specific key combinations.
 
 2. Question: How does the `goto_mode` variable work in this code?
@@ -31,4 +33,3 @@ The function then returns an empty `div` element, as the main purpose of this co
 
 5. Question: What is the purpose of the `use_future` function in this code?
    Answer: The `use_future` function is used to create an asynchronous event listener for the "keydown" event on the document. It allows the code to handle keyboard events asynchronously and perform actions like navigating to different routes or focusing on list items based on the pressed keys.
-    

@@ -19,8 +19,10 @@ After declaring the modules, the `mod.rs` file re-exports the contents of each m
 8. `pub use job::*;`: This line re-exports all public items from the `job` module.
 
 In summary, the `mod.rs` file in the "clockwork" project is responsible for organizing and exporting the functionality provided by the `create_entry`, `create_frame`, `create_snapshot`, and `job` sub-modules. By declaring and re-exporting these modules, it allows developers to easily access and use their functionality in other parts of the project.
-## Questions: 
- 1. Question: What is the purpose of each module in this code?
+
+## Questions:
+
+1. Question: What is the purpose of each module in this code?
    Answer: Each module in this code represents a different functionality of the clockwork project: `create_entry` handles the creation of entries, `create_frame` manages the creation of frames, `create_snapshot` deals with creating snapshots, and `job` is responsible for handling jobs.
 
 2. Question: Why are the modules declared as `pub`?
@@ -34,4 +36,3 @@ In summary, the `mod.rs` file in the "clockwork" project is responsible for orga
 
 5. Question: How are errors handled in these modules?
    Answer: From the given code snippet, we cannot determine how errors are handled in these modules. To understand the error handling mechanism, we would need to review the implementation details within each module.
-    

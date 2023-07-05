@@ -14,10 +14,12 @@ The file starts by declaring eight public sub-modules:
 After declaring these sub-modules, the file proceeds to re-export all their components using the `pub use` keyword. This makes the components of each sub-module directly accessible to other parts of the project that import the `clockwork` module. For example, if another module imports `clockwork`, it can directly access the `Clock` struct from the `clock` sub-module by using `clockwork::Clock` instead of having to use `clockwork::clock::Clock`.
 
 In summary, the `mod.rs` file in the Clockwork project serves as a central hub for organizing and exporting the various sub-modules and their components, making it easier for developers to manage dependencies and access the functionality provided by each sub-module.
-## Questions: 
- 1. What is the purpose of each module in this code?
 
-   Each module represents a different component of the clockwork project, such as the backpack, blocks table, clock, connect button, markets table, navbar, sidebar, and threads table.
+## Questions:
+
+1.  What is the purpose of each module in this code?
+
+Each module represents a different component of the clockwork project, such as the backpack, blocks table, clock, connect button, markets table, navbar, sidebar, and threads table.
 
 2. Why are there both `pub mod` and `pub use` statements for each module?
 
@@ -34,4 +36,3 @@ In summary, the `mod.rs` file in the Clockwork project serves as a central hub f
 5. How can a developer extend or modify the functionality of these modules?
 
    A developer can extend or modify the functionality of these modules by editing the respective module files or directories, adding new functions, structs, or other items as needed.
-    

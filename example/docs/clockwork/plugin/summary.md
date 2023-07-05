@@ -21,5 +21,3 @@ The `executors` subfolder manages the execution of transactions and webhooks in 
 The `observers` subfolder implements the observer functionality within the Clockwork system, which is used to monitor and react to specific events. It defines and manages two types of observers: `ThreadObserver` and `WebhookObserver`. The `Observers` struct serves as the main container for both observer types, and its implementation provides a constructor function for initializing a new instance with a `ThreadObserver` and a `WebhookObserver`.
 
 In summary, the code in the `output/clockwork/plugin/src` folder is central to the operation of the Clockwork Geyser Plugin, providing the core functionality required for processing events, executing transactions and webhooks, and monitoring changes in the blockchain state. Developers working on the Clockwork project should have a good understanding of the code in this folder, as it is essential for the system's operation and integration with the Solana Geyser Plugin Interface.
-
-    

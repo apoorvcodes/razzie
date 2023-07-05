@@ -11,8 +11,10 @@ Inside the `<head>` element, there are several important meta tags and external 
 7. `<title>Clockwork</title>`: This tag sets the title of the web page to "Clockwork".
 
 The `<body>` element contains a single `<div>` element with the ID "main". This div is likely used as a container for the main content of the application, which will be populated by JavaScript code. The `class` attribute of the `<body>` element applies some utility classes from the Tailwind CSS framework to control the overflow behavior and set the background and text colors for the dark mode.
-## Questions: 
- 1. Question: What is the purpose of the three Font Awesome links in the head section?
+
+## Questions:
+
+1. Question: What is the purpose of the three Font Awesome links in the head section?
    Answer: These links are importing the Font Awesome library, which provides a collection of scalable vector icons that can be customized with CSS. The three links import the main Font Awesome styles, solid icons, and brand icons, respectively.
 
 2. Question: What is the purpose of the Tailwind CSS script tag?
@@ -26,4 +28,3 @@ The `<body>` element contains a single `<div>` element with the ID "main". This 
 
 5. Question: Why is the "main" div element empty, and how is the content populated?
    Answer: The "main" div element is empty because it serves as a placeholder for the dynamic content that will be injected into the page using JavaScript. The content is likely populated by a script or a JavaScript framework that manipulates the DOM and adds the necessary elements and components to the "main" div.
-    

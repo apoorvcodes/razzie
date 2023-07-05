@@ -14,8 +14,10 @@ The `handler` function performs the following operations:
 5. It returns a `ThreadResponse` with the `dynamic_instruction` and default values for other fields.
 
 In summary, this file is responsible for managing the deletion of snapshot process frames in the Clockwork project. It defines a struct with the necessary accounts and a handler function that performs the deletion logic and builds the next instruction based on the current state of the snapshot frame.
-## Questions: 
- 1. Question: What is the purpose of the `DeleteSnapshotProcessFrame` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `DeleteSnapshotProcessFrame` struct?
    Answer: The `DeleteSnapshotProcessFrame` struct defines the account types and constraints required for the `handler` function to delete a snapshot process frame in the Clockwork project.
 
 2. Question: What does the `handler` function do?
@@ -29,4 +31,3 @@ In summary, this file is responsible for managing the deletion of snapshot proce
 
 5. Question: How does the `handler` function handle the transfer of lamports when closing the frame and snapshot accounts?
    Answer: The `handler` function transfers the lamports from the closed frame and snapshot accounts to the `thread` account by updating the lamports of the respective accounts using `borrow_mut()`.
-    

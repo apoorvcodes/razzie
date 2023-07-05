@@ -15,8 +15,10 @@ The `TimeUnitField` trait is implemented for the `Minutes` struct, which require
 Additionally, the `PartialEq` trait is implemented for the `Minutes` struct, which allows for comparison of two `Minutes` instances for equality. The `eq` method is implemented to compare the `ordinals` of the two instances.
 
 In summary, the `minutes.rs` file defines the `Minutes` struct and its associated methods for handling the minutes component of a time unit in the Clockwork project. It provides functionality for creating, comparing, and working with minute values and their associated ordinal sets.
-## Questions: 
- 1. Question: What is the purpose of the `Minutes` struct and its fields?
+
+## Questions:
+
+1. Question: What is the purpose of the `Minutes` struct and its fields?
    Answer: The `Minutes` struct represents a set of minutes in the clockwork project. It has a single field `ordinals`, which is an optional `OrdinalSet` representing the specific minutes.
 
 2. Question: How does the `TimeUnitField` trait relate to the `Minutes` struct?
@@ -30,4 +32,3 @@ In summary, the `minutes.rs` file defines the `Minutes` struct and its associate
 
 5. Question: How does the `PartialEq` implementation for `Minutes` work?
    Answer: The `PartialEq` implementation for `Minutes` compares two `Minutes` instances for equality by comparing their `ordinals` sets. If the sets are equal, the two instances are considered equal.
-    

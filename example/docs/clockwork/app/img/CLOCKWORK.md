@@ -5,8 +5,10 @@ The file starts with the `<svg>` element, which defines the SVG namespace, the w
 Inside the `<svg>` element, there are multiple `<path>` elements, each representing a part of the Clockwork logo. Each `<path>` element has a "d" attribute, which contains a series of commands and coordinates that define the shape of the path. The "fill" attribute is set to "white" for all the paths, indicating that the shapes will be filled with white color.
 
 In summary, the `CLOCKWORK.svg` file is an SVG file that contains the vector representation of the Clockwork logo. The logo is composed of several white text characters and shapes, defined by a series of `<path>` elements with specific coordinates and commands. This file can be used by developers to include the Clockwork logo in their projects, as it can be easily scaled without losing quality.
-## Questions: 
- 1. Question: What is the purpose of the viewBox attribute in the svg element?
+
+## Questions:
+
+1. Question: What is the purpose of the viewBox attribute in the svg element?
    Answer: The viewBox attribute defines the position and dimension of the SVG canvas, allowing it to scale and fit the content within the specified area.
 
 2. Question: What do the path elements represent in this code?
@@ -20,4 +22,3 @@ In summary, the `CLOCKWORK.svg` file is an SVG file that contains the vector rep
 
 5. Question: How can the size of the entire SVG image be changed while maintaining its aspect ratio?
    Answer: To change the size of the SVG image while maintaining its aspect ratio, you can update the width and height attributes of the svg element, and the viewBox attribute will ensure that the content scales proportionally.
-    

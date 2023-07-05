@@ -20,8 +20,10 @@ Each of these sub-modules is responsible for a specific functionality within the
 After declaring the sub-modules, the file also contains a list of `pub use` statements. These statements are used to re-export the contents of the sub-modules, making their public items (such as functions, structs, and enums) directly accessible to other modules that import the clockwork module. This is a common pattern in Rust projects, as it allows for a cleaner and more organized code structure.
 
 In summary, the `mod.rs` file in the clockwork project is responsible for organizing and managing the sub-modules within the project. It publicly exposes these sub-modules and re-exports their contents, making them accessible to other parts of the project or external code that depends on the clockwork library.
-## Questions: 
- 1. Question: What is the purpose of the `mod.rs` file in the clockwork project?
+
+## Questions:
+
+1. Question: What is the purpose of the `mod.rs` file in the clockwork project?
    Answer: The `mod.rs` file is used to declare and re-export the public modules and their contents in the clockwork project, making them accessible to other parts of the project or external code that depends on it.
 
 2. Question: What are the functionalities provided by the different modules in the clockwork project?
@@ -35,4 +37,3 @@ In summary, the `mod.rs` file in the clockwork project is responsible for organi
 
 5. Question: How can a developer use the functionalities provided by the clockwork project in their own code?
    Answer: A developer can use the functionalities provided by the clockwork project by importing the required modules or their contents using the `use` keyword, and then calling the appropriate functions or using the provided types in their code.
-    

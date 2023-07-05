@@ -22,5 +22,3 @@ The folder contains five files, each serving a specific purpose in the Clockwork
 5. `request_new.rs`: Creates a new HTTP request instruction in the Clockwork Webhook Program, taking parameters such as API key, caller, unique identifier, HTTP method, payer, and route to create a new `Instruction` object for processing the HTTP request.
 
 In summary, the `mod.rs` file and the `instruction` subfolder play crucial roles in the Clockwork project by providing the necessary functions and structures for creating and managing instructions related to the Clockwork Webhook Program. These instructions enable developers to interact with the system, create new APIs, initialize the program, and handle HTTP requests. Understanding the code in these files is essential for developers working with the Clockwork project, as it provides a foundation for building and extending the system's functionality.
-
-    

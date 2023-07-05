@@ -21,8 +21,10 @@ The `thread_create` function constructs an `Instruction` object with the followi
 - `data`: The serialized data of a `ThreadCreate` object, which includes the `amount`, `id`, `instructions`, and `trigger` parameters.
 
 In summary, the `thread_create.rs` file defines a function that creates a new thread in the Clockwork system with the specified parameters. This thread can then be executed by the Clockwork system based on the provided instructions and trigger conditions. The function returns an `Instruction` object that can be used to interact with the Clockwork system.
-## Questions: 
- 1. Question: What is the purpose of the `thread_create` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_create` function?
    Answer: The `thread_create` function is used to create a new thread with the specified parameters, such as amount, authority, id, instructions, payer, thread, and trigger, and returns an Instruction object with the necessary data.
 
 2. Question: What are the types of the input parameters for the `thread_create` function?
@@ -36,4 +38,3 @@ In summary, the `thread_create.rs` file defines a function that creates a new th
 
 5. Question: How are the `AccountMeta` objects used in the `thread_create` function?
    Answer: The `AccountMeta` objects are used to specify the accounts involved in the thread creation process, such as the authority, payer, system program, and the thread itself. These accounts are passed as part of the Instruction object returned by the function.
-    

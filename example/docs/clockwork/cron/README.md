@@ -7,8 +7,10 @@ The example also demonstrates how to convert a 5-column cron expression to a 7-c
 In addition to the standard cron syntax, the parser also supports special strings such as "@yearly", "@weekly", "@daily", and "@hourly" for convenience.
 
 Developers using this library should be aware of the 7-column string requirement and the supported special strings. The example code provided in the `README.md` file can be used as a reference for implementing the `clockwork-cron` parser in their projects.
-## Questions: 
- 1. Question: What is the purpose of the clockwork-cron library?
+
+## Questions:
+
+1. Question: What is the purpose of the clockwork-cron library?
    Answer: The clockwork-cron library is a cron expression parser that is safe to use in the Solana runtime and works with stable Rust v1.28.0.
 
 2. Question: How does the clockwork-cron library handle the seconds and year columns in the cron expression?
@@ -22,4 +24,3 @@ Developers using this library should be aware of the 7-column string requirement
 
 5. Question: What is the format of the cron expression used in the example code?
    Answer: The cron expression format used in the example code is "sec min hour day of month month day of week year", where each field is separated by spaces and can contain specific values, ranges, or wildcards.
-    

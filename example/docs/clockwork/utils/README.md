@@ -7,8 +7,10 @@ The Clockwork Utils module may include functions for tasks such as date and time
 Developers working with the Clockwork project should refer to the `README.md` file for the Clockwork Utils module to gain an understanding of the available functions and their usage. This file may also include information on any dependencies that the module relies on, as well as instructions for installing and configuring the module within the Clockwork project.
 
 In summary, the `README.md` file for the Clockwork Utils module serves as a comprehensive documentation guide for developers, providing an overview of the module's purpose, usage, and any relevant information needed to work with the module effectively. By referring to this file, developers can ensure they are using the Clockwork Utils module correctly and efficiently within the Clockwork project.
-## Questions: 
- 1. Question: What is the purpose of the Clockwork utils project?
+
+## Questions:
+
+1. Question: What is the purpose of the Clockwork utils project?
    Answer: The purpose of the Clockwork utils project is not explicitly mentioned in the README.md file, but it is likely a collection of utility functions or tools related to time and date management or manipulation.
 
 2. Question: What programming language(s) is Clockwork utils written in?
@@ -22,4 +24,3 @@ In summary, the `README.md` file for the Clockwork Utils module serves as a comp
 
 5. Question: Is there any documentation or examples available for using the Clockwork utils functions?
    Answer: The README.md file does not provide any links to documentation or examples, so a developer would need to search for additional resources or examine the source code to learn how to use the Clockwork utils functions effectively.
-    

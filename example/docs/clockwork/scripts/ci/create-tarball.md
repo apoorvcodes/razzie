@@ -1,6 +1,7 @@
 The `create-tarball.sh` script is a bash script used in the Clockwork project to create a release tarball for the clockwork-geyser-plugin. The script is designed to work on both macOS (osx) and Linux environments.
 
 1. The script first checks the operating system (CI_OS_NAME) and sets the appropriate target architecture:
+
    - For macOS, it checks the CPU type (uname -m) and sets the target to either arm64-apple-darwin or x86_64-apple-darwin.
    - For Linux, it sets the target to x86_64-unknown-linux-gnu.
    - If the operating system is not supported, the script exits with an error message.
@@ -16,8 +17,10 @@ The `create-tarball.sh` script is a bash script used in the Clockwork project to
 6. Finally, the script prints "ok" to indicate successful completion.
 
 This script is useful for developers who need to create a release tarball of the clockwork-geyser-plugin for distribution. It ensures that the tarball is created with the correct target architecture and includes the necessary version information.
-## Questions: 
- 1. Question: What is the purpose of the `CI_OS_NAME` variable and how is it set?
+
+## Questions:
+
+1. Question: What is the purpose of the `CI_OS_NAME` variable and how is it set?
    Answer: The `CI_OS_NAME` variable is used to determine the operating system (osx or linux) on which the script is running. It is expected to be set externally, likely by the continuous integration (CI) system.
 
 2. Question: What is the purpose of the `_cputype` variable and how is it used?
@@ -31,4 +34,3 @@ This script is useful for developers who need to create a release tarball of the
 
 5. Question: What does the `./scripts/build-all.sh stable "${RELEASE_BASENAME}"` command do?
    Answer: This command runs the `build-all.sh` script located in the `./scripts` directory with the arguments "stable" and the value of the `RELEASE_BASENAME` variable. It is likely responsible for building the project binaries and placing them in the specified release directory.
-    

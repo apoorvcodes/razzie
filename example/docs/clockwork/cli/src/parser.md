@@ -9,8 +9,10 @@ Additionally, there are several utility functions for parsing specific argument 
 The file also defines several JSON-related structures and implementations, such as `JsonInstructionData`, `JsonAccountMetaData`, and their `TryFrom` implementations for converting them into `SerializableInstruction` and `SerializableAccount` respectively.
 
 Lastly, the `ProgramInfo` struct is defined, which holds information about a program, including its `Pubkey` and the path to its file.
-## Questions: 
- 1. Question: What is the purpose of the `TryFrom<&ArgMatches>` implementation for `CliCommand`?
+
+## Questions:
+
+1. Question: What is the purpose of the `TryFrom<&ArgMatches>` implementation for `CliCommand`?
    Answer: The `TryFrom<&ArgMatches>` implementation for `CliCommand` is used to convert command line argument matches into a `CliCommand` enum variant, which represents a specific command to be executed by the application.
 
 2. Question: How does the `parse_bpf_command` function work?
@@ -24,4 +26,3 @@ Lastly, the `ProgramInfo` struct is defined, which holds information about a pro
 
 5. Question: What is the purpose of the `JsonInstructionData` and `JsonAccountMetaData` structs?
    Answer: The `JsonInstructionData` and `JsonAccountMetaData` structs are used to deserialize JSON data from an instruction file into a format that can be easily converted into `SerializableInstruction` and `SerializableAccount` structs, respectively.
-    

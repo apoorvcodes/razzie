@@ -9,8 +9,10 @@ Inside the `FilesPage` function, the `cx.render()` method is called with an `rsx
 The `rsx!` block contains a `Page` component, which is likely a reusable layout component for the project. Inside the `Page` component, an `h1` element is defined with a class attribute set to `"text-2xl font-semibold"`. This class attribute likely comes from a CSS framework (such as Tailwind CSS) and is used to style the heading. The content of the `h1` element is set to the string `"Files"`.
 
 In summary, the `files.rs` file is responsible for rendering the Files page in the Clockwork project. It uses the Dioxus library to create a reactive UI and leverages the RSX macro to define the UI elements in an HTML-like syntax. The main component of this file is the `FilesPage` function, which renders a `Page` component containing an `h1` element with the text "Files".
-## Questions: 
- 1. Question: What is the purpose of the `FilesPage` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `FilesPage` function?
    Answer: The `FilesPage` function is responsible for rendering the Files page with a specific layout and style, using the `Page` component and the `h1` element with a class and text content.
 
 2. Question: What is the `dioxus::prelude::*` import used for?
@@ -24,4 +26,3 @@ In summary, the `files.rs` file is responsible for rendering the Files page in t
 
 5. Question: How can the styling of the `h1` element be modified or extended?
    Answer: The styling of the `h1` element can be modified or extended by updating the `class` attribute value with additional CSS classes or by adding inline styles using the `style` attribute.
-    

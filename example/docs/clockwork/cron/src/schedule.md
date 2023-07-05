@@ -7,10 +7,12 @@ The `ScheduleIterator` struct is used for iterating through the dates and times 
 The `is_leap_year` function checks if a given year is a leap year, and the `days_in_month` function returns the number of days in a given month and year.
 
 The file also includes tests for various functionalities, such as creating schedules from strings, converting schedules to strings, checking schedule equality, and iterating through schedules.
-## Questions: 
- 1. What is the purpose of the `Schedule` struct and its associated methods?
 
-   The `Schedule` struct represents a schedule with specific time units (years, months, days, hours, minutes, and seconds). It provides methods to find the next and previous date-times that match the schedule, check if a given date-time is included in the schedule, and access the time unit specifications of the schedule.
+## Questions:
+
+1.  What is the purpose of the `Schedule` struct and its associated methods?
+
+The `Schedule` struct represents a schedule with specific time units (years, months, days, hours, minutes, and seconds). It provides methods to find the next and previous date-times that match the schedule, check if a given date-time is included in the schedule, and access the time unit specifications of the schedule.
 
 2. How does the `next_after` method work?
 
@@ -27,4 +29,3 @@ The file also includes tests for various functionalities, such as creating sched
 5. How is the `days_in_month` function used in the code?
 
    The `days_in_month` function takes a month and a year as input and returns the number of days in that month, considering leap years. It is used in the `next_after` and `prev_before` methods to determine the range of days to iterate through when searching for matching date-times.
-    

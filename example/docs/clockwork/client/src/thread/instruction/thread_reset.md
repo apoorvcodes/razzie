@@ -11,8 +11,10 @@ The `thread_reset` function returns an `Instruction` object, which is a data str
 3. `data`: This is set to the serialized data of a `ThreadReset` object, which is an empty struct defined in the `clockwork_thread_program::instruction` module. This data is used by the Clockwork thread program to determine the specific action that needs to be performed when the instruction is executed.
 
 In summary, the `thread_reset.rs` file provides a function to create an instruction for resetting a thread on the Solana blockchain. This instruction requires the authority's signature and modifies the thread account.
-## Questions: 
- 1. Question: What is the purpose of the `thread_reset` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `thread_reset` function?
    Answer: The `thread_reset` function creates an Instruction for resetting a thread in the Clockwork project, taking the authority and thread public keys as input.
 
 2. Question: What are the dependencies used in this code?
@@ -26,4 +28,3 @@ In summary, the `thread_reset.rs` file provides a function to create an instruct
 
 5. Question: What is the role of the `program_id` field in the `Instruction` struct?
    Answer: The `program_id` field in the `Instruction` struct specifies the ID of the Clockwork Thread Program, which is the program responsible for handling the `thread_reset` instruction on the Solana blockchain.
-    

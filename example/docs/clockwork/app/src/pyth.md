@@ -16,8 +16,10 @@ The `load()` function is a helper function that casts the data slice into a `Pod
 The `Quotable` trait is implemented for the `PriceAccount` struct, which provides a `quote()` method that formats the price and confidence interval as a string.
 
 In summary, this file is responsible for handling Pyth price feeds, providing methods to retrieve and format price data for various assets. It is essential for developers working with market data and price feeds in the Clockwork project.
-## Questions: 
- 1. Question: What is the purpose of the `PythFeed` enum and its associated methods?
+
+## Questions:
+
+1. Question: What is the purpose of the `PythFeed` enum and its associated methods?
    Answer: The `PythFeed` enum represents different price feeds for various cryptocurrency pairs. The associated methods provide functionality to retrieve the ticker symbol, public key, and lists of all available tickers and public keys for each price feed.
 
 2. Question: How does the `get_price_feeds` function work?
@@ -31,4 +33,3 @@ In summary, this file is responsible for handling Pyth price feeds, providing me
 
 5. Question: What is the purpose of the `PythFeedPrice` struct?
    Answer: The `PythFeedPrice` struct is a container for holding the price feed data, including the `PriceAccount`, public key, and ticker symbol. It is used as the return type for the `get_price_feeds` function, providing a convenient way to store and access the fetched price feed data.
-    

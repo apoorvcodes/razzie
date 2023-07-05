@@ -15,5 +15,3 @@ The `TriggerContext` enum represents the event that allowed a transaction thread
 The `ThreadSettings` struct represents the properties of threads that can be updated, such as fee, instructions, name, rate limit, and trigger. This struct is used when updating the settings of a thread.
 
 In summary, the code in the `output/clockwork/programs/thread/src/state` folder is crucial for managing the state and execution of transaction threads on the Solana blockchain within the Clockwork project. It provides the necessary structs, methods, and traits for working with thread accounts, execution contexts, trigger contexts, and thread settings, making it an essential part of the project's functionality.
-
-    

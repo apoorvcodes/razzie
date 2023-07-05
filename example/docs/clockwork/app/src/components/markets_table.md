@@ -9,8 +9,10 @@ The `Header(cx: Scope) -> Element` function renders the table header with two co
 The `Row` function takes a `RowProps` struct as a property, which contains an `elem_id` string and a `price` object of type `PythFeedPrice`. The `Row` function renders a table row (`tr`) with two cells (`td`): one for the ticker and one for the price. The price is formatted using the `quote()` method from the `Quotable` trait implemented by the `PythFeedPrice` type.
 
 In summary, the `markets_table.rs` file is responsible for rendering a table with market data fetched from the Pyth library. It uses Dioxus for creating the user interface and updates the market data every second.
-## Questions: 
- 1. Question: What is the purpose of the `MarketsTable` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `MarketsTable` function?
    Answer: The `MarketsTable` function is responsible for rendering a table of market data, which includes fetching the price feeds, updating the state, and rendering the table with the header and rows containing the ticker and price information.
 
 2. Question: How does the `use_future` function work in this code?
@@ -24,4 +26,3 @@ In summary, the `markets_table.rs` file is responsible for rendering a table wit
 
 5. Question: What is the purpose of the `Row` function and the `RowProps` struct?
    Answer: The `Row` function is responsible for rendering a single row in the table with the ticker and price information. The `RowProps` struct defines the properties required for the `Row` component, which includes the `elem_id` and `price` data.
-    

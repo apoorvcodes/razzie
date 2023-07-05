@@ -7,15 +7,16 @@ export async function loopDirectory(
   directoryPath: string,
 ): Promise<Document[]> {
   const docs: Document[] = [];
-  let finalPath = directoryPath
-  if(!directoryPath.includes(process.cwd())) finalPath = process.cwd()+directoryPath
+  let finalPath = directoryPath;
+  if (!directoryPath.includes(process.cwd()))
+    finalPath = process.cwd() + directoryPath;
   try {
     const files = fs.readdirSync(finalPath);
     for (const file of files) {
       const filePath = path.join(finalPath, file);
       const stat = fs.statSync(filePath);
       if (stat.isDirectory()) {
-        console.log(stat.isDirectory)
+        console.log(stat.isDirectory);
         const nestedDocs = await loopDirectory(filePath);
         docs.push(...nestedDocs);
       } else {

@@ -1,1 +1,1 @@
-export * from "./hnswlib"
+export * from "./hnswlib";

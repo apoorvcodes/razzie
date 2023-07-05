@@ -13,8 +13,10 @@ The `connect_hint_text` and `connect_text` variables are defined based on the `h
 Finally, the `html!` macro is used to define the HTML structure of the component, which includes an `h1` element displaying the connection status and a `Button` component with the `value` and `onclick` properties set to the appropriate values.
 
 In summary, the `phantom_connect.rs` file provides a user interface component for connecting and disconnecting a Phantom Wallet using the Solana blockchain. It handles the connection state and updates the UI accordingly.
-## Questions: 
- 1. Question: What is the purpose of the `PhantomConnect` function component?
+
+## Questions:
+
+1. Question: What is the purpose of the `PhantomConnect` function component?
    Answer: The `PhantomConnect` function component is responsible for rendering a button that allows users to connect or disconnect from their Phantom Wallet, and displaying the connection status.
 
 2. Question: How does the `handle_click` callback function work?
@@ -28,4 +30,3 @@ In summary, the `phantom_connect.rs` file provides a user interface component fo
 
 5. Question: What is the purpose of the `Props` struct and its `onclick` property?
    Answer: The `Props` struct is used to define the properties that can be passed to the `PhantomConnect` component. The `onclick` property is a callback function that can be provided by the parent component to handle additional actions when the button is clicked.
-    

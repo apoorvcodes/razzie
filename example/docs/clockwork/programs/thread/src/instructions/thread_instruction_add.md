@@ -12,8 +12,10 @@ The `handler` function is the main entry point for this file. It takes a `Contex
 The handler function returns a `Result<()>` indicating the success or failure of the operation.
 
 In summary, this file provides the functionality to add instructions to a thread in the Clockwork project. It ensures that the thread account has enough lamports to maintain rent-exemption and handles the necessary account updates and memory reallocation.
-## Questions: 
- 1. Question: What is the purpose of the `ThreadInstructionAdd` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `ThreadInstructionAdd` struct?
    Answer: The `ThreadInstructionAdd` struct defines the accounts required by the `thread_instruction_add` instruction, including the authority (owner) of the thread, the Solana system program, and the thread to be paused.
 
 2. Question: What is the role of the `handler` function?
@@ -27,4 +29,3 @@ In summary, this file provides the functionality to add instructions to a thread
 
 5. Question: What is the `SerializableInstruction` type used as an argument in the `ThreadInstructionAdd` struct and the `handler` function?
    Answer: The `SerializableInstruction` type represents a serializable version of a Solana instruction, which can be easily stored and processed within the smart contract. It is used as an input to the `thread_instruction_add` instruction and is appended to the thread's instructions list.
-    

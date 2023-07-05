@@ -13,8 +13,10 @@ The `TriggerContext` enum represents the event that allowed a transaction thread
 The `ThreadSettings` struct represents the properties of threads that can be updated, such as fee, instructions, name, rate limit, and trigger. This struct is used when updating the settings of a thread.
 
 In summary, the `thread.rs` file is responsible for managing the state and execution of transaction threads on the Solana blockchain, providing structs and methods for working with thread accounts, execution contexts, trigger contexts, and thread settings.
-## Questions: 
- 1. Question: What is the purpose of the `Thread` struct?
+
+## Questions:
+
+1. Question: What is the purpose of the `Thread` struct?
    Answer: The `Thread` struct represents the current state of a transaction thread on Solana, including information about the owner, creation time, execution context, fees, instructions, and other properties related to the thread.
 
 2. Question: How is the `pubkey` of a `Thread` derived?
@@ -28,4 +30,3 @@ In summary, the `thread.rs` file is responsible for managing the state and execu
 
 5. Question: What are the different types of `TriggerContext`?
    Answer: The `TriggerContext` enum represents the event which allowed a particular transaction thread to be triggered. It has several variants: Account (with a data hash), Cron (with a started_at timestamp), Now, Slot (with a started_at slot), and Epoch (with a started_at epoch).
-    

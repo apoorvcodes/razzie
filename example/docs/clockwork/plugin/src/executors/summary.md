@@ -7,5 +7,3 @@ The `tx.rs` file is responsible for managing and executing transactions. It defi
 The `webhook.rs` file is responsible for executing webhooks. It defines the `WebhookExecutor` struct, which has a single field, `config`, of type `PluginConfig`. The `WebhookExecutor` struct has a `new` function for creating a new instance and an asynchronous method `execute_webhooks` for executing webhooks by sending HTTP requests to specified URLs when certain events occur in the system.
 
 In summary, the `output/clockwork/plugin/src/executors` folder in the Clockwork project contains the core functionality for managing the execution of transactions and webhooks, as well as providing an implementation for fetching and deserializing account data from the Solana blockchain. This folder plays a crucial role in the Clockwork system, as it handles the processing of transactions and webhooks, which are essential components of the project. Developers working on the Clockwork project should have a good understanding of the code in this folder, as it is central to the system's operation.
-
-    

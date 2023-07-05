@@ -25,8 +25,10 @@ Additionally, the file contains several job functions that perform specific task
 Each job function has its own handler and may have additional sub-functions for processing specific parts of the job.
 
 In summary, the `lib.rs` file is a crucial part of the Clockwork project, providing the main functionality for managing the worker network, delegations, pools, and various jobs within the Solana cluster.
-## Questions: 
- 1. Question: What is the purpose of the `declare_id!` macro in this code?
+
+## Questions:
+
+1. Question: What is the purpose of the `declare_id!` macro in this code?
    Answer: The `declare_id!` macro is used to define the unique program ID for the Clockwork network program on the Solana blockchain. This ID is used to identify and interact with the program on the cluster.
 
 2. Question: How are the different jobs in the Clockwork network program organized and implemented?
@@ -40,4 +42,3 @@ In summary, the `lib.rs` file is a crucial part of the Clockwork project, provid
 
 5. Question: What is the purpose of the `Context` type used in the handler functions for instructions and jobs?
    Answer: The `Context` type is a part of the `anchor_lang` library and is used to provide the necessary context for executing a handler function, such as the accounts involved in the transaction, the program's state, and any additional data required for the operation.
-    

@@ -11,8 +11,10 @@ The file is organized into several sections:
 4. `cpi` module: This module provides a set of functions that act as wrappers for the Cross-Program Invocation (CPI) functions in the `clockwork_thread_program::cpi` module. These functions include `thread_create`, `thread_delete`, `thread_pause`, `thread_resume`, `thread_reset`, `thread_update`, and `thread_withdraw`. Each function takes a `CpiContext` and additional arguments as needed, and then calls the corresponding function from the `clockwork_thread_program::cpi` module.
 
 In summary, the `lib.rs` file in the Clockwork project serves as a convenient entry point for accessing various components of the `clockwork_thread_program` crate. It re-exports types and functions related to the state, utilities, and CPI functionality, making it easier for developers to use these components in their projects.
-## Questions: 
- 1. Question: What is the purpose of the `clockwork_thread_program` module?
+
+## Questions:
+
+1. Question: What is the purpose of the `clockwork_thread_program` module?
    Answer: The `clockwork_thread_program` module is an external module that provides the core functionality for the Clockwork project, including thread management, state handling, and cross-program invocations (CPI).
 
 2. Question: What are the main components being re-exported from the `clockwork_thread_program` module?
@@ -26,4 +28,3 @@ In summary, the `lib.rs` file in the Clockwork project serves as a convenient en
 
 5. Question: What is the purpose of the `utils` submodule in this file?
    Answer: The `utils` submodule re-exports the `PAYER_PUBKEY` constant, which is a utility value used in the Clockwork project.
-    

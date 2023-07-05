@@ -11,8 +11,10 @@ Finally, the generated code is converted back into a `TokenStream` using the `pr
 There is also some commented-out code in the file, which seems to be related to another procedural macro called `Clockwork`. However, this code is not currently being used and is not relevant to the `TryFromData` macro.
 
 In summary, the `lib.rs` file provides a custom derive macro called `TryFromData` that generates an implementation of the `TryFrom<Vec<u8>>` trait for a given struct, allowing it to be deserialized from a byte vector.
-## Questions: 
- 1. Question: What is the purpose of the `derive_try_from_data_attr` function?
+
+## Questions:
+
+1. Question: What is the purpose of the `derive_try_from_data_attr` function?
    Answer: The `derive_try_from_data_attr` function is a procedural macro that generates an implementation of the `TryFrom<Vec<u8>>` trait for a given struct, allowing it to be converted from a byte vector to the struct type.
 
 2. Question: What is the role of the `#[automatically_derived]` attribute in the generated code?
@@ -26,4 +28,3 @@ In summary, the `lib.rs` file provides a custom derive macro called `TryFromData
 
 5. Question: What is the purpose of the `anchor_syn::AccountsStruct` type in the commented-out `derive_clockwork` function?
    Answer: The `anchor_syn::AccountsStruct` type is likely a custom representation of a struct that holds account information. It is used to parse the input token stream and generate code for creating a new instruction with the specified accounts and data.
-    
