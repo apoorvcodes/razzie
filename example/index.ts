@@ -1,9 +1,13 @@
-import { config } from "dotenv";
+import env from "dotenv"
+env.config()
 
-config();
+import {execute} from "../src/llm"
 
-import  Client  from "../src/llm";
-
-const client = new Client({
-    condensePrompt: 
+const run = async () => {
+await execute({
+    question: "What is the best way to write an essay related to computer science, for harvard?",
+    isStreaming: false
 })
+}
+
+run()
